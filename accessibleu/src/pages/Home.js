@@ -1,4 +1,5 @@
-export default function Home() {
+
+const Home = () => {
   return (
     <main className="flex min-h-screen flex-col">
       <div className="w-full h-20 w- mt-0.5 self-center text-center border border-1 border-black">Top Bar</div>
@@ -10,5 +11,7 @@ export default function Home() {
         <div className=" h-full text-center border border-1 border-black">Community info and Rules</div>
       </div>      
     </main>
-  )
+  );
 }
+
+export default Home;
