@@ -1,15 +1,17 @@
 import './App.css';
 import Home from "./pages/Home.js"
-import Navbar from './Navbar';
+import NavBar from './NavBar.js';
+import Login from './pages/Login.js';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
     <main>
-      <Navbar/>
+      <NavBar/>
       <Router>
         <Routes>
           <Route exact path="/" element={<Home/>}/>
+          <Route path="/auth" element={<Login/>}/>
         </Routes>
       </Router>  
     </main>   
