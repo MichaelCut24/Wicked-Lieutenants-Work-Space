@@ -1,20 +1,27 @@
+import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom'
 import './App.css';
-import Home from "./pages/Home.js"
-import NavBar from './NavBar.js';
-import Login from './pages/Login.js';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
+import Login from './pages/Login';
+import Home from "./pages/Home"
 
 function App() {
   return (
-    <main>
-      <NavBar/>
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Home/>}/>
-          <Route path="/auth" element={<Login/>}/>
-        </Routes>
+    <>
+      <Router> 
+        <header >
+          <nav>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="login">Login</NavLink>
+          </nav>
+        </header>
+        <main>
+            <Routes>
+              <Route exact path="/" element={<Home />}/>
+              <Route path="login" element={<Login/>}/>
+            </Routes>
+        </main>   
       </Router>  
-    </main>   
+    </>       
   );
 }
 
