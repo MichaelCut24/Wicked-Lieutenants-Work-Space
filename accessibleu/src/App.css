@@ -8,15 +8,14 @@ header nav {
     gap: 16px;
     flex: end;
     margin: 0 auto;
+    margin-bottom: 16px;
 }
 
 header nav a{
     text-decoration: none;
-    padding: 6px;
     border-radius: 4px;
 }
 
 header nav a.active {
-    background: var(blue);
     font-style: italic;
 }
