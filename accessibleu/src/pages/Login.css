@@ -1,9 +1,21 @@
+
+.page{
+    height: 85vh;
+    width: 100vw;
+}
+
 /* Logo */
-.login{
-    font-size: medium;
+.wlcmsg{
+    top:15%;
+    right: 2%;
 }
 
 /* Login Form */
+.form{
+    top: 15%;
+    left: 2%;
+}
+
 button { 
     background-color: lightblue;
     width: 100%;
