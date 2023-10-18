@@ -10,7 +10,7 @@ const Home = () => {
     </div>
 
     <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰ </a>
       <a href="#">About</a>
       <a href="#">Services</a>
       <a href="#">Clients</a>
