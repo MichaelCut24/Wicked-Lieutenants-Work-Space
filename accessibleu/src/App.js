@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom
 // IMPORT YOUR .JS PAGE HERE
 import Login from './pages/Login';
 import Home from "./pages/Home"
+import Accounts from "./pages/Accounts"
 
 import './App.css';
 
@@ -13,12 +14,14 @@ function App() {
           <nav> {/* Navigation Bar component */}
             <NavLink to="/">Home</NavLink>
             <NavLink to="login">Login</NavLink>
+            <NavLink to="accounts">Login</NavLink>
           </nav>
 
         <main>
             <Routes> {/* Insert your page component here !!!*/}
               <Route exact path="/" element={<Home />}/>
               <Route path="login" element={<Login/>}/>
+              <Route path="accounts" element={<Accounts/>}/>
             </Routes>
         </main>   
       </Router>  
