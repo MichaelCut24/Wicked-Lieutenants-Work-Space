@@ -37,6 +37,7 @@
 .RecentPost{
     position: absolute;
     border: 1px solid black;
+    margin-left: 12rem;
     width: 85vw;
     height: 80%;
     bottom: 10%
