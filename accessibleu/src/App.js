@@ -9,13 +9,11 @@ import './App.css';
 function App() {
   return (
     <>
-      <Router> {/* Everything related to the page routing will be put inside here */}
-        <header > 
+      <Router> {/* Everything related to the page routing will be put inside here */} 
           <nav> {/* Navigation Bar component */}
             <NavLink to="/">Home</NavLink>
             <NavLink to="login">Login</NavLink>
           </nav>
-        </header>
 
         <main>
             <Routes> {/* Insert your page component here !!!*/}
