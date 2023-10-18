@@ -21,8 +21,9 @@
 
 }
 
-.TopSearchBar:hover{
-    color: var(black);
+.TopSearchBar input:hover{
+    border-color: var(--primary-color);
+    background-color: white;
 }
 
 
@@ -38,7 +39,7 @@
     position: absolute;
     border: 1px solid black;
     margin-left: 12rem;
-    width: 85vw;
+    width: 75vw;
     height: 80%;
     bottom: 10%
 
