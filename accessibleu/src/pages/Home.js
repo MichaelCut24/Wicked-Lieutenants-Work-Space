@@ -1,16 +1,76 @@
 
 const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col">
-      <div className="w-full h-20 w- mt-0.5 self-center text-center border border-1 border-black">Top Bar</div>
-      <div className="w-full h-40 w self-center text-center mt-16 border border-1 border-black ">Banner</div>
-      <div className="h-10 w self-center text-center border border-1 border-black ">Create a Post</div>
-      <div className="columns-3 mt-2">
-        <div className=" text-center border border-1 border-black">Your Post</div>
-        <div className=" text-center border border-1 border-black">Community Post</div>
-        <div className=" h-full text-center border border-1 border-black">Community info and Rules</div>
-      </div>      
-    </main>
+  <>
+  <div class="header">
+    <a href="#default" id="main">
+    <button class="openbtn" onclick="openNav()">☰ </button>  
+    <a href="#default" class="logo">AccessibleU</a>
+    <div class="header-right">   
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Server ex. 1</h3>
+      <p>Title</p>
+      <p>Description</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Server ex. 2</h3>
+      <p>Title</p>
+      <p>Description</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Server ex. 3</h3>
+      <p>Title</p>
+      <p>Description</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Server ex. 4</h3>
+      <p>Title</p>
+      <p>Description</p>
+    </div>
+  </div>
+</div>
+
+<div class="div1">Popular Today!</div>
+
+<header>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "200px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</header>
+</>
+    
   );
 }
 
