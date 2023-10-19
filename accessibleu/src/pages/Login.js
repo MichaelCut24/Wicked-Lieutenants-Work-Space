@@ -4,10 +4,13 @@
 // Lgin.css is created. Go to https://v2.tailwindcss.com/docs/ to lookup the syntax and
 // convert tailwind into Login.css if Danny has not done it( he will eventually). Or yall can just delete everything
 // and start over.
+import Popup from './Popup.js'
+import { useState } from 'react';
 
 import './Login.css'
 
 function Login() {
+    const [buttonPopup, setButtonPopup] = useState(false);
     return (
         <div className="page flex flex-row"> {/* Whole page container */}
             <div className="relative w-2/3 "> {/* Left half of page divider */}
@@ -32,6 +35,15 @@ function Login() {
                             <input type="password" placeholder="Password" name="password" required/>
                             <center><button type="submit">Login</button> </center>
                         </div>   
+                        {/* This is for the Create Account Popup. */}
+                        <div className="Popup-Button">
+                            <br/><br/>
+                            <button onClick={() => setButtonPopup(true)}>Create Account</button>
+                            <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+                            <h1>Create Account Popup</h1>
+                            <p>Account creation lines will go here.</p>
+                            </Popup>
+                        </div>
                     </form> 
                     <center><img src='./AccessibleU-logos.jpeg' alt="logo"/></center>
                 </div>

@@ -4,7 +4,7 @@
 
 /* navbar */
 nav {
-    background-image: linear-gradient( #1a1919, #4c4c7c, #93a3f3, #4c4c7c, #1a1919);
+    background-image: linear-gradient( #1d1b50, #4c4c7c, #93a3f3, #4c4c7c, #1d1b50);
     position:absolute;
     display: flex;
     flex-direction: column;

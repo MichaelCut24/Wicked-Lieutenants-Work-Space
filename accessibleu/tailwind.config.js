@@ -5,7 +5,8 @@ module.exports = {
     "./src/pages/Home.js",
     "./src/NavBar.js",
     "./src/pages/Login.js",
-    "./src/pages/MainPage.js"
+    "./src/pages/Community.js",
+    "./src/pages/Popup.js"
   ],
   theme: {
     extend: {},
