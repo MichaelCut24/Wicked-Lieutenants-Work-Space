@@ -6,8 +6,11 @@
 // and start over.
 
 import './Login.css'
+import Popup from './Popup.js'
+import { useState } from 'react';
 
 function Login() {
+    const [buttonPopup, setButtonPopup] = useState(false);
     return (
         <div className="page m-auto flex flex-row border border-1 border-black"> {/* Whole page container */}
             <div className="relative w-1/2 border border-1 border-black"> {/* Left half of page divider */}
@@ -28,11 +31,23 @@ function Login() {
                         <div className=" flex flex-col container"> 
                             <input type="text" placeholder="Enter your school email" name="username" required/>
                             <input type="password" placeholder="Password" name="password" required/>
-                            <button type="submit">Login</button> 
-                        </div>   
-                    </form> 
+                            <button type="submit">Login</button>   
+                        </div>  
+                    </form>
+                    
+                    {/* This is for the Create Account Popup. */}
+                    <div className="Popup Button">
+                      <br/><br/>
+                      <button onClick={() => setButtonPopup(true)}>Create Account</button>
+                      <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+                      <h1>Create Account Popup</h1>
+                      <p>Account creation lines will go here.</p>
+                      </Popup>
+                    </div>
                 </div>
-            </div>    
+            </div>
+
+    
         </div>      
     );
 }
