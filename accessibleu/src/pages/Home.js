@@ -1,67 +1,22 @@
-// HOME PAGE
+import './Home.css'
+import React from "react"
 
-// NOTE: Everything in the className part is tailwind CSS, yall can delete everything in it once
-// Home.css is created. Go to https://v2.tailwindcss.com/docs/ to lookup the syntax and
-// convert tailwind into Home.css if Danny has not done it (he will eventually). Or yall can just delete everything
-// and start over.
-
-import "./Home.css"
-
-function Home(){
-  return (
-    <div class="page">
-
-      <div class="header">
-          <a href="#default" id="main"/>
-          <button class="openbtn" onclick="openNav()">☰ </button>  
-          <a href="#default" class="logo">AccessibleU</a>
-          <div class="header-right">   
-          </div>
-
-          <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰ </a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-          </div>
-      </div>
-
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <h3>Server ex. 1</h3>
-            <p>Title</p>
-            <p>Description</p>
-          </div>
+export default function Home(){
+    return (
+        <div className="Page">        
+            <div className="TopSearchBar">
+                <input id="searchbar" placeholder="Search for a post" />
+            </div>
+            <div className="MainSection">
+                <div className="RecentPost">
+                <p>According to all known laws of aviation,there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible.
+                </p>
+                </div>
+                <div className="Suggestion">
+                <p>According to all known laws of aviation,there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible.
+                </p>
+                </div>
+            </div>
         </div>
-
-        <div class="column">
-          <div class="card">
-            <h3>Server ex. 2</h3>
-            <p>Title</p>
-            <p>Description</p>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="card">
-            <h3>Server ex. 3</h3>
-            <p>Title</p>
-            <p>Description</p>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="card">
-            <h3>Server ex. 4</h3>
-            <p>Title</p>
-            <p>Description</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+      );
 }
-
-export default Home;
