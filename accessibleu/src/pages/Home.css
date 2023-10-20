@@ -1,0 +1,55 @@
+.Page{
+    display:flex;
+    flex-direction:row;
+    width: 100vw;
+    height: 100%;
+}
+
+.TopSearchBar{
+    position: absolute;
+    left: 35%;
+    top: 5%;
+}
+
+.TopSearchBar input{
+    width: 500px;
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: var(--border-radius);
+    border: 1px solid rgb(230, 230, 230,);
+    background-color: rgb(245,245,245);
+
+}
+
+.TopSearchBar input:hover{
+    border-color: var(--primary-color);
+    background-color: white;
+}
+
+
+.MainSection{
+    display:black;
+    flex-direction:column;
+    border: 1px solid black;
+    width: 100vw;
+    height: 100%;
+}
+
+.RecentPost{
+    position: absolute;
+    border: 1px solid black;
+    margin-left: 12rem;
+    width: 75vw;
+    height: 80%;
+    bottom: 10%
+
+}
+
+.Suggestion{
+    position: absolute;
+    border: 1px solid black;
+    right: 0;
+    width: 14vw;
+    height: 35vw;
+    bottom: 15%;
+}
