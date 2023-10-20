@@ -45,7 +45,6 @@ function Login() {
                             </Popup>
                         </div>
                     </form> 
-                    <center><img src='./AccessibleU-logos.jpeg' alt="logo"/></center>
                 </div>
             </div>    
         </div>      
