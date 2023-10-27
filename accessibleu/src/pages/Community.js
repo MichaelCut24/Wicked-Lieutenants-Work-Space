@@ -5,7 +5,7 @@
 // convert tailwind into Home.css if Danny has not done it (he will eventually). Or yall can just delete everything
 // and start over.
 
-import "./Community.css"
+import "./Community.css";
 
 function Community(){
   return (

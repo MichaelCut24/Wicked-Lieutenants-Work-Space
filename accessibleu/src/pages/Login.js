@@ -34,17 +34,16 @@ function Login() {
                             <input type="text" placeholder="Enter your school email" name="username" required/>
                             <input type="password" placeholder="Password" name="password" required/>
                             <center><button type="submit">Login</button> </center>
-                        </div>   
+                        </div>
+                    </form>
+                          
                         {/* This is for the Create Account Popup. */}
                         <div className="Popup-Button">
-                            <br/><br/>
-                            <button onClick={() => setButtonPopup(true)}>Create Account</button>
+                            <center></center><button className="Pop-B" onClick={() => setButtonPopup(true)}>Create Account </button>
                             <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-                            <h1>Create Account Popup</h1>
-                            <p>Account creation lines will go here.</p>
                             </Popup>
                         </div>
-                    </form> 
+                    
                     <center><img src='./AccessibleU-logos.jpeg' alt="logo"/></center>
                 </div>
             </div>    

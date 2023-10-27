@@ -1,3 +1,29 @@
+.Pop-B {
+    background-color: white;
+    width: 25%;
+    color: black;  
+    border: 1px solid black; 
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+button {
+    background-color: white;
+    width: 25%;
+    color: black;  
+    border: 1px solid black; 
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.Pop-B:hover { 
+    background-color: green;
+    color: white; 
+}
+
+
+
 .popup {
     position: fixed;
     top: 0;
@@ -22,4 +48,33 @@
     position: absolute;
     top: 16px;
     right: 16px;
+}
+
+
+.close-btn { 
+    background-color: yellow;
+    color: black;
+    width: 15%;  
+    border: 1px solid black; 
+    border-radius: 15px;
+    cursor: pointer;  
+}
+
+.close-btn:hover { 
+    background-color: rgb(255, 0, 191);
+    color: white; 
+}
+
+.popup-create { 
+    background-color: red;
+    color: white;
+    width: 20%;  
+    border: 1px solid black; 
+    border-radius: 15px;
+    cursor: pointer; 
+}
+
+.popup-create:hover { 
+    background-color: rgb(0, 238, 255);
+    color: black; 
 }

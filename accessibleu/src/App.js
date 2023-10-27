@@ -14,7 +14,7 @@ function App() {
           <nav> {/* Navigation Bar component */}
             <NavLink to="main">Home</NavLink>
             <NavLink to="login">Login</NavLink>
-            <NavLink to="/">Communities</NavLink>
+            <NavLink to="/">Community</NavLink>
           </nav>
 
         <main>
