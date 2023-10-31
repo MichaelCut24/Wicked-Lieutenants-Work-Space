@@ -1,0 +1,13 @@
+.google-container button{ 
+    border: 1px solid black; 
+    border-radius: 10px;
+    cursor: pointer;
+    width:3.1rem;
+}
+
+.user-info{
+    position:fixed;
+    bottom:0;
+    left:0;
+    z-index: 10;
+}

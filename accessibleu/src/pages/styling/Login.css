@@ -1,0 +1,82 @@
+
+.page{
+
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+/* Welcome message */
+.wlcmsg{
+    top:15%;
+    right: 2%;
+    height:50vh;
+    width: 40rem;
+    font-size: 1.5rem;
+}
+.wlcmsg h1{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-left: 13%;
+    font-weight: bold;
+    color:#4c4c7c
+}
+.wlcmsg h2, p{
+    font-size: 1.2rem;
+}
+
+/* Login Form */
+.form{
+    background-image: white;
+    border: 10px solid linear-gradient( #1d1b50, #4c4c7c, #95a2f1 55%);
+    border-radius: 15px;
+    top: 15%;
+    left: 2%;
+    height:30rem;
+    width: 22rem;
+}
+
+.third_party{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.third_party button{ 
+    background-color: white;
+    color: black;  
+    border: 1px solid black; 
+    border-radius: 10px;
+    cursor: pointer;
+    width:3.1rem;
+} 
+
+.third_party button:last-child {
+    text-align: right;
+}
+.third_party button:first-child {
+    text-align: left;
+}
+
+form{
+    margin-top: 3rem;
+}
+
+input[type=text], input[type=password] { 
+    width: 100%; 
+    padding: 12px 12px; 
+    display: inline-block; 
+    margin: 8px 0;
+    border: 1px solid black; 
+    box-sizing: border-box;
+    font-size: smaller; 
+    border-radius: 10px;
+}
+   
+.container { 
+    padding: 17px; 
+}
+
+.Popup-Button button{
+    margin-left:7.5rem;
+}
