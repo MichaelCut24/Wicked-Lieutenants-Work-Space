@@ -16,7 +16,7 @@ export default function Community(){
             <input id="searchbar" placeholder="Search for a post" />
         </div>
         <div className= "Homebutton">
-            <a href='communities'>
+            <a href='/'>
                 <button>
                     <img src = './HomeIcon.png'alt = 'HomeIcon'>
                     </img>
