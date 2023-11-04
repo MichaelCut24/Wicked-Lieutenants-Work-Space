@@ -6,7 +6,6 @@ function Home(){
 
       <div class="header">
           <a href="#default" id="main"/>
-          <button class="openbtn" onclick="openNav()">☰ </button>  
           <a href="#default" class="logo">AccessibleU</a>
           <div class="header-right">   
           </div>
