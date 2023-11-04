@@ -10,8 +10,8 @@ function Home(){
           <div class="header-right">  
           <div class="search-container">
             <form action="/action_page.php">
-              <input type="text" placeholder="Search.." name="search"></input>
-              <button type="submit"><i class="fa fa-search"></i></button>
+              <input type="text" placeholder="Search..." name="search"></input>
+              <button type="submit"><i class="fa fa-search" style="font-size:24px"></i></button>
             </form> 
           </div>          
       </div>
