@@ -12,7 +12,7 @@ function Home(){
           </div>
 
           <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰ </a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> </a>
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Clients</a>
@@ -23,7 +23,7 @@ function Home(){
       <div class="row">
         <div class="column">
           <div class="card">
-            <h3>Server ex. 1</h3>
+            <h3>Community</h3>
             <p>Title</p>
             <p>Description</p>
           </div>
@@ -31,7 +31,7 @@ function Home(){
 
         <div class="column">
           <div class="card">
-            <h3>Server ex. 2</h3>
+            <h3>Community</h3>
             <p>Title</p>
             <p>Description</p>
           </div>
@@ -39,7 +39,7 @@ function Home(){
 
         <div class="column">
           <div class="card">
-            <h3>Server ex. 3</h3>
+            <h3>Community</h3>
             <p>Title</p>
             <p>Description</p>
           </div>
@@ -47,7 +47,7 @@ function Home(){
 
         <div class="column">
           <div class="card">
-            <h3>Server ex. 4</h3>
+            <h3>Community</h3>
             <p>Title</p>
             <p>Description</p>
           </div>
