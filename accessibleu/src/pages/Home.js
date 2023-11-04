@@ -8,6 +8,7 @@ function Home(){
           <a href="#default" id="main"/>
           <a href="#default" class="logo">AccessibleU</a>
           <div class="header-right">   
+          <input type="text" placeholder="Search..."></input>
           </div>
       </div>
 
