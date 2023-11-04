@@ -22,15 +22,6 @@ font-size: 25px;
 font-weight: bold;
 }
 
-/*Style search bar in header
-.header input[type=text] {
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  border: none;
-  font-size: 17px;
-}*/
 .header .search-container {
   float: right;
 }
@@ -42,6 +33,7 @@ font-weight: bold;
   border: none;
 }
 
+/*Style for the search bar*/
 .header .search-container button {
   float: right;
   padding: 6px 10px;
@@ -53,6 +45,7 @@ font-weight: bold;
   cursor: pointer;
 }
 
+/*Change search button on hover*/
 .header .search-container button:hover {
   background: #ccc;
 }
@@ -75,7 +68,7 @@ font-family: Arial, Helvetica, sans-serif;
 .column {
 float: left;
 width: 25%;
-padding: 20px 10px;
+padding: 10px 20px;
 }
 
 /* Remove extra left and right margins, due to padding */
