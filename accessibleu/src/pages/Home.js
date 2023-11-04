@@ -1,6 +1,6 @@
-import "./Community.css"
+import "./Home.css"
 
-function Community(){
+function Home(){
   return (
     <div class="page">
 
