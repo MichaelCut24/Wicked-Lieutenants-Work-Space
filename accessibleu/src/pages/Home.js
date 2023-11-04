@@ -7,8 +7,12 @@ function Home(){
       <div class="header">
           <a href="#default" id="main"/>
           <a href="#default" class="logo">AccessibleU</a>
-          <input type="text" placeholder="Search..."></input>
-          <div class="header-right">   
+          <div class="header-right">  
+          <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form> 
           </div>
       </div>
 
