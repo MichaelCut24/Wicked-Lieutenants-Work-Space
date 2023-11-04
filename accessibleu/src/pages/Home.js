@@ -57,4 +57,4 @@ function Home(){
   );
 }
 
-export default Community;
+export default Home;
