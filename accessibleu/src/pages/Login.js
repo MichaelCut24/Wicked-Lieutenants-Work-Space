@@ -1,18 +1,16 @@
 // LOGIN PAGE
 
-// NOTE: Everything in the className part is tailwind CSS, yall can delete everything in it once
-// Lgin.css is created. Go to https://v2.tailwindcss.com/docs/ to lookup the syntax and
-// convert tailwind into Login.css if Danny has not done it( he will eventually). Or yall can just delete everything
-// and start over.
-import Popup from './Popup.js'
+import Popup from './login-components/Popup.js'
+import GoogleAuth from './login-components/GoogleAuth.js';
 import { useState } from 'react';
 
-import './Login.css'
+import './styling/Login.css'
 
 function Login() {
     const [buttonPopup, setButtonPopup] = useState(false);
+
     return (
-        <div className="page flex flex-row"> {/* Whole page container */}
+        <div className="page flex flex-row">{/* Whole page container */}
             <div className="relative w-2/3 "> {/* Left half of page divider */}
                 <div className="wlcmsg absolute mt-1/4"> {/* Login message container */}
                     <div className='flex flex-row'>
@@ -34,20 +32,24 @@ function Login() {
                             <input type="text" placeholder="Enter your school email" name="username" required/>
                             <input type="password" placeholder="Password" name="password" required/>
                             <center><button type="submit">Login</button> </center>
-                        </div>
-                    </form>
-                          
+                            <div className='third_party mt-4'> {/* Third Party login options divider */}
+                                <GoogleAuth/>
+                            </div>
+                            
+                        </div>   
                         {/* This is for the Create Account Popup. */}
                         <div className="Popup-Button">
-                            <center></center><button className="Pop-B" onClick={() => setButtonPopup(true)}>Create Account </button>
+                            <br/><br/>
+                            <button onClick={() => setButtonPopup(true)}>Create Account</button>
                             <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+                            <h1>Create Account Popup</h1>
+                            <p>Account creation lines will go here.</p>
                             </Popup>
                         </div>
-                    
-                    <center><img src='./AccessibleU-logos.jpeg' alt="logo"/></center>
+                    </form> 
                 </div>
             </div>    
-        </div>      
+        </div>
     );
 }
 
