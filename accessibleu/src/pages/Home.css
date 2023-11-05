@@ -2,21 +2,68 @@
 
 .header {
 overflow: hidden;
-background-color: #f1f1f1;
+background-color: lightgray;
 }
 
-.header a {
-float: left;
-display: block;
-color: black;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 17px; 
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
 }
 
-.header .search-container {
+.header-right {
   float: right;
+}
+
+/* Basic styles for the search bar and icon */
+.header .search-container {
+  display: flex;
+  float: right;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  padding: 5px;
+  width: 300px;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  width: 80%;
+  padding: 10px;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+/* Add the Font Awesome library for the search icon */
+i.fa {
+  font-size: 20px;
+}
+
+/* Styles for displaying search results */
+#search-results {
+  display: none;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  width: 300px;
+  z-index: 1;
 }
 
 .header input[type=text] {
@@ -47,10 +94,6 @@ font-size: 17px;
 .header a.active {
 background-color: dodgerblue;
 color: white;
-}
-
-.header-right {
-float: center;
 }
 
 body {
