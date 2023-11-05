@@ -1,18 +1,32 @@
+import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom' // React Router to create page routes/links
+
+// IMPORT YOUR .JS PAGE HERE
+import Login from './pages/Login';
+import Home from "./pages/Home"
+import Community from './pages/Community';
+
 import './App.css';
-import Home from "./pages/Home.js"
-import Navbar from './Navbar';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
-    <main>
-      <Navbar/>
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Home/>}/>
-        </Routes>
+    <>
+      <Router> {/* Everything related to the page routing will be put inside here */} 
+          <nav> {/* Navigation Bar component */}
+            <center><img src='./nobg-logo.png' alt="logo"/></center>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="login">Login</NavLink>
+            <NavLink to="communities">Communities</NavLink>
+          </nav>
+
+        <main>
+            <Routes> {/* Insert your page component here !!!*/}
+              <Route exact path="/" element={<Home/>}/>
+              <Route path="login" element={<Login/>}/>
+              <Route path="communities" element={<Community/>}/>
+            </Routes>
+        </main>   
       </Router>  
-    </main>   
+    </>       
   );
 }
 

@@ -1,2 +1,10 @@
-We will add more to this later
-I am adding more stuff now.
+USAGE:
+In terminal
+1. cd accessibleu
+2. npm i (one time setup)
+3. npm start
+
+NOTES:
+1. Page components are stored in the "src/pages" folder
+
+2. App.js in the src folder is the linker file for all the page components
