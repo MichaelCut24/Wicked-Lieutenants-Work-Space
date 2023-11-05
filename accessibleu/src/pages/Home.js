@@ -4,6 +4,7 @@ function Home(){
   return (
     <div class="page">
 
+      <div>@babel/plugin-proposal-private-property-in-object</div>
       <div class="header">
           <a href="#default" id="main"/>
           <a href="#default" class="logo">AccessibleU</a>
