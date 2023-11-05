@@ -42,22 +42,6 @@
     justify-content: center;
 }
 
-.third_party button{ 
-    background-color: white;
-    color: black;  
-    border: 1px solid black; 
-    border-radius: 10px;
-    cursor: pointer;
-    width:3.1rem;
-} 
-
-.third_party button:last-child {
-    text-align: right;
-}
-.third_party button:first-child {
-    text-align: left;
-}
-
 form{
     margin-top: 3rem;
 }

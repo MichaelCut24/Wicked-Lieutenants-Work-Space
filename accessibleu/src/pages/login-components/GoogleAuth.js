@@ -4,8 +4,7 @@ import axios from 'axios';
 
 import "../styling/GoogleAuth.css"
 
-
-const LoginForm = () => {
+const GoogleAuth = () => {
     const [ user, setUser ] = useState([]);
     const [ profile, setProfile ] = useState([]);
 
@@ -14,7 +13,7 @@ const LoginForm = () => {
         onError: (error) => console.log('Login Failed:', error)
     });
 
-    useEffect(
+    useEffect( 
         () => {
             if (user) {
                 axios
@@ -30,10 +29,9 @@ const LoginForm = () => {
                     .catch((err) => console.log(err));
             }
         },
-        [ user ]
+        [user]
     );
-
-    // log out function to log the user out of google and set the profile array to null
+    
     const logOut = () => {
         googleLogout();
         setProfile(null);
@@ -41,23 +39,23 @@ const LoginForm = () => {
 
     return (
         <>
-            {profile ? (    
-                <div className='google-container'>
-                    <div className='user-info'>
-                        <img src={profile.picture} alt="user image" />
-                        <p>Name: {profile.name}</p>
-                        <p>Email Address: {profile.email}</p>
-                        <button onClick={logOut}>Log out</button>
-                    </div>
-                    <button onClick={() => login()}><img alt="login with google" src="./Google.png"/></button>
-                </div>
+            {profile ? (  
+                <div className='user-info'>
+                    <img src={profile.picture} alt="user image" />
+                    <p>{profile.name}</p>
+                    <p>{profile.email}</p>
+                    <button onClick={logOut}>Log out</button>
+                </div>  
             ) : (
-                <div className='google-container'>
-                    <button onClick={() => login()}><img alt="login with google" src="./Google.png"/></button>
+                <div className='user-info'>
+                    <p>Not signed in</p>
                 </div>
             )}
+                <div className="google-button">
+                    <button onClick={() => login()}><img alt="login with google" src="./Google.png"/></button>
+                </div>  
         </>  
   );
 }
 
-export default LoginForm;
+export default GoogleAuth;

@@ -1,23 +1,16 @@
 // LOGIN PAGE
 
-// NOTE: Everything in the className part is tailwind CSS, yall can delete everything in it once
-// Lgin.css is created. Go to https://v2.tailwindcss.com/docs/ to lookup the syntax and
-// convert tailwind into Login.css if Danny has not done it( he will eventually). Or yall can just delete everything
-// and start over.
 import Popup from './login-components/Popup.js'
 import GoogleAuth from './login-components/GoogleAuth.js';
 import { useState } from 'react';
 
 import './styling/Login.css'
 
-
-
-
 function Login() {
     const [buttonPopup, setButtonPopup] = useState(false);
 
     return (
-        <div className="page flex flex-row"> {/* Whole page container */}
+        <div className="page flex flex-row">{/* Whole page container */}
             <div className="relative w-2/3 "> {/* Left half of page divider */}
                 <div className="wlcmsg absolute mt-1/4"> {/* Login message container */}
                     <div className='flex flex-row'>
@@ -39,9 +32,8 @@ function Login() {
                             <input type="text" placeholder="Enter your school email" name="username" required/>
                             <input type="password" placeholder="Password" name="password" required/>
                             <center><button type="submit">Login</button> </center>
-                            <div className='third_party mt-4'>
+                            <div className='third_party mt-4'> {/* Third Party login options divider */}
                                 <GoogleAuth/>
-                                <button className='ml-4' type="submit">Other Login</button>
                             </div>
                             
                         </div>   
