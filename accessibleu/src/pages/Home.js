@@ -20,6 +20,7 @@ function Home(){
           <a href="#default" class="logo">AccessibleU</a>
           <div class="header-right">   
           </div>
+
       </div>
 
       <div class="row">
