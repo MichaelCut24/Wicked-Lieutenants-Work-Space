@@ -4,16 +4,9 @@ function Home(){
   return (
     <><div class="page">
       <div class="header">
-        <a href="#default" class="logo">Welcome</a>
+        <a href="#default" id="main" />
         <div class="header-right">
-          <div class="search-container">
-            <form action="/action_page.php">
-            <input type="text" placeholder="Search..." name="search"></input>
-              <button type="submit">
-                  <i class="fa fa-search"></i>
-                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-              </button>
-          </form>
+          
         </div>
       </div>
     </div>
