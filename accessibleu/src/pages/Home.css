@@ -1,8 +1,25 @@
 * {box-sizing: border-box;}
 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 10px;
+}
+
 .header {
-overflow: hidden;
-background-color: lightgray;
+  overflow: hidden;
+  background-color: lightgray;
+}
+
+/* Style the header links*/
+.header a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .header a.logo {
@@ -10,9 +27,15 @@ background-color: lightgray;
   font-weight: bold;
 }
 
-.header-right {
+/* Style the "active" element to highlight the current page 
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}*/
+
+/*.header-right {
   float: right;
-}
+}*/
 
 /* Basic styles for the search bar and icon */
 .header .search-container {
@@ -24,6 +47,30 @@ background-color: lightgray;
   border-radius: 1px;
   padding: 5px;
   width: 300px;
+}
+
+.header input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+/*Style for the search bar*/
+.header .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+/*Change search button on hover*/
+.header .search-container button:hover {
+  background: #ccc;
 }
 
 button[type="submit"] {
@@ -40,14 +87,14 @@ button[type="submit"]:hover {
   background-color: #555;
 }
 
-input[type="text"] {
+/*input[type="text"] {
   border: none;
   outline: none;
   width: 80%;
   padding: 10px;
   background-color: transparent;
   font-size: 16px;
-}
+}*/
 
 /* Add the Font Awesome library for the search icon */
 i.fa {
@@ -64,40 +111,6 @@ i.fa {
   position: absolute;
   width: 300px;
   z-index: 1;
-}
-
-.header input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
-
-/*Style for the search bar*/
-.header .search-container button {
-  float: right;
-  padding: 6px 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-/*Change search button on hover*/
-.header .search-container button:hover {
-  background: #ccc;
-}
-
-/* Style the "active" element to highlight the current page */
-.header a.active {
-background-color: dodgerblue;
-color: white;
-}
-
-body {
-font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Float four columns side by side */
@@ -144,4 +157,21 @@ change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
 .sidebar {padding-top: 15px;}
 .sidebar a {font-size: 18px;}
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
 }
