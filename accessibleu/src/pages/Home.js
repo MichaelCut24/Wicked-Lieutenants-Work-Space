@@ -22,40 +22,44 @@ function Home(){
   
     
     <div class="row">
-        <div class="column">
-          <div class="card">
-            <h3>Community</h3>
-            <p>Title</p>
-            <p>Description</p>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="card">
-            <h3>Community</h3>
-            <p>Title</p>
-            <p>Description</p>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="card">
-            <h3>Community</h3>
-            <p>Title</p>
-            <p>Description</p>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="card">
-            <h3>Community</h3>
-            <p>Title</p>
-            <p>Description</p>
-          </div>
+      <div class="column">
+        <div class="card">
+          <h3>Community</h3>
+          <p>Title</p>
+          <p>Description</p>
         </div>
       </div>
+
+      <div class="column">
+        <div class="card">
+          <h3>Community</h3>
+          <p>Title</p>
+          <p>Description</p>
+        </div>
       </div>
-    </>
+
+      <div class="column">
+        <div class="card">
+          <h3>Community</h3>
+          <p>Title</p>
+          <p>Description</p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h3>Community</h3>
+          <p>Title</p>
+          <p>Description</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="div1">Popular Today!</div>
+
+    
+  </div>
+</>
   );
 }
 
