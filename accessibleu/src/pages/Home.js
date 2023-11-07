@@ -55,8 +55,6 @@ function Home(){
           </div>
         </div>
         <div class="div1">Trending</div>
-        <p>Community Name</p>
-        <p>Title of post</p>
 
     
       </div>
