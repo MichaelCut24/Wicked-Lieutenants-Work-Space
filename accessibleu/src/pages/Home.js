@@ -20,7 +20,7 @@ function Home(){
             </div>
         </div>
     
-        <div class="div">
+        
         <div class="row">
           <div class="column">
             <div class="card">
@@ -53,7 +53,6 @@ function Home(){
               <p>Description</p>
             </div>
           </div>
-        </div>
         </div>
         <div class="div1">Popular Today!</div>
 
