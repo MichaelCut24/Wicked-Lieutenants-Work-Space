@@ -11,7 +11,7 @@ import React from "react"
 
 export default function Community(){
     return (
-        <div className="Page">        
+        <div className="Page">    
         <div className="TopSearchBar">
             <input id="searchbar" placeholder="Search for a post" />
         </div>
@@ -23,16 +23,37 @@ export default function Community(){
                 </button>
             </a>
         </div>
+        <div className='Messages'>
+            <a href = '/'>
+                <button>
+                    <img src = './MessageIcon.png' alt ="Message">
+                    </img>
+                </button>
+            </a>
+        </div>
+        <div className='Bell'>
+            <a href = '/'>
+                <button>
+                    <img src = './Bellicon.png' alt ="Notification">
+                    </img>
+                </button>
+            </a>
+        </div>    
         <div className="MainSection">
             <div className="RecentPost">
-            <h1>
             <p>According to all known laws of aviation,there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible.
             </p>
-            </h1>
             </div>
         </div>
         <div className=" BottomSection">
-            <p> University of North Texas.u</p>
+            <p className='ServerName'> University of North Texas.u</p>
+            <div className='CreatePost'>
+            <a href ='/'>
+                <button>
+                    <p>Create a Post</p>
+                </button>
+            </a>
+            </div>  
         </div>
     </div>
       );
