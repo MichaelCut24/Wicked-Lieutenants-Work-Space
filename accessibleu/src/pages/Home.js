@@ -1,23 +1,75 @@
-// HOME PAGE
-
-// NOTE: Everything in the className part is tailwind CSS, yall can delete everything in it once
-// Home.css is created. Go to https://v2.tailwindcss.com/docs/ to lookup the syntax and
-// convert tailwind into Home.css if Danny has not done it (he will eventually). Or yall can just delete everything
-// and start over.
-
 import "./Home.css"
 
-const Home = () => {
+function Home(){
   return (
-    <main className="flex min-h-screen flex-col">
-      <div className="w-full h-40 w self-center text-center mt-16 border border-1 border-black ">Banner</div>
-      <div className="h-10 w self-center text-center border border-1 border-black ">Create a Post</div>
-      <div className="columns-3 mt-2">
-        <div className=" text-center border border-1 border-black">Your Post</div>
-        <div className=" text-center border border-1 border-black">Community Post</div>
-        <div className=" h-full text-center border border-1 border-black">Community info and Rules</div>
-      </div>      
-    </main>
+    <><div class="main">
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <div class="header">
+          <a href="default" id="main"></a>
+          <a href="#default" class="logo">Welcome</a>
+            <div class="header-right">
+              <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search..." name="search"></input>
+                    <button type="submit">
+                      <i class="fa fa-search"></i>
+                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+                    </button>
+                </form>
+              </div>
+            </div>
+        </div>
+    
+        
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <h3>Community</h3>
+              <p>Title</p>
+              <p>Description</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <h3>Community</h3>
+              <p>Title</p>
+              <p>Description</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <h3>Community</h3>
+              <p>Title</p>
+              <p>Description</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <h3>Community</h3>
+              <p>Title</p>
+              <p>Description</p>
+            </div>
+          </div>
+        </div>
+        <div class="div1">Trending</div>
+
+/* Femi Code */
+
+<div class="column">
+            <div class="card">
+              <h3>Popular Communities</h3>
+              <p>Community 1</p>
+              <p>Community 2</p>
+              <p>Community 3</p>
+              <p>See More</p>
+            </div>
+          </div>
+    
+      </div>
+    </>
   );
 }
 
