@@ -6,7 +6,7 @@
 // and start over.
 
 
-import './Community.css'
+import './styling/Community.css'
 import React from "react"
 
 export default function Community(){
