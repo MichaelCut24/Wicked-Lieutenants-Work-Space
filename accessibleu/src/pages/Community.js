@@ -5,63 +5,56 @@
 // convert tailwind into Home.css if Danny has not done it (he will eventually). Or yall can just delete everything
 // and start over.
 
-import "./Community.css"
 
-function Community(){
-  return (
-    <div class="page">
+import './Community.css'
+import React from "react"
 
-      <div class="header">
-          <a href="#default" id="main"/>
-          <button class="openbtn" onclick="openNav()">☰ </button>  
-          <a href="#default" class="logo">AccessibleU</a>
-          <div class="header-right">   
-          </div>
-
-          <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰ </a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-          </div>
-      </div>
-
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <h3>Server ex. 1</h3>
-            <p>Title</p>
-            <p>Description</p>
-          </div>
+export default function Community(){
+    return (
+        <div className="Page">    
+        <div className="TopSearchBar">
+            <input id="searchbar" placeholder="Search for a post" />
         </div>
-
-        <div class="column">
-          <div class="card">
-            <h3>Server ex. 2</h3>
-            <p>Title</p>
-            <p>Description</p>
-          </div>
+        <div className= "Homebutton">
+            <a href='/'>
+                <button>
+                    <img src = './HomeIcon.png'alt = 'HomeIcon'>
+                    </img>
+                </button>
+            </a>
         </div>
-
-        <div class="column">
-          <div class="card">
-            <h3>Server ex. 3</h3>
-            <p>Title</p>
-            <p>Description</p>
-          </div>
+        <div className='Messages'>
+            <a href = '/'>
+                <button>
+                    <img src = './MessageIcon.png' alt ="Message">
+                    </img>
+                </button>
+            </a>
         </div>
-
-        <div class="column">
-          <div class="card">
-            <h3>Server ex. 4</h3>
-            <p>Title</p>
-            <p>Description</p>
-          </div>
+        <div className='Bell'>
+            <a href = '/'>
+                <button>
+                    <img src = './Bellicon.png' alt ="Notification">
+                    </img>
+                </button>
+            </a>
+        </div>    
+        <div className="MainSection">
+            <div className="RecentPost">
+            <p>According to all known laws of aviation,there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible.
+            </p>
+            </div>
         </div>
-      </div>
+        <div className=" BottomSection">
+            <p className='ServerName'> University of North Texas.u</p>
+            <div className='CreatePost'>
+            <a href ='/'>
+                <button>
+                    <p>Create a Post</p>
+                </button>
+            </a>
+            </div>  
+        </div>
     </div>
-  );
+      );
 }
-
-export default Community;
