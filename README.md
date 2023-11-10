@@ -1,4 +1,4 @@
-# ACESSIBLEU WEB-APPLICATION (CSCE-4901)
+# ACCESSIBLEU WEB-APPLICATION (CSCE-4901)
 ## USAGE
 In terminal
 1. npm i (one time local machine setup)
