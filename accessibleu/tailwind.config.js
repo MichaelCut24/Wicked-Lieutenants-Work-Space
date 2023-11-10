@@ -6,7 +6,8 @@ module.exports = {
     "./src/NavBar.js",
     "./src/pages/Login.js",
     "./src/pages/Community.js",
-    "./src/pages/Popup.js"
+    "./src/pages/login-comps/Popup.js",
+    "./src/pages/login-comps/Google.js"
   ],
   theme: {
     extend: {},
