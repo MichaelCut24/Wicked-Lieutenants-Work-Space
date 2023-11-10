@@ -1,67 +1,66 @@
-// HOME PAGE
+import "./Home.css"
 
-// NOTE: Everything in the className part is tailwind CSS, yall can delete everything in it once
-// Home.css is created. Go to https://v2.tailwindcss.com/docs/ to lookup the syntax and
-// convert tailwind into Home.css if Danny has not done it (he will eventually). Or yall can just delete everything
-// and start over.
-
-import "./Community.css"
-
-function Community(){
+function Home(){
   return (
-    <div class="page">
-
-      <div class="header">
-          <a href="#default" id="main"/>
-          <button class="openbtn" onclick="openNav()">☰ </button>  
-          <a href="#default" class="logo">AccessibleU</a>
-          <div class="header-right">   
+    <><div class="main">
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <div class="header">
+          <a href="default" id="main"></a>
+          <a href="#default" class="logo">Welcome</a>
+            <div class="header-right">
+              <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search..." name="search"></input>
+                    <button type="submit">
+                      <i class="fa fa-search"></i>
+                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+                    </button>
+                </form>
+              </div>
+            </div>
+        </div>
+    
+        
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <h3>Community</h3>
+              <p>Title</p>
+              <p>Description</p>
+            </div>
           </div>
 
-          <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰ </a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+          <div class="column">
+            <div class="card">
+              <h3>Community</h3>
+              <p>Title</p>
+              <p>Description</p>
+            </div>
           </div>
+
+          <div class="column">
+            <div class="card">
+              <h3>Community</h3>
+              <p>Title</p>
+              <p>Description</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <h3>Community</h3>
+              <p>Title</p>
+              <p>Description</p>
+            </div>
+          </div>
+        </div>
+        <div class="div1">Trending</div>
+
+    
       </div>
-
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <h3>Server ex. 1</h3>
-            <p>Title</p>
-            <p>Description</p>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="card">
-            <h3>Server ex. 2</h3>
-            <p>Title</p>
-            <p>Description</p>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="card">
-            <h3>Server ex. 3</h3>
-            <p>Title</p>
-            <p>Description</p>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="card">
-            <h3>Server ex. 4</h3>
-            <p>Title</p>
-            <p>Description</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </>
   );
 }
 
-export default Community;
+export default Home;
+
