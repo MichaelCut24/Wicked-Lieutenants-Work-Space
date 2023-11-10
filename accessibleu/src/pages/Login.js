@@ -1,5 +1,5 @@
 // LOGIN PAGE
-import './styling/Login.css'
+import './Login.css'
 
 import GoogleAuth from './login-components/GoogleAuth.js';
 import PopCreate from './login-components/PopCreate.js';
