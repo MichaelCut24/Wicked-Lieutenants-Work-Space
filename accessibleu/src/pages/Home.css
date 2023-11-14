@@ -1,0 +1,119 @@
+<<<<<<< HEAD
+=======
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style page content */
+.main {
+  margin-left: 180px; /* Same as the width of the sidebar */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+.header {
+  overflow: hidden;
+}
+
+.header-right {
+  float: right;
+}
+
+/* Style the header links*/
+.header a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.header a.logo {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Style the "active" element to highlight the current page*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+/* Float four columns side by side */
+.column {
+float: left;
+width: 25%;
+padding: 20px 20px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Style the counter cards */
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+padding: 16px;
+text-align: center;
+background-color: #f1f1f1;
+}
+
+/*Style and shape for popular box*/
+.div1 {
+  width: 700px;
+  height: 400px;
+  margin-left: 15px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/*
+.responsive {
+  width: 100%;
+  height: auto;
+}*/
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+.column {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+}
+
+/* On smaller screens, where height is less than 450px, 
+change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+.sidebar {padding-top: 15px;}
+.sidebar a {font-size: 18px;}
+}
+
+>>>>>>> origin
