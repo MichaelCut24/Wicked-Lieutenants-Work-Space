@@ -56,17 +56,13 @@ function Home(){
         </div>
         <div class="div1">Trending</div>
 
-/* Femi Code */
+        <div class="sidenav">
+  <h3>Popular Communities</h3>
+  <a href="#community 1">Community 1</a>
+  <a href="#community 2">Community 2</a>
+  <a href="#community 3">Community 3</a>
+</div>
 
-<div class="column">
-            <div class="card">
-              <h3>Popular Communities</h3>
-              <p>Community 1</p>
-              <p>Community 2</p>
-              <p>Community 3</p>
-              <p>See More</p>
-            </div>
-          </div>
     
       </div>
     </>
