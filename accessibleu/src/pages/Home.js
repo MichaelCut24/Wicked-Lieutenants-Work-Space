@@ -1,9 +1,5 @@
 import "./Home.css"
 
-<<<<<<< HEAD
-export default function Home(){
-}
-=======
 function Home(){
   return (
     <><div class="main">
@@ -68,4 +64,3 @@ function Home(){
 
 export default Home;
 
->>>>>>> origin

@@ -9,28 +9,28 @@
   position: absolute;
   left: 10.2%;
   top: 2%;
-  width: 40px
+  width: 200px;
 }
 
 .Messages{
   position: absolute;
   left: 15%;
   top: 2%;
-  width: 40px
+  width: 200px;
 }
 
 .Bell{
   position: absolute;
   left: 20%;
   top: 2%;
-  width: 40px
+  width: 200px;
 }
 
 .Messages:hover{
   background-color: grey;
   border-radius: 100%;
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 100px;
 }
 
 .Bell:hover{
