@@ -4,7 +4,7 @@
 
 /* navbar */
 nav {
-    background-image: linear-gradient( #93a3f3, #4c4c7c, #1d1b50, #4c4c7c, #93a3f3);
+    background-color: grey;
     position:absolute;
     display: flex;
     flex-direction: column;
