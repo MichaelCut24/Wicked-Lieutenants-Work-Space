@@ -1,10 +1,10 @@
 import "./Home.css"
-import Content from "./home-components/Feed";
+import Feed from "./home-components/Feed";
 
 function Home(){
   return (
     <>  
-      <Content/>
+      <Feed/>
     </>
   );
 }
