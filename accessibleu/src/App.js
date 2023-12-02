@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom
 import Login from './pages/Login';
 import Home from "./pages/Home"
 import Community from './pages/Community';
+import Comment from "./pages/comments/Comments";
+import Comment1 from "./pages/Comment1";
 
 import './App.css';
 
@@ -16,6 +18,7 @@ function App() {
             <NavLink to="/">Home</NavLink>
             <NavLink to="login">Login</NavLink>
             <NavLink to="communities">Communities</NavLink>
+            <NavLink to="comment">Comment</NavLink>
           </nav>
 
         <main>
@@ -23,9 +26,11 @@ function App() {
               <Route exact path="/" element={<Home/>}/>
               <Route path="login" element={<Login/>}/>
               <Route path="communities" element={<Community/>}/>
+              <Route path="comment" element={<Comment1/>}/>
             </Routes>
         </main>   
       </Router>   
+
     </>       
   );
 }
