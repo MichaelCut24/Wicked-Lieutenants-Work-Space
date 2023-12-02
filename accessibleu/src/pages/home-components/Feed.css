@@ -1,0 +1,28 @@
+.feed-container{
+    margin-left: 12rem;
+    height:100vh;
+    border: 1px solid black;
+    overflow-y: scroll;
+}
+
+.contents-container{
+    position: relative;
+    border:1px solid black;
+    width: 45rem;
+    left:20%;
+}
+
+.video-react{
+    padding-top: 0 !important;
+ 
+}
+
+.video-react-fullscreen{
+    cursor: pointer;
+    position: static;
+    width: 100vw !important;
+    height: 100vh !important;
+    padding-top: 0 !important;
+    top:0;
+    left:0;
+}
