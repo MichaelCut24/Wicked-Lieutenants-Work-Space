@@ -119,38 +119,4 @@ change the style of the sidenav (less padding and a smaller font size)
 }
 <<<<<<< HEAD
 */
-=======
-
-/*FEMIS CODE*/
-.sidenav {
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  bottom: 100px;
-  right: 10px;
-  background: #eee;
-  overflow-x: hidden;
-  padding: 50px 0;
-  box-shadow: 9px 9px 8px 5px rgba(0, 0, 0, 0.2);
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 50px;
-  text-decoration: none;
-  font-size: 19px;
-  color: #2196F3;
-  display: block;
-  line-height: 30px;
-}
-
-.sidenav a:hover {
-  color: #064579;
-}
-
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 19px;}
-}
->>>>>>> origin/femi
 
