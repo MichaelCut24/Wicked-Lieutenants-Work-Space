@@ -1,9 +1,12 @@
 import "./Home.css"
+import TopBar from './Top Bar/TopBar.js';
 
 function Home(){
   return (
     <><div class="main">
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+  
+      <div class="TopBar"><TopBar/></div>
 
       {/*Community boxes*/} 
         <div class="row">
