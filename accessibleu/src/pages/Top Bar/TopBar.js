@@ -2,8 +2,8 @@ import "./TopBar.css"
 
 function TopBar (){
   return(
-<div class="header">
-          <a href="default" id="main"></a>
+    <div class="header">
+        <a href="default" id="main"></a>
           <a href="#default" class="logo">Welcome</a>
             <div class="header-right">
               <div class="search-container">
@@ -14,7 +14,7 @@ function TopBar (){
                 </form>
               </div>
             </div>
-        </div>
+    </div>
   )
 }
 export default TopBar;

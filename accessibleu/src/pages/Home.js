@@ -6,7 +6,7 @@ function Home(){
     <><div class="main">
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
   
-      <div class="TopBar"><TopBar/></div>
+      <div class="TopBar"><TopBar/></div> {/*TopBar*/}
 
       {/*Community boxes*/} 
         <div class="row">
