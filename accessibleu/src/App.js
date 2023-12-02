@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom
 // IMPORT YOUR .JS PAGE HERE
 import Login from './pages/Login';
 import Home from "./pages/Home"
+import Community from './pages/Community';
 
 import './App.css';
 
@@ -14,12 +15,14 @@ function App() {
             <center><img src='./nobg-logo.png' alt="logo"/></center>
             <NavLink to="/">Home</NavLink>
             <NavLink to="login">Login</NavLink>
+            <NavLink to="communities">Communities</NavLink>
           </nav>
 
         <main>
             <Routes> {/* Insert your page component here !!!*/}
               <Route exact path="/" element={<Home/>}/>
               <Route path="login" element={<Login/>}/>
+              <Route path="communities" element={<Community/>}/>
             </Routes>
         </main>   
       </Router>   
