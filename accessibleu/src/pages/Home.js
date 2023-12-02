@@ -4,21 +4,8 @@ function Home(){
   return (
     <><div class="main">
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-        <div class="header">
-          <a href="default" id="main"></a>
-          <a href="#default" class="logo">Welcome</a>
-            <div class="header-right">
-              <div class="search-container">
-                <form action="/action_page.php">
-                  <input type="text" placeholder="Search..." name="search"></input>
-                    <button type="submit"><i class="fa fa-search"></i><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-                    </button>
-                </form>
-              </div>
-            </div>
-        </div>
-    
-        
+
+      {/*Community boxes*/} 
         <div class="row">
           <div class="column">
             <div class="card">
@@ -54,9 +41,7 @@ function Home(){
         </div>
         <div class="div1">Trending</div>
 
-<<<<<<< HEAD
-    
-=======
+
 {/* Popular section */} {/* work on this later , try to combine the dots into a list or a grid with the links */}
         {/* Femi's code */}
         <div class="sidenav">
@@ -73,10 +58,10 @@ function Home(){
           <div class="dot"></div> 
         </div>
 
->>>>>>> parent of be5e41e (Merge remote-tracking branch 'origin/femi' into Michelle)
       </div>
     </>
   );
 }
+
 export default Home;
 
