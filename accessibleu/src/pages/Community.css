@@ -9,28 +9,28 @@
   position: absolute;
   left: 10.2%;
   top: 2%;
-  width: 40px
+  width: 200px;
 }
 
 .Messages{
   position: absolute;
   left: 15%;
   top: 2%;
-  width: 40px
+  width: 200px;
 }
 
 .Bell{
   position: absolute;
   left: 20%;
   top: 2%;
-  width: 40px
+  width: 200px;
 }
 
 .Messages:hover{
   background-color: grey;
   border-radius: 100%;
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 100px;
 }
 
 .Bell:hover{
@@ -39,6 +39,7 @@
   width: 40px;
   height: 40px;
 }
+
 
 @media only screen and (min-width: 2560px){
   .Homebutton{
@@ -72,17 +73,15 @@
 
 .CreatePost{
   position: fixed;
-  right: 10px;
-  top: 93%;
-  width: 150px;
-  padding-left: 10px;
+  left: 66%;
+  bottom: 5%;
+  width: 1000px;
+  padding-left: 5px;
+  height: 10px;
 }
 
 .CreatePost:hover{
   background-color: grey;
-  width: 150px;
-  height: 40px;
-  padding-left: 10px;
 }
 
 .TopSearchBar{
