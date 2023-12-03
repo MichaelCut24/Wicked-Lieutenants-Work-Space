@@ -3,18 +3,18 @@ import "./TopBar.css"
 function TopBar (){
   return(
     <div class="header">
+      <meta charset="UTF-8"></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <a href="default" id="main"></a>
           <a href="#default" class="logo">Welcome</a>
             <div class="header-right">
               <div class="search-container">
-                <form action="/action_page.php">
-                  <input type="text" placeholder="Search..." name="search"></input>
-                    <button type="submit"><i class="fa fa-search"></i><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-                    </button>
-                </form>
+                <input type="text" id="searchInput" name="q" placeholder="Search..."></input>
+                <button type="submit" id="searchButton"><span class="search-icon">&#128269;</span></button>
               </div>
             </div>
     </div>
   )
 }
 export default TopBar;
+
