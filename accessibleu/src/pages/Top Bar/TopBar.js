@@ -9,8 +9,10 @@ function TopBar (){
           <a href="#default" class="logo">Welcome</a>
             <div class="header-right">
               <div class="search-container">
-                <input type="text" id="searchInput" name="q" placeholder="Search..."></input>
-                <button type="submit" id="searchButton"><span class="search-icon">&#128269;</span></button>
+                <form action="/action_page.php">
+                  <input type="text" id="searchInput" name="q" placeholder="Search..."></input>
+                  <button type="submit" id="searchButton"><span class="search-icon">&#128269;</span></button>
+                </form>
               </div>
             </div>
     </div>

@@ -1,55 +1,65 @@
-.header {
-    overflow: hidden;
-  }
+header {
+  background-color: #333;
+  color: white;
+
+  text-align: left;
+  overflow: hidden;
+}
   
-  .header-right {
-    float: right;
-  }
+/* Style the header links*/  
+.header a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
   
-  /* Style the header links*/
-  .header a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+.header a.logo {
+  font-size: 35px;
+  font-weight: bold;
+}
   
-  .header a.logo {
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  /* Style the "active" element to highlight the current page*/
-  .header a.active {
-    background-color: dodgerblue;
-    color: white;
-  }
-  
-  .search-container {
-    float: left;
-  }
-  
-  input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: 1px solid black;
-  }
-  
-  .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .search-container button:hover {
-    background: gray;
-  }
+/* Style the "active" element to highlight the current page*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.search-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#searchInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  width: 70%;
+}
+
+#searchButton {
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 0 5px 5px 0;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  background-color: lightgrey;
+}
+
+/* Magnifying Glass Icon */
+.search-icon {
+  content: "\1F50D"; /* Unicode character for a magnifying glass */
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+
