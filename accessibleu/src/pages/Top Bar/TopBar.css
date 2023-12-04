@@ -1,7 +1,6 @@
 header {
   background-color: #333;
   color: white;
-
   text-align: left;
   overflow: hidden;
 }
@@ -17,15 +16,32 @@ header {
   font-size: 17px;
 }
   
-.header a.logo {
+.header a.welcome {
   font-size: 35px;
   font-weight: bold;
+
+}
+
+.header a.message{
+  font-size: 20px;
+  text-align: left;
+  
 }
   
 /* Style the "active" element to highlight the current page*/
 .header a.active {
-  background-color: dodgerblue;
+  background-color: lightgrey;
   color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
 
 .search-container {

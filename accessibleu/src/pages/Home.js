@@ -5,26 +5,19 @@ function Home(){
   return (
     <><div class="main">
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-  
-      <div class="TopBar"><TopBar/></div> {/*TopBar*/}
-
-      {/*Community boxes*/} 
-        <div class="row">
-          <div class="column">
-            <div class="card">
-              <h3>Community</h3>
-              <p>Title</p>
-              <p>Description</p>
+        
+        <div class="TopBar"><TopBar/></div> {/*TopBar*/}
+        
+       
+          {/*Community boxes*/} 
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <h3>Community</h3>
+                <p>Title</p>
+                <p>Description</p>
+              </div>
             </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <h3>Community</h3>
-              <p>Title</p>
-              <p>Description</p>
-            </div>
-          </div>
 
           <div class="column">
             <div class="card">
@@ -41,7 +34,16 @@ function Home(){
               <p>Description</p>
             </div>
           </div>
-        </div>
+
+          <div class="column">
+            <div class="card">
+              <h3>Community</h3>
+              <p>Title</p>
+              <p>Description</p>
+            </div>
+          </div>
+      
+      </div>
         <div class="div1">Trending</div>
 
 
