@@ -1,5 +1,6 @@
 import "./TopBar.css"
 
+
 function TopBar (){
   return(
     <div class="header" id="myHeader">
@@ -7,6 +8,8 @@ function TopBar (){
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <a href="default" id="main"></a>
         <a href="#default" class="welcome">Welcome</a>
+        <a href="default" class="account-button">Account</a>
+        
               <div class="header-right">
                 <div class="search-container">
                   <form action="/action_page.php">

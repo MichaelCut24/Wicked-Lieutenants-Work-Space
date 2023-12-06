@@ -16,6 +16,7 @@ function App() {
             <NavLink to="/">Home</NavLink>
             <NavLink to="login">Login</NavLink>
             <NavLink to="communities">Communities</NavLink>
+            <NavLink to="account">Account</NavLink>
           </nav>
 
         <main>
