@@ -1,5 +1,4 @@
 import "./Home.css"
-import "./Account.js"
 import TopBar from './Top Bar/TopBar.js';
 
 function Home(){

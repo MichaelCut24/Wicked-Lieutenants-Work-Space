@@ -2,8 +2,9 @@ import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom
 
 // IMPORT YOUR .JS PAGE HERE
 import Login from './pages/Login';
-import Home from "./pages/Home"
+import Home from './pages/Home';
 import Community from './pages/Community';
+import Account from './pages/Account';
 
 import './App.css';
 
