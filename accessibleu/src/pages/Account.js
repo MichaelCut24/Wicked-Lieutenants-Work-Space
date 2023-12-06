@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
 import './Account.css';
-import './Home.js'
 
 function Account() {
   useEffect(() => {
     // Set the date we're counting down to
-    var countDownDate = new Date('Jan 5, 2024 15:37:25').getTime();
+    var countDownDate = new Date('Feb 1, 2024 15:37:25').getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function () {
@@ -38,19 +37,19 @@ function Account() {
 
   return (
     <>
-      <div className="bgimg">
-        <div className="topleft">
-          <p>Logo</p>
+      <div class="bgimg">
+        <div class="topleft">
+          <p>AccessibleU</p>
         </div>
 
-        <div className="middle">
+        <div class="middle">
           <h1>COMING SOON</h1>
           <hr />
           <p id="demo" style={{ fontSize: '30px' }}></p>
         </div>
 
-        <div className="bottomleft">
-          <p>Some text</p>
+        <div class="bottomleft">
+          <p>Wicked Lieutenants</p>
         </div>
       </div>
     </>
