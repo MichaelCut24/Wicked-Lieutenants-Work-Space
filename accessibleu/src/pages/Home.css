@@ -52,7 +52,7 @@ background-color: #f1f1f1;
 /* Popular Communities Side bar*/
 .sidenav {
   width: 250px;
-  position: fixed;
+  position: absolute;
   bottom: 270px;
   right: 30px;
   background: #eee;
