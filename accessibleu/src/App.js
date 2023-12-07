@@ -25,6 +25,7 @@ function App() {
               <Route exact path="/" element={<Home/>}/>
               <Route path="login" element={<Login/>}/>
               <Route path="communities" element={<Community/>}/>
+              <Route path="account" element={<Account/>}/>
             </Routes>
         </main>   
       </Router>   
