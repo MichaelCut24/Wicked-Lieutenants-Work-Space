@@ -8,7 +8,6 @@ function Home(){
         
         <div class="TopBar"><TopBar/></div> {/*TopBar*/}
         
-       
           {/*Community boxes*/} 
           <div class="row">
             <div class="column">
