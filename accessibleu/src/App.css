@@ -6,7 +6,7 @@
 .nav-open {
     transition: 300ms;
     background-image: linear-gradient( black, black);
-    position:absolute;
+    position:fixed;
     display: flex;
     flex-direction: column;
     width:12rem;
@@ -87,7 +87,7 @@
 .nav-closed {
     transition: 300ms;
     background-image: linear-gradient( black, black);
-    position:absolute;
+    position:fixed;
     display: flex;
     text-align: center;
     flex-direction: column;

@@ -26,13 +26,11 @@ function App() {
               <NavLink to="communities"><span class="material-symbols-outlined" id = "NavCommunities">groups</span></NavLink>
             </div>
           </nav>
-          <button className ="toggle-nav"
-              onClick={() => setIsNavOpen(!isNavOpen)}
-            >
+            <button className ="toggle-nav" onClick={() => setIsNavOpen(!isNavOpen)}>
               <span class="material-symbols-outlined">
                 {isNavOpen? "toggle_on" : "toggle_off"} 
               </span>
-          </button>
+            </button>
         <main>
             <Routes> {/* Insert your page component here !!!*/}
               <Route exact path="/" element={<Home/>}/>
