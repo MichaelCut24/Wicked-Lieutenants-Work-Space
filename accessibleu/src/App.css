@@ -3,10 +3,9 @@
 @tailwind utilities;
 
 /* navbar */
-.nav-open {
-    transition: 300ms;
-    background-image: linear-gradient( black, black);
-    position:fixed;
+nav {
+    background-color: grey;
+    position:absolute;
     display: flex;
     flex-direction: column;
     width:12rem;
@@ -16,89 +15,7 @@
     font-size: 1rem;
 }
 
-
-.nav-open a {
-    margin-top: 2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    padding: 0.2rem;
-    margin-left: 0.5rem;
-    border-radius: 10px 10px 10px 10px
-}
-
-.nav-open .NavLinks{
-    position:absolute;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 11rem;
-    height: 100vh;
-    z-index: 10;
-    top: 9rem;
-    color: whitesmoke;
-    font-size: 1.2rem;
-}
-
-.nav-open .NavLinks a:hover{
-    background-color: whitesmoke;
-    font-size: 1.5rem;
-    color: purple;
-    width: 183.5px;
-    border-radius: 0px 0px 0px 0px;
-}
-
-.nav-open img{
-    margin-top:0;
-    height:9rem;
-}
-
-.nav-open a.active {
-    font-weight: bold;
-    border-radius: 0;
-    font-size: 1.6rem;   
-    border-radius: 10px 0px 0px 10px;
-}
-
-.nav-open .ClosedIcons{
-    display: none;
-}
-
-
-.toggle-nav{
-    position: absolute;
-    background-color: transparent;
-    border:transparent;
-    top: .1em;
-    left: .4em;
-    z-index: 11;
-    cursor: pointer;
-    width: fit-content;
-}
-
-
-.toggle-nav span{
-    font-size: 2.5em;
-    color: whitesmoke;
-    align-items: center;
-    width: fit-content;
-}
-
-.nav-closed {
-    transition: 300ms;
-    background-image: linear-gradient( black, black);
-    position:fixed;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    width: 5rem;
-    height: 100vh;
-    z-index: 10;
-    color: whitesmoke;
-    font-size: 0;
-}
-
-.nav-closed a{
+nav a{
     margin-top: 2rem;
     text-decoration: none;
     border-radius: 4px;
@@ -108,34 +25,21 @@
     border-radius: 10px 10px 10px 10px;
 }
 
-.nav-closed img{
-    opacity: 0;
+nav img{
+    margin-top:0;
+    height:9rem;
 }
 
-.nav-closed .ClosedIcons{
-    position:absolute;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    width: 5rem;
-    height: 100vh;
-    z-index: 10;
-    color: whitesmoke;
-    font-size: 1.3rem;
-    top: 3rem;
-}
-
-.nav-closed .ClosedIcons a:hover{
+nav a:hover {
     background-color: white;
-    font-size: 1rem;
-    font-style: bold;
-    color: purple;
-    border-radius: 0px 0px 0px 0px;
+    font-size: 1.3rem;
+    color:#4c4c7c;
+    border-radius: 10px 0px 0px 10px;
 }
 
-.nav-closed a:active {
+nav a.active {
     font-weight: bold;
     border-radius: 0;
-    font-size: 1.6rem;   
+    font-size: 1.1rem;   
     border-radius: 10px 0px 0px 10px;
 }

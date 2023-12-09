@@ -13,43 +13,6 @@ import {
 function Feed() {
     return (
         <div className="feed-container">
-            <div class="communities-container">
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                            <h3>Community</h3>
-                            <p>Title</p>
-                            <p>Description</p>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Community</h3>
-                            <p>Title</p>
-                            <p>Description</p>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Community</h3>
-                            <p>Title</p>
-                            <p>Description</p>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Community</h3>
-                            <p>Title</p>
-                            <p>Description</p>
-                        </div>
-                    </div>
-                </div>
-            </div>   
-        
-
             <div className="contents-container space-y-10">
                 <div className="border boder-1 border-black rounded-3xl"> 
                     <div className="border border-1 border-black">a/community</div>
