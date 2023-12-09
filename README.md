@@ -14,6 +14,7 @@ In terminal
 1. Home-> Top Bar: Michelle, Micheal, Femi
 2. Home-> Posts: Danh, Henry
 3. Home-> Communities Box: Micheal, Femi
+4. App -> Navbar: Michael
 
 ### SPRINT 2 WORK DISTRIBUTION
 1. Home: Michelle, Femi
