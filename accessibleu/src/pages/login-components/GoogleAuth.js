@@ -2,7 +2,7 @@ import {React, useState, useEffect} from 'react';
 import { googleLogout, useGoogleLogin} from '@react-oauth/google';
 import axios from 'axios';
 
-import "../styling/GoogleAuth.css"
+import "./GoogleAuth.css"
 
 const GoogleAuth = () => {
     const [ user, setUser ] = useState([]);

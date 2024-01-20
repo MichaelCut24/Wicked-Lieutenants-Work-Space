@@ -1,10 +1,14 @@
 // LOGIN PAGE
+<<<<<<< HEAD
 
 import Popup from './login-components/Popup.js'
 import GoogleAuth from './login-components/GoogleAuth.js';
 import { useState } from 'react';
 
 import './styling/Login.css'
+=======
+import './Login.css'
+>>>>>>> main
 
 function Login() {
     const [buttonPopup, setButtonPopup] = useState(false);
