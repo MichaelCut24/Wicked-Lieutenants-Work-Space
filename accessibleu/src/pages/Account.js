@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './Account.css';
 
 function Account() {
+  {/* 
   useEffect(() => {
     // Set the date we're counting down to
     var countDownDate = new Date('Feb 1, 2024 15:37:25').getTime();
@@ -53,7 +54,7 @@ function Account() {
         </div>
       </div>
     </>
-  );
+  );*/}
 }
 
 export default Account;

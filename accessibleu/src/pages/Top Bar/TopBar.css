@@ -19,7 +19,7 @@ header {
 .header a.welcome {
   font-size: 35px;
   font-weight: bold;
-
+  margin-left: 160px; 
 }
 
 .header a.message{
