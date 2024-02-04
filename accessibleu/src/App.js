@@ -14,7 +14,7 @@ function App() {
       <Router> {/* Everything related to the page routing will be put inside here */} 
           <nav className= "nav"> {/* Navigation Bar component */}
             <div class="logo">
-              <img src="./nobg-logo.png" atl="logo"></img>
+              <img src="./nobg-logoWH.png" atl="logo"></img>
             </div>
             <div className='NavLinks'>
               <ul>
@@ -37,8 +37,24 @@ function App() {
               </ul>
             </div>
             <div className='bar'>
-              <span class="material-symbols-outlined">remove</span>
+              <span class="material-symbols-outlined"></span>
             </div>
+            <footer className='footnav'>
+                  <div className='lownav'>
+                    <ul>
+                      <li>
+                        <NavLink to="#">Help</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="#">Contact Us</NavLink>
+                      </li>
+                      <li>
+                        <i class='bx bx-log-out-circle'></i>
+                        <NavLink to="#">Logout</NavLink>
+                      </li>
+                    </ul>
+                  </div>
+            </footer>
           </nav>
         <main>
             <Routes> {/* Insert your page component here !!!*/}

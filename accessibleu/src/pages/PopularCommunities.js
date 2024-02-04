@@ -13,3 +13,6 @@ function PopularCommunities(){
   }
   
   export default PopularCommunities;
+
+  //add min and max margin to make dynamic
+  //@media for different sizes 

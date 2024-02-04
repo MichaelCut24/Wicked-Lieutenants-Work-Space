@@ -14,6 +14,7 @@ header {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  margin-left: 6rem;
 }
   
 .header a.welcome {
@@ -26,13 +27,6 @@ header {
   font-size: 20px;
   text-align: left;
   
-}
-
-.account-button{
-  text-align: right;
-  position: absolute;
-  top: 0;
-  right: 16px;
 }
   
 /* Style the "active" element to highlight the current page*/
@@ -84,5 +78,3 @@ header {
   font-size: 18px;
   margin-right: 5px;
 }
-
-

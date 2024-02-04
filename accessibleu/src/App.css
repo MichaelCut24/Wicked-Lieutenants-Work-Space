@@ -3,21 +3,18 @@
 @tailwind utilities;
 
 /* navbar */
-.nav{
+.nav {
     transition: all 0.6s ease;
     background-color: #141414;
     align-items: center;
     position:fixed;
-}
-nav {
-    background-color: grey;
-    position:absolute;
     display: flex;
     flex-direction: column;
-    width:12rem;
-    height: 100vh;
+    min-width:12rem;
+    max-width:12rem;
+    height: 100%;
     z-index: 10000;
-    padding: 0px 100px;
+    padding: 0px 60px;
 }
 
 .nav .logo{
@@ -33,41 +30,73 @@ nav {
     margin-bottom: 25px;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 8px;
     cursor: pointer;
 }
 
 .nav .NavLinks ul li a{
     position: relative;
-    font-size: 18px;
+    font-size: 100%;
     font-weight: bold;
     color: #D3D3D3;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 }
 
 
 .nav .NavLinks ul li i{
-    font-size: 20px;
+    font-size: 200%;
     color: #D3D3D3;
 }
 
-.nav .NavLinks ul li:hover i, .nav .NavLinks ul li:hover a{
+.nav .NavLinks li a.active{
+    color: greenyellow;
+    border-bottom: 2px solid;
+    display: flex;
+    flex-direction: column;
+    transition: 0.1s;
+    border-radius: 1px;
+}
+
+.nav .NavLinks li i.active{
     color: greenyellow;
 }
 
-
-.nav .NavLinks ul li a:active{
-    color: red;
-}
-
-.nav .bar span{
-    color: red;
+.nav .bar{
     font-size: 50px;
-    width: 100px;
-
+    width: 9.5rem;
+    background-color: #595959;
+    max-height: 1px;
+    margin-top: 3px;
 }
 
-.nav.toggle-nav{
+.footnav{
+    transform: translate(10%, 285%);
+}
+
+
+.footnav .lownav ul li{
+    font-size: 90%;
+    position: relative;
+    right: 40%;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #a7a7a7;
+    font-weight: bold;
+    letter-spacing: 1px;
+    list-style: none;
+}
+
+/*.nav .bar span{
+    font-size: 100%;
+    width: 3.5em;
+    margin-inline:auto;
+}
+*/
+
+/*.nav.toggle-nav{
     position: fixed;
     background-color: transparent;
     border:transparent;
@@ -77,3 +106,4 @@ nav {
     cursor: pointer;
     width: fit-content;
 }
+*/
