@@ -33,8 +33,8 @@ function App() {
                   <NavLink to="communities">Communities</NavLink>
                 </li>
                 <li>
-                <NavLink to="account"><i class='bx bx-cog'></i></NavLink>
-                  <NavLink to="account">Settings</NavLink>
+                <NavLink to="Settings"><i class='bx bx-cog'></i></NavLink>
+                  <NavLink to="Settings">Settings</NavLink>
                 </li>
               </ul>
             </div>

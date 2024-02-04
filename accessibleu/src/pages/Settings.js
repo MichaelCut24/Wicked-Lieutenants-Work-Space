@@ -3,23 +3,24 @@ import React from "react"
 
 import "./Settings.css";
 import TopBar from "./Top Bar/Settings-Bar.js";
+import Appearance from "./settings-components/Appearance.js"
 
 function Settings() {
   return (
     <>
       <div className="topbar border border-1 border-black"><TopBar/></div>
-      
-      <div class="menuBox">
-        <div class="settingsMenu">
-          <a class="activeBox">My account <br/></a> 
-          <NavLink to="appearance">Appearance <br/></NavLink>
-          <NavLink to="PrivacySecurity"> Privacy & Security <br/></NavLink>
-          <NavLink to="Notifications"> Notifications <br/></NavLink>
-          <NavLink to="Language"> Language <br/></NavLink>
-          <NavLink to="Advanced"> Advanced<br/></NavLink>
+        <div class="menuBox">
+          <div class="settingsMenu">
+            <a class="activeBox">My account <br/></a>
+            <nav id='settings'>
+              <NavLink to="#">Appearance <br/></NavLink>
+              <NavLink to="#"> Privacy & Security <br/></NavLink>
+              <NavLink to="#"> Notifications <br/></NavLink>
+              <NavLink to="#"> Language <br/></NavLink>
+              <NavLink to="#"> Advanced<br/></NavLink>
+            </nav>
+          </div>
         </div>
-      </div> 
-
       <div class="formBox">
         <div class="formHeading">My Account</div>
         <div class="editButton">Edit</div>
