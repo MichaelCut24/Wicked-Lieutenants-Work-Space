@@ -3,139 +3,73 @@
 @tailwind utilities;
 
 /* navbar */
-.nav-open {
-    transition: 300ms;
-    background-image: linear-gradient( black, black);
+.nav{
+    transition: all 0.6s ease;
+    background-color: #141414;
+    align-items: center;
     position:fixed;
     display: flex;
     flex-direction: column;
     width:12rem;
     height: 100vh;
-    z-index: 10;
-    color: white;
-    font-size: 1rem;
+    z-index: 10000;
+    padding: 0px 100px;
 }
 
-
-.nav-open a {
-    margin-top: 2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    padding: 0.2rem;
-    margin-left: 0.5rem;
-    border-radius: 10px 10px 10px 10px
+.nav .logo{
+    width: 200px;
 }
 
-.nav-open .NavLinks{
-    position:absolute;
+.nav .NavLinks ul{
+    list-style: none;
+}
+
+.nav .NavLinks ul li{
+    position: relative;
+    margin-bottom: 25px;
     display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 11rem;
-    height: 100vh;
-    z-index: 10;
-    top: 9rem;
-    color: whitesmoke;
-    font-size: 1.2rem;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
 }
 
-.nav-open .NavLinks a:hover{
-    background-color: whitesmoke;
-    font-size: 1.5rem;
-    color: purple;
-    width: 183.5px;
-    border-radius: 0px 0px 0px 0px;
-}
-
-.nav-open img{
-    margin-top:0;
-    height:9rem;
-}
-
-.nav-open a.active {
+.nav .NavLinks ul li a{
+    position: relative;
+    font-size: 18px;
     font-weight: bold;
-    border-radius: 0;
-    font-size: 1.6rem;   
-    border-radius: 10px 0px 0px 10px;
-}
-
-.nav-open .ClosedIcons{
-    display: none;
+    color: #D3D3D3;
+    letter-spacing: 1px;
 }
 
 
-.toggle-nav{
-    position: absolute;
+.nav .NavLinks ul li i{
+    font-size: 20px;
+    color: #D3D3D3;
+}
+
+.nav .NavLinks ul li:hover i, .nav .NavLinks ul li:hover a{
+    color: greenyellow;
+}
+
+
+.nav .NavLinks ul li a:active{
+    color: red;
+}
+
+.nav .bar span{
+    color: red;
+    font-size: 50px;
+    width: 100px;
+
+}
+
+.nav.toggle-nav{
+    position: fixed;
     background-color: transparent;
     border:transparent;
-    top: .1em;
+    top: 57em;
     left: .4em;
-    z-index: 11;
+    z-index: 10000;
     cursor: pointer;
     width: fit-content;
-}
-
-
-.toggle-nav span{
-    font-size: 2.5em;
-    color: whitesmoke;
-    align-items: center;
-    width: fit-content;
-}
-
-.nav-closed {
-    transition: 300ms;
-    background-image: linear-gradient( black, black);
-    position:fixed;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    width: 5rem;
-    height: 100vh;
-    z-index: 10;
-    color: whitesmoke;
-    font-size: 0;
-}
-
-.nav-closed a{
-    margin-top: 2rem;
-    text-decoration: none;
-    border-radius: 4px;
-    text-align: center;
-    padding: 0.2rem;
-    margin-left: 0.5rem;
-    border-radius: 10px 10px 10px 10px;
-}
-
-.nav-closed img{
-    opacity: 0;
-}
-
-.nav-closed .ClosedIcons{
-    position:absolute;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    width: 5rem;
-    height: 100vh;
-    z-index: 10;
-    color: whitesmoke;
-    font-size: 1.3rem;
-    top: 3rem;
-}
-
-.nav-closed .ClosedIcons a:hover{
-    background-color: white;
-    font-size: 1rem;
-    font-style: bold;
-    color: purple;
-    border-radius: 0px 0px 0px 0px;
-}
-
-.nav-closed a:active {
-    font-weight: bold;
-    border-radius: 0;
-    font-size: 1.6rem;   
-    border-radius: 10px 0px 0px 10px;
 }
