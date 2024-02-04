@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom' // React Router to create page routes/links
-import React, {useState} from "react"
 
 // IMPORT YOUR .JS PAGE HERE
 import Login from './pages/Login';
-import Home from "./pages/Home"
+import Home from './pages/Home';
 import Community from './pages/Community';
+import Account from './pages/Account';
 
 import './App.css';
 
@@ -14,7 +14,7 @@ function App() {
       <Router> {/* Everything related to the page routing will be put inside here */} 
           <nav className= "nav"> {/* Navigation Bar component */}
             <div class="logo">
-              <img src="./nobg-logoWH.png" atl="logo"></img>
+              <img src="./nobg-logo.png" atl="logo"></img>
             </div>
             <div className='NavLinks'>
               <ul>
@@ -32,7 +32,7 @@ function App() {
                 </li>
                 <li>
                   <i class='bx bx-cog'></i>
-                  <NavLink to="#">Settings</NavLink>
+                  <NavLink to="account">Settings</NavLink>
                 </li>
               </ul>
             </div>
@@ -45,9 +45,10 @@ function App() {
               <Route exact path="/" element={<Home/>}/>
               <Route path="login" element={<Login/>}/>
               <Route path="communities" element={<Community/>}/>
+              <Route path="account" element={<Account/>}/>
             </Routes>
         </main>   
-      </Router> 
+      </Router>   
     </>       
   );
 }

@@ -8,6 +8,10 @@
     background-color: #141414;
     align-items: center;
     position:fixed;
+}
+nav {
+    background-color: grey;
+    position:absolute;
     display: flex;
     flex-direction: column;
     width:12rem;
