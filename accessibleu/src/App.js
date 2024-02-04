@@ -1,14 +1,16 @@
 import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom' // React Router to create page routes/links
+import React, {useState} from "react"
 
 // IMPORT YOUR .JS PAGE HERE
 import Login from './pages/Login';
-import Home from './pages/Home';
+import Home from "./pages/Home"
 import Community from './pages/Community';
-import Account from './pages/Account';
+import Settings from './pages/Settings';
 
 import './App.css';
 
 function App() {
+  const[isNavOpen, setIsNavOpen] = useState(false);
   return (
     <>
       <Router> {/* Everything related to the page routing will be put inside here */} 
@@ -57,16 +59,27 @@ function App() {
             </footer>
           </nav>
         <main>
-            <Routes> {/* Insert your page component here !!!*/}
+            <Routes> {/* Insert your page component here !!! */}
               <Route exact path="/" element={<Home/>}/>
               <Route path="login" element={<Login/>}/>
               <Route path="communities" element={<Community/>}/>
-              <Route path="account" element={<Account/>}/>
+              <Route path="Settings" element={<Settings/>}/>
             </Routes>
-        </main>   
-      </Router>   
+        </main> 
+      </Router> 
     </>       
   );
 }
+
+{/*function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}*/}
+
 
 export default App;
