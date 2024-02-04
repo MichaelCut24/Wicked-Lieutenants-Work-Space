@@ -1,0 +1,96 @@
+<center><img src='./nobg-logoWH.png' alt="logo"/></center>
+<NavLink to="login">Login</NavLink>
+<NavLink to="communities">Communities</NavLink>
+</div>
+<div className='ClosedIcons'>
+  <NavLink to="/"><span class="material-symbols-outlined" id = "NavHome">home</span></NavLink>
+  <NavLink to="login"><span class="material-symbols-outlined" id = "NavLogin">login</span></NavLink>
+  <NavLink to="communities"><span class="material-symbols-outlined" id = "NavCommunities">groups</span></NavLink>
+</div>
+
+              <div class="homelogo">
+                <i class='bx bx-home'></i>
+                <NavLink to="/">Home</NavLink>
+              </div>
+              <div class="loginlogo">
+                <i class='bx bx-log-in-circle'></i>
+                <NavLink to="login">Login</NavLink>
+              </div>
+              <div class="communitieslogo">
+                <i class='bx bx-log-in-circle'></i>
+                <NavLink to="communities">Communities</NavLink>
+              </div>
+              <div class="settingslogo">
+                <i class='bx bx-cog'></i>
+                <NavLink to="#">Settings</NavLink>
+              </div>
+
+.nav-open {
+    transition: all 0.6 ease;
+    background-color: black;
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    width:12rem;
+    height: 100vh;
+    z-index: 10000;
+    color: white;
+    font-size: 1rem;
+}
+
+
+/*.nav-open a{
+    margin-top: 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.2rem;
+    margin-left: 0.5rem;
+    border-radius: 10px 10px 10px 10px
+}
+*/
+
+.nav-open .NavLinks ul{
+    list-style: none;
+}
+
+.nav-open .NavLinks ul li{
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-open .NavLinks a:hover{
+    background-color: whitesmoke;
+    font-size: 1.5rem;
+    color: purple;
+    width: 183.5px;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.nav-open img{
+    margin-top:0;
+    height:9rem;
+}
+
+.nav-open a.active {
+    font-weight: bold;
+    border-radius: 0;
+    font-size: 1.6rem;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.nav-open .ClosedIcons{
+    display: none;
+}
+
+button code
+const[isNavOpen, setIsNavOpen] = useState(true);
+<nav className={`nav ${isNavOpen ? "nav-open" : "nav-closed"}`}> {/* Navigation Bar component */}
+
+            <button className ="toggle-nav" onClick={() => setIsNavOpen(!isNavOpen)}>
+                <span class="material-symbols-outlined">
+                  {isNavOpen? "arrow_forward_ios" : "arrow_back_ios"}
+                </span>
+            </button>
