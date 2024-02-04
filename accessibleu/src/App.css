@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* navbar */
 .nav {
     transition: all 0.6s ease;
@@ -19,19 +20,19 @@
 
 .nav .logo{
     width: 200px;
+    transform: translate(0%, -15%);
 }
 
-.nav .NavLinks ul{
-    list-style: none;
-}
 
 .nav .NavLinks ul li{
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 9px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
     cursor: pointer;
+    list-style: none;
+    transform: translate(0%, -100%);
 }
 
 .nav .NavLinks ul li a{
@@ -48,29 +49,26 @@
     color: #D3D3D3;
 }
 
-.nav .NavLinks li a.active{
+.nav .NavLinks ul li a.active{
     color: greenyellow;
-    border-bottom: 2px solid;
-    display: flex;
-    flex-direction: column;
-    transition: 0.1s;
-    border-radius: 1px;
 }
 
-.nav .NavLinks li i.active{
+.nav .NavLinks ul li:hover a, .nav .NavLinks ul li:hover i{
     color: greenyellow;
+    transition: all 0.3s ease;
 }
 
 .nav .bar{
     font-size: 50px;
-    width: 9.5rem;
+    width: 9.9rem;
     background-color: #595959;
     max-height: 1px;
     margin-top: 3px;
+    transform: translate(0%, -30px);
 }
 
 .footnav{
-    transform: translate(10%, 285%);
+    transform: translate(5%, 315%);
 }
 
 
@@ -88,6 +86,12 @@
     letter-spacing: 1px;
     list-style: none;
 }
+
+.footnav .lownav ul li:hover{
+    color: white;
+    transition: all 0.5s ease;
+}
+
 
 /*.nav .bar span{
     font-size: 100%;

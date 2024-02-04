@@ -19,19 +19,19 @@ function App() {
             <div className='NavLinks'>
               <ul>
                 <li>
-                  <i class='bx bx-home'></i>
-                  <NavLink to="/">Home</NavLink>
+                  <NavLink to="/"><i class='bx bx-home'></i></NavLink>
+                  <a><NavLink to="/">Home</NavLink></a>
                 </li>
                 <li>
-                  <i class='bx bx-log-in-circle'></i>
+                  <NavLink to="login"><i class='bx bx-log-in-circle'></i></NavLink>
                   <NavLink to="login">Login</NavLink>
                 </li>
                 <li>
-                  <i class='bx bx-group'></i>
+                  <NavLink to="communities"><i class='bx bx-group'></i></NavLink>
                   <NavLink to="communities">Communities</NavLink>
                 </li>
                 <li>
-                  <i class='bx bx-cog'></i>
+                <NavLink to="account"><i class='bx bx-cog'></i></NavLink>
                   <NavLink to="account">Settings</NavLink>
                 </li>
               </ul>
