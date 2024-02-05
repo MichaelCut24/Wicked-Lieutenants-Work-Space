@@ -1,17 +1,10 @@
 // LOGIN PAGE
-<<<<<<< HEAD
-
-import Popup from './login-components/Popup.js'
-import GoogleAuth from './login-components/GoogleAuth.js';
-import { useState } from 'react';
-
-import './styling/Login.css'
-=======
 import './Login.css'
->>>>>>> main
+
+import GoogleAuth from './login-components/GoogleAuth.js';
+import PopCreate from './login-components/PopCreate.js';
 
 function Login() {
-    const [buttonPopup, setButtonPopup] = useState(false);
 
     return (
         <div className="page flex flex-row">{/* Whole page container */}
@@ -41,16 +34,12 @@ function Login() {
                             </div>
                             
                         </div>   
-                        {/* This is for the Create Account Popup. */}
-                        <div className="Popup-Button">
-                            <br/><br/>
-                            <button onClick={() => setButtonPopup(true)}>Create Account</button>
-                            <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-                            <h1>Create Account Popup</h1>
-                            <p>Account creation lines will go here.</p>
-                            </Popup>
+                    </form>
+
+                     {/* This is for the Create Account Popup. */}
+                        <div className="PopCreate">
+                            <PopCreate/>
                         </div>
-                    </form> 
                 </div>
             </div>    
         </div>
