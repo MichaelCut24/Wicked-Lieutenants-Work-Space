@@ -1,0 +1,9 @@
+NOTES:
+# DEVELOPMENT NOTES
+
+1. 'App.js' in the "/src" folder is the linker file for all the page components, and contains the navigation bar component.
+
+2.  All styling files (.css) are now moved to "src/pages/styling"
+
+3. For custom scroll bar library is needed.
+  npm install --save reac-custom-scrollbars
