@@ -27,7 +27,7 @@ function App() {
             </div>
           </nav>
             <button className ="toggle-nav" onClick={() => setIsNavOpen(!isNavOpen)}>
-              <span class="material-symbols-outlined">
+              <span className="material-symbols-outlined">
                 {isNavOpen? "toggle_on" : "toggle_off"} 
               </span>
             </button>
