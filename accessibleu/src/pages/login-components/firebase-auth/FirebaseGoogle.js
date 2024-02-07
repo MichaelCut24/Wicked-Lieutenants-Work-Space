@@ -1,4 +1,4 @@
-import { auth } from "../Firebase";
+import { auth } from "./Firebase";
 import { signInWithPopup } from "firebase/auth";
 import { GoogleAuthProvider } from "firebase/auth";
 
