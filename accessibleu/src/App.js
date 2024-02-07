@@ -5,6 +5,7 @@ import React, {useState} from "react"
 import Login from './pages/Login';
 import Home from "./pages/Home"
 import Community from './pages/Community';
+import Settings from './pages/Settings';
 
 import './App.css';
 
@@ -13,34 +14,72 @@ function App() {
   return (
     <>
       <Router> {/* Everything related to the page routing will be put inside here */} 
-          <nav className={`nav ${isNavOpen ? "nav-open" : "nav-closed"}`}> {/* Navigation Bar component */}
-            <center><img src='./nobg-logoWH.png' alt="logo"/></center>
+          <nav className= "nav"> {/* Navigation Bar component */}
+            <div class="logo">
+              <img src="./nobg-logoWH.png" atl="logo"></img>
+            </div>
             <div className='NavLinks'>
-              <NavLink to="/">Home</NavLink>
-              <NavLink to="login">Login</NavLink>
-              <NavLink to="communities">Communities</NavLink>
+              <ul>
+                <li>
+                  <NavLink to="/"><i class='bx bx-home'></i></NavLink>
+                  <a><NavLink to="/">Home</NavLink></a>
+                </li>
+                <li>
+                  <NavLink to="login"><i class='bx bx-log-in-circle'></i></NavLink>
+                  <NavLink to="login">Login</NavLink>
+                </li>
+                <li>
+                  <NavLink to="communities"><i class='bx bx-group'></i></NavLink>
+                  <NavLink to="communities">Communities</NavLink>
+                </li>
+                <li>
+                <NavLink to="Settings"><i class='bx bx-cog'></i></NavLink>
+                  <NavLink to="Settings">Settings</NavLink>
+                </li>
+              </ul>
             </div>
-            <div className='ClosedIcons'>
-              <NavLink to="/"><span class="material-symbols-outlined" id = "NavHome">home</span></NavLink>
-              <NavLink to="login"><span class="material-symbols-outlined" id = "NavLogin">login</span></NavLink>
-              <NavLink to="communities"><span class="material-symbols-outlined" id = "NavCommunities">groups</span></NavLink>
+            <div className='bar'>
+              <span class="material-symbols-outlined"></span>
             </div>
+            <footer className='footnav'>
+                  <div className='lownav'>
+                    <ul>
+                      <li>
+                        <NavLink to="#">Help</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="#">Contact Us</NavLink>
+                      </li>
+                      <li>
+                        <i class='bx bx-log-out-circle'></i>
+                        <NavLink to="#">Logout</NavLink>
+                      </li>
+                    </ul>
+                  </div>
+            </footer>
           </nav>
-            <button className ="toggle-nav" onClick={() => setIsNavOpen(!isNavOpen)}>
-              <span className="material-symbols-outlined">
-                {isNavOpen? "toggle_on" : "toggle_off"} 
-              </span>
-            </button>
         <main>
-            <Routes> {/* Insert your page component here !!!*/}
+            <Routes> {/* Insert your page component here !!! */}
               <Route exact path="/" element={<Home/>}/>
               <Route path="login" element={<Login/>}/>
               <Route path="communities" element={<Community/>}/>
+              <Route path="Settings" element={<Settings/>}/>
             </Routes>
-        </main>   
+        </main> 
       </Router> 
     </>       
   );
 }
+
+{/*function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}*/}
+
 
 export default App;

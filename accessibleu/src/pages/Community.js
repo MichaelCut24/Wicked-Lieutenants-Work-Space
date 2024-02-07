@@ -1,4 +1,4 @@
-// HOME PAGE
+// Communties page
 
 // NOTE: Everything in the className part is tailwind CSS, yall can delete everything in it once
 // Home.css is created. Go to https://v2.tailwindcss.com/docs/ to lookup the syntax and
