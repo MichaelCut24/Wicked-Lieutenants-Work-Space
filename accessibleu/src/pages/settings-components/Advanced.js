@@ -1,8 +1,8 @@
-import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom' // React Router to create page routes/links
+import { NavLink } from "react-router-dom";
 import React from "react"
 
 import "./Advanced.css";
-import TopBar from "./Top Bar/Settings-Bar.js";
+import TopBar from "../Top-Bar/Settings-Bar";
 
 function Advanced() {
     return (

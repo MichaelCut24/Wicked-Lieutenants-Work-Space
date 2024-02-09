@@ -3,7 +3,7 @@ import React, {useState} from "react"
 
 // IMPORT YOUR .JS PAGE HERE
 import Login from './pages/Login';
-import Home from "./pages/Home"
+import Home from './pages/Home';
 import Community from './pages/Community';
 import Settings from './pages/Settings';
 

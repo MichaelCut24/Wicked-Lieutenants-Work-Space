@@ -1,6 +1,6 @@
 import "./TopBar.css"
 
-function TopBar (){
+function SettingsBar (){
   return(
     <div class="header" id="myHeader">
       <meta charset="UTF-8"></meta>
@@ -21,15 +21,14 @@ function TopBar (){
             
           <div class="search-container">
             <form action="/action_page.php">
-              <input type="text" placeholder="🔍  Search.." name="search"></input>
+              <input type="text" placeholder="🔍  Search..." name="search"></input>
             </form>
               
           </div>
         </div>
     </div>
-  )
-    
-  }
+  )    
+}
   
-  export default TopBar;
+  export default SettingsBar;
   

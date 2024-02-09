@@ -1,13 +1,13 @@
-import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom' // React Router to create page routes/links
+import { NavLink } from "react-router-dom";
 import React from "react"
 
 import "./Notifications.css";
-import TopBar from "./Top Bar/Settings-Bar.js";
+import SettingsBar from "../Top-Bar/Settings-Bar.js";
 
 function Notifications() {
     return (
       <>
-        <div className="topbar border border-1 border-black"><TopBar/></div>
+        <div className="topbar border border-1 border-black"><SettingsBar/></div>
       
         <div class="menuBox">
           <div class="settingsMenu">

@@ -1,26 +1,30 @@
-import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom' // React Router to create page routes/links
-import React from "react"
+import { NavLink } from "react-router-dom";
+import React from "react";
 
-import "./Settings.css";
-import TopBar from "./Top Bar/Settings-Bar.js";
-import Appearance from "./settings-components/Appearance.js"
+import './Settings.css';
+import SettingsBar from './Top-Bar/Settings-Bar.js';
 
 function Settings() {
   return (
     <>
-      <div className="topbar border border-1 border-black"><TopBar/></div>
+      <div className="topbar border border-1 border-black"><SettingsBar/></div>
+        
         <div class="menuBox">
           <div class="settingsMenu">
             <a class="activeBox">My account <br/></a>
-            <nav id='settings'>
-              <NavLink to="#">Appearance <br/></NavLink>
-              <NavLink to="#"> Privacy & Security <br/></NavLink>
-              <NavLink to="#"> Notifications <br/></NavLink>
-              <NavLink to="#"> Language <br/></NavLink>
-              <NavLink to="#"> Advanced<br/></NavLink>
-            </nav>
+            
+            <ul>
+              <nav id='settings'>
+                <li><NavLink to="appearance">Appearance</NavLink></li>
+                <li><NavLink to="privacySecurity">Privacy & Security</NavLink></li>
+                <li><NavLink to="notifications">Notifications</NavLink></li>
+                <li><NavLink to="language">Language</NavLink></li>
+                <li><NavLink to="advanced">Advanced</NavLink></li>
+              </nav>
+            </ul>
           </div>
         </div>
+      
       <div class="formBox">
         <div class="formHeading">My Account</div>
         <div class="editButton">Edit</div>
