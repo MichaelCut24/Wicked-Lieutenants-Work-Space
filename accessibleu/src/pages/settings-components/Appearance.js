@@ -2,12 +2,12 @@ import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom
 import React from "react"
 
 import "./Appearance.css";
-import TopBar from "../Top Bar/Settings-Bar.js";
+import SettingsBar from "pages/Top Bar/Settings-Bar.js";
 
 function Appearance() {
     return (
       <>
-        <div className="topbar border border-1 border-black"><TopBar/></div>
+        <div className="topbar border border-1 border-black"><SettingsBar/></div>
         
         <div class="menuBox">
           <div class="settingsMenu">

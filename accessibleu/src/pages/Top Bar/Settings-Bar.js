@@ -1,6 +1,6 @@
 import "./TopBar.css"
 
-function TopBar (){
+function SettingsBar (){
   return(
     <div class="header" id="myHeader">
       <meta charset="UTF-8"></meta>
@@ -31,5 +31,5 @@ function TopBar (){
     
   }
   
-  export default TopBar;
+  export default SettingsBar;
   
