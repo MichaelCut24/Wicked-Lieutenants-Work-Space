@@ -1,14 +1,14 @@
-import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom' // React Router to create page routes/links
-import React from "react"
+import {NavLink} from 'react-router-dom' 
+import React from "react";
 
-import "./Settings.css";
-import TopBar from "./Top Bar/Settings-Bar.js";
-import Appearance from "./settings-components/Appearance.js"
+import './Settings.css';
+import SettingsBar from './Top-Bar/Settings-Bar.js';
 
 function Settings() {
   return (
     <>
-      <div className="topbar border border-1 border-black"><TopBar/></div>
+      <div className="topbar border border-1 border-black"><SettingsBar/></div>
+        
         <div class="menuBox">
           <div class="settingsMenu">
             <a class="activeBox">My account <br/></a>
@@ -21,6 +21,7 @@ function Settings() {
             </nav>
           </div>
         </div>
+      
       <div class="formBox">
         <div class="formHeading">My Account</div>
         <div class="editButton">Edit</div>

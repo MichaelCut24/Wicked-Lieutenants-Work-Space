@@ -51,22 +51,22 @@ function Feed() {
         
 
             <div className="contents-container space-y-10">
-                <div className="border boder-1 border-black rounded-3xl"> 
+                <div className="border border-1 border-black"> 
                     <div className="border border-1 border-black">a/community</div>
                     <div className="border border-1 border-black">
                         <h2>Title</h2>
                     </div>
-                    <div className="border border-1 border-black text-sm">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div className="border border-1 border-black">
+                        <p> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div className="flex flex row border border-1 border-black">
-                        <div className="border border-1 border-black">Likes</div>
-                        <div className="border border-1 border-black">Comments</div>
-                        <div className="border border-1 border-black">Share</div>
+                    <div className="flex border border-1 border-black">
+                        <div className="border border-1 border-black"> Likes</div>
+                        <div className="border border-1 border-black"> Comments</div>
+                        <div className="border border-1 border-black"> Share</div>
                     </div>
                 </div>
 
-                <div className="border boder-1 border-black rounded-3xl">
+                <div className="border boder-1 border-black">
                     <div className="border border-1 border-black">a/community</div>
                         <div className="border border-1 border-black">
                             <h2>Title</h2>
@@ -87,7 +87,7 @@ function Feed() {
                                 </ControlBar>
                             </Player>
                         </div>
-                        <div className="flex flex row border border-1 border-black">
+                        <div className=" flex border border-1 border-black">
                             <div className="border border-1 border-black">Likes</div>
                             <div className="border border-1 border-black">Comments</div>
                             <div className="border border-1 border-black">Share</div>
@@ -96,7 +96,7 @@ function Feed() {
                     <div className="border boder-1 border-black">
                 </div>
 
-                <div className="border boder-1 border-black rounded-3xl">
+                <div className="border boder-1 border-black">
                     <div className="border border-1 border-black">a/community</div>
                         <div className="border border-1 border-black">
                             <h2>Title</h2>
@@ -104,7 +104,7 @@ function Feed() {
                         <div className="border border-1 border-black text-sm">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
-                        <div className="flex flex row border border-1 border-black">
+                        <div className="flex border border-1 border-black">
                             <div className="border border-1 border-black">Likes</div>
                             <div className="border border-1 border-black">Comments</div>
                             <div className="border border-1 border-black">Share</div>
@@ -113,7 +113,7 @@ function Feed() {
                     <div className="border boder-1 border-black">
                 </div>
 
-                <div className="border boder-1 border-black rounded-3xl">
+                <div className="border boder-1 border-black">
                     <div className="border border-1 border-black">a/community</div>
                         <div className="border border-1 border-black">
                             <h2>Title</h2>
