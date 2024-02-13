@@ -13,11 +13,11 @@ function Settings() {
           <div class="settingsMenu">
             <a class="activeBox">My account <br/></a>
             <nav id='settings'>
-              <NavLink to="#">Appearance <br/></NavLink>
-              <NavLink to="#"> Privacy & Security <br/></NavLink>
-              <NavLink to="#"> Notifications <br/></NavLink>
-              <NavLink to="#"> Language <br/></NavLink>
-              <NavLink to="#"> Advanced<br/></NavLink>
+            <NavLink to="./settings-componets/Appearance.js">Appearance <br/></NavLink>
+            <NavLink to="./settings-componets/Privacy-Security.js"> Privacy & Security <br/></NavLink>
+            <NavLink to="./settings-componets/Notifivation.js"> Notifications <br/></NavLink>
+            <NavLink to="./settings-componets/Language.js"> Language <br/></NavLink>
+            <NavLink to="./settings-componets/Advanced.js"> Advanced<br/></NavLink>
             </nav>
           </div>
         </div>

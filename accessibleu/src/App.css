@@ -50,11 +50,11 @@
 }
 
 .nav .NavLinks ul li a.active{
-    color: greenyellow;
+    color: #95a2f1;
 }
 
 .nav .NavLinks ul li:hover a, .nav .NavLinks ul li:hover i{
-    color: greenyellow;
+    color: #95a2f1;
     transition: all 0.3s ease;
 }
 
