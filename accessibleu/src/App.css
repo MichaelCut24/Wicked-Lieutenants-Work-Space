@@ -13,7 +13,7 @@
     flex-direction: column;
     min-width:12rem;
     max-width:12rem;
-    height: 100%;
+    min-height: 100%;
     z-index: 10000;
     padding: 0px 60px;
 }
@@ -68,18 +68,18 @@
 }
 
 .footnav{
-    transform: translate(5%, 315%);
+    margin-top: 560%;
+    margin-right: 100%;
+    max-height: 100%;
 }
 
 
 .footnav .lownav ul li{
     font-size: 90%;
-    position: relative;
-    right: 40%;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     cursor: pointer;
     color: #a7a7a7;
     font-weight: bold;
@@ -90,6 +90,14 @@
 .footnav .lownav ul li:hover{
     color: white;
     transition: all 0.5s ease;
+}
+
+@media only screen and (min-height: 0px) and (max-height: 900px){
+    .footnav{
+        margin-top: 33vh;
+        margin-right: 100%;
+    }
+    
 }
 
 

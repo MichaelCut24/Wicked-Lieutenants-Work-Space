@@ -2,12 +2,10 @@ import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom
 import React from "react"
 
 import "./Advanced.css";
-import TopBar from "./Top Bar/Settings-Bar.js";
 
 function Advanced() {
     return (
       <>
-        <div className="topbar border border-1 border-black"><TopBar/></div>
         
         <div class="menuBox">
           <div class="settingsMenu">

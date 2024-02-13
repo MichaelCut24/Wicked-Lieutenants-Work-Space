@@ -148,3 +148,17 @@ input:focus {
     float: bottom;
 }
 
+@media only screen and (min-height: 0px) and (max-height: 900px){
+	.menuBox {
+		position: relative;
+		left: 5%;
+		width: 270px;
+		height: 290px;
+		padding: 8px 8px 8px 8px;
+		background: white;
+		border-radius: 16px 16px 16px 16px;
+		border-color: black;
+		border-style: solid;
+		border-width: 1px;
+	}
+}

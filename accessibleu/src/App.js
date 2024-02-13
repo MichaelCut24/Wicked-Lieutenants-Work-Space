@@ -3,9 +3,11 @@ import React, {useState} from "react"
 
 // IMPORT YOUR .JS PAGE HERE
 import Login from './pages/Login';
-import Home from "./pages/Home"
+import Home from "./pages/Home";
 import Community from './pages/Community';
 import Settings from './pages/Settings';
+import Advanced from './pages/settings-components/Advanced.js';
+
 
 import './App.css';
 
@@ -64,6 +66,7 @@ function App() {
               <Route path="login" element={<Login/>}/>
               <Route path="communities" element={<Community/>}/>
               <Route path="Settings" element={<Settings/>}/>
+              <Route path="Advanced" element={<Advanced/>}/>
             </Routes>
         </main> 
       </Router> 
