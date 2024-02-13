@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import {NavLink} from 'react-router-dom' 
 import React from "react";
 
 import './Settings.css';
@@ -12,6 +12,7 @@ function Settings() {
         <div class="menuBox">
           <div class="settingsMenu">
             <a class="activeBox">My account <br/></a>
+
             
             <ul>
               <nav id='settings'>
@@ -22,6 +23,7 @@ function Settings() {
                 <li><NavLink to="advanced">Advanced</NavLink></li>
               </nav>
             </ul>
+        
           </div>
         </div>
       

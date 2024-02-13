@@ -8,7 +8,7 @@ import SettingsBar from '../Top-Bar/Settings-Bar.js';
 function Appearance() {
   return (
     <>
-    <div className="settingsBar border border-1 border-black"><SettingsBar/></div>
+    <div className="topBar border border-1 border-black"><SettingsBar/></div>
       
     <div class="menuBox">
       <div class="settingsMenu">
