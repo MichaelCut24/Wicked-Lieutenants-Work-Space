@@ -1,5 +1,5 @@
-import {NavLink} from 'react-router-dom' 
-import React from "react";
+import { NavLink } from 'react-router-dom';
+import React from 'react';
 
 import './Settings.css';
 import SettingsBar from './Top-Bar/Settings-Bar.js';
@@ -7,21 +7,18 @@ import SettingsBar from './Top-Bar/Settings-Bar.js';
 function Settings() {
   return (
     <>
-      <div className="topbar border border-1 border-black"><SettingsBar/></div>
+      <div class="topbar border border-1 border-black"><SettingsBar/></div>
         
         <div class="menuBox">
           <div class="settingsMenu">
-            <a class="activeBox">My account <br/></a>
-
             
             <ul>
-              <nav id='settings'>
-                <li><NavLink to="appearance">Appearance</NavLink></li>
-                <li><NavLink to="privacySecurity">Privacy & Security</NavLink></li>
-                <li><NavLink to="notifications">Notifications</NavLink></li>
-                <li><NavLink to="language">Language</NavLink></li>
-                <li><NavLink to="advanced">Advanced</NavLink></li>
-              </nav>
+              <li><NavLink to="Settings"><a class="activeBox">My Account</a></NavLink></li>
+              <li><NavLink to="Appearance">Appearance</NavLink></li>
+              <li><NavLink to="./settings-components/Privacy-Security.js">Privacy & Security</NavLink></li>
+              <li><NavLink to="Notifications">Notifications</NavLink></li>
+              <li><NavLink to="Language">Language</NavLink></li>
+              <li><NavLink to="Advanced">Advanced</NavLink></li>
             </ul>
         
           </div>
