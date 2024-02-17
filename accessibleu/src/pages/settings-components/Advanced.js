@@ -1,26 +1,39 @@
-import { NavLink } from "react-router-dom";
-import React from "react"
+import React from 'react';
 
-import "./Advanced.css";
-import TopBar from "../Top-Bar/Settings-Bar";
+import './MyAccount.css';
+import SettingsBar from '../Top-Bar/Settings-Bar.js';
 
-function Advanced() {
-    return (
-      <>
-        <div className="topbar border border-1 border-black"><TopBar/></div>
-        
-        <div class="menuBox">
+function PrivacySecurity (){
+  return (
+    <>
+      <div class="topbar border border-1 border-black"><SettingsBar/></div>
+
+      <div class="menuBox">
           <div class="settingsMenu">
-            <NavLink to="settings">My account <br/></NavLink> 
-            <NavLink to="appearance">Appearance <br/></NavLink>
-            <NavLink to="privacySecurity">Privacy & Security <br/></NavLink>
-            <NavLink to="notifications">Notifications <br/></NavLink>
-            <NavLink to="language">Language <br/></NavLink>
-            <a class="activeBox">Advanced<br/></a>
+            <ul>
+              <li>MyAccount</li>
+              <li>Appearance</li>
+              <li>Privacy & Security</li>
+              <li>Notifications</li>
+              <li>Language</li>
+              <li><a className='activeBox'>Advanced</a></li>
+            </ul>
           </div>
-        </div> 
-      </>
-   );
-}
+        </div>
+
+        <div class="formBox">
+            <div class="formHeading">Advanced</div>
+            <div class="editButton">Edit</div>
+            <div class="boxHeading"></div>
+            <div class="container">
+                <form>
+                    
+                </form>
+            </div>
+      </div>
+    </>
+  );
+};
+export default PrivacySecurity;
+
   
-export default Advanced;

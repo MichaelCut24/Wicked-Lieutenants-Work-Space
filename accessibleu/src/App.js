@@ -5,12 +5,19 @@ import React, {useState} from "react"
 import Login from './pages/Login';
 import Home from './pages/Home';
 import Community from './pages/Community';
-import Settings from './pages/Settings';
+import MyAccount from './pages/settings-components/MyAccount';
+import Appearance from './pages/settings-components/Appearance';
+import PrivacySecurity from './pages/settings-components/Privacy-Security';
+import Notifications from './pages/settings-components/Notifications';
+import Language from './pages/settings-components/Language';
+import Advanced from './pages/settings-components/Advanced';
 
 import './App.css';
 
 function App() {
   const[isNavOpen, setIsNavOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleDropdown = () => {setIsOpen(!isOpen);};
   return (
     <>
       <Router> {/* Everything related to the page routing will be put inside here */} 
@@ -33,10 +40,26 @@ function App() {
                   <NavLink to="communities">Communities</NavLink>
                 </li>
                 <li>
-                  <NavLink to="Settings"><i class='bx bx-cog'></i></NavLink>
-                  <NavLink to="Settings">Settings</NavLink>
+                  <NavLink to="settings"><i class='bx bx-cog'></i></NavLink>
+                  <NavLink to="settings" onClick={toggleDropdown} className="dropdown-toggle">Settings</NavLink>
+                  <li>
+                    <div className="dropdown">
+                      {isOpen && (
+                        <ul className="dropdown-menu">
+                          <li><a href="myaccount">MyAccount</a></li>
+                          <li><a href="appearance">Appearance</a></li>
+                          <li><a href="privacySecurity">Privacy & Security</a></li>
+                          <li><a href="notifications">Notifications</a></li>
+                          <li><a href="language">Language</a></li>
+                          <li><a href="advanced">Advanced</a></li>
+                        </ul>
+                      )}
+                    </div>
+                    </li>
                 </li>
+                
               </ul>
+
             </div>
             <div className='bar'>
               <span class="material-symbols-outlined"></span>
@@ -63,7 +86,12 @@ function App() {
               <Route exact path="/" element={<Home/>}/>
               <Route path="login" element={<Login/>}/>
               <Route path="communities" element={<Community/>}/>
-              <Route path="Settings" element={<Settings/>}/>
+              <Route path="myAccount" element={<MyAccount />}/>
+              <Route path="appearance" element={<Appearance />}/>
+              <Route path="privacySecurity" element={<PrivacySecurity />}/>
+              <Route path="notifications" element={<Notifications />}/>
+              <Route path="language" element={<Language />}/>
+              <Route path="advanced" element={<Advanced />}/>
             </Routes>
         </main> 
       </Router> 
