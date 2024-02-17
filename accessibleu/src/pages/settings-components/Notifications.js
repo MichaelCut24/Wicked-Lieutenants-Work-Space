@@ -10,21 +10,19 @@ function PrivacySecurity (){
 
       <div class="menuBox">
           <div class="settingsMenu">
-            
             <ul>
               <li>MyAccount</li>
               <li>Appearance</li>
               <li>Privacy & Security</li>
-              <li>Notifications</li>
-              <li><a className='activeBox'>Language</a></li>
+              <li><a className='activeBox'>Notifications</a></li>
+              <li>Language</li>
               <li>Advanced</li>
             </ul>
-            
           </div>
         </div>
 
         <div class="formBox">
-            <div class="formHeading">Language</div>
+            <div class="formHeading">Notifications</div>
             <div class="editButton">Edit</div>
             <div class="boxHeading"></div>
             <div class="container">
