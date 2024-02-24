@@ -9,7 +9,7 @@
 .contents-container{
     position: relative;
     width:45vw;
-    left: 25%;
+    left: 33%;
 }
 
 
@@ -19,18 +19,18 @@
     padding: 0px 10px;
     max-width: 60vw;
     position: relative;
-    left: 10rem;
+    left: 14rem;
 }
 
 /* Float four columns side by side */
 .column {
     float: left;
-    width: 25%;
-    padding: 20px 20px;
+    width: 30%;
+    padding: 30px 20px;
     }
     
     /* Remove extra left and right margins, due to padding */
-    .row {margin: 0 -5px;}
+    .row {margin: 0 -115px;}
     
     /* Clear floats after the columns */
     .row:after {
@@ -41,7 +41,7 @@
     
     /* Style the counter cards */
     .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
     background-color: #f1f1f1;
@@ -61,3 +61,34 @@
     top:0;
     left:0;
 }
+
+.fa-thumbs-up{
+    float: left;
+    width: 5%;   
+    user-select: none;
+   }
+.fa-thumbs-up:hover {
+    color: darkblue;
+  }
+  .fa-thumbs-up {
+    display: flex;
+    justify-content: center;
+ }
+
+   .fa-comment{
+       float: left;
+       width: 5%;   
+      }
+    .fa-comment:hover {
+        color: darkblue;
+      }
+
+   .fa-share{
+       float: left;
+       width: 5%;   
+      }
+    .fa-share:hover {
+        color: darkblue;
+      }
+
+    
