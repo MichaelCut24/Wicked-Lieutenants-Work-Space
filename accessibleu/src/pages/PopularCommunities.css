@@ -2,7 +2,7 @@
     width: 200px;
     position: fixed;
     z-index: 1;
-    bottom: 65px;
+    top: 300px;
     right: 20px;
     background: #eee;
     overflow-x: hidden;

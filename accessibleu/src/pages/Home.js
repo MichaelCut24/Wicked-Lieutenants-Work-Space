@@ -12,7 +12,7 @@ function Home(){
         {/* Femi's code */}
         <div class="sidenav">
           <h3>Popular Communities</h3>
-          <div className="topbar border border-1 border-black"><PopularCommunities/></div>
+          <div><PopularCommunities/></div>
         </div>
       <Feed/> 
     </>

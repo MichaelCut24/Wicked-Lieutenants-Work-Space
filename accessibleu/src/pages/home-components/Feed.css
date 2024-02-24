@@ -1,7 +1,7 @@
 .feed-container{
     height:100vh;
     width: 100vw;
-    border: 1px solid black;
+    /* border: 1px solid black; removed because of a double border*/
     overflow-y: scroll;
     position:fixed;
 }

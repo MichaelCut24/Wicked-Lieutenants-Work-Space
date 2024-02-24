@@ -8,20 +8,18 @@ function PrivacySecurity (){
     <>
       <div class="topbar border border-1 border-black"><SettingsBar/></div>
 
-      <div class="menuBox">
-          <div class="settingsMenu">
-            
-            <ul>
-              <li>MyAccount</li>
-              <li>Appearance</li>
-              <li><a className='activeBox'>Privacy & Security</a></li>
-              <li>Notifications</li>
-              <li>Language</li>
-              <li>Advanced</li>
-            </ul>
-            
-          </div>
+      {/*<div class="menuBox">
+        <div class="settingsMenu"> 
+          <ul>
+            <li>MyAccount</li>
+            <li>Appearance</li>
+            <li><a className='activeBox'>Privacy & Security</a></li>
+            <li>Notifications</li>
+            <li>Language</li>
+            <li>Advanced</li>
+          </ul>
         </div>
+      </div>*/}
 
         <div class="formBox">
           <div class="formHeading">Privacy & Security</div>

@@ -3,14 +3,14 @@ import React from 'react';
 import './MyAccount.css';
 import './Appearance.js';
 import SettingsBar from '../Top-Bar/Settings-Bar.js';
-import Appearance from './Appearance.js';
+
 
 function Settings (){
   return (
     <>
       <div class="topbar border border-1 border-black"><SettingsBar /></div>
      
-        <div class="menuBox">
+        {/*<div class="menuBox">
           <div class="settingsMenu">
             <nav>
               <ul>
@@ -23,9 +23,8 @@ function Settings (){
               </ul>
             </nav>
           </div>
-        </div>
-        
-        
+        </div>*/}
+
       <div class="formBox">
         <div class="formHeading">My Account</div>
         <div class="editButton">Edit</div>
