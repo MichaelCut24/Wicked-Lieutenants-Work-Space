@@ -29,6 +29,6 @@ function SettingsBar (){
     </div>
   )    
 }
-  
-  export default SettingsBar;
+export default SettingsBar;
+
   
