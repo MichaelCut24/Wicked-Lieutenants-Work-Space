@@ -5,7 +5,6 @@ import React, {useState} from "react"
 import Login from './pages/Login';
 import Home from "./pages/Home";
 import Community from './pages/Community';
-import Settings from './pages/Settings';
 import Advanced from './pages/settings-components/Advanced.js';
 
 
@@ -35,8 +34,8 @@ function App() {
                   <NavLink to="communities">Communities</NavLink>
                 </li>
                 <li>
-                <NavLink to="Settings"><i class='bx bx-cog'></i></NavLink>
-                  <NavLink to="Settings">Settings</NavLink>
+                <NavLink to="advanced"><i class='bx bx-cog'></i></NavLink>
+                  <NavLink to="advanced">Settings</NavLink>
                 </li>
               </ul>
             </div>
@@ -65,8 +64,7 @@ function App() {
               <Route exact path="/" element={<Home/>}/>
               <Route path="login" element={<Login/>}/>
               <Route path="communities" element={<Community/>}/>
-              <Route path="Settings" element={<Settings/>}/>
-              <Route path="Advanced" element={<Advanced/>}/>
+              <Route path="advanced" element={<Advanced/>}/>
             </Routes>
         </main> 
       </Router> 
