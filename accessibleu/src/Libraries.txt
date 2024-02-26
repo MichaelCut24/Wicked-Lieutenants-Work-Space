@@ -1,0 +1,7 @@
+This txt file will be for libraries needed to be installed for the app
+
+**These firebase libraries are needed for the aunthentications and database**
+npm install firebase
+npm install -g firebase-tools 
+^^^ if this does not work ^^^
+npm config set registry http://registry.npmjs.org/

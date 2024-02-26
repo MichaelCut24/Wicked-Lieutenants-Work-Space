@@ -1,26 +1,30 @@
-import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom' // React Router to create page routes/links
-import React from "react"
+import React from 'react';
 
-import "./Settings.css";
-import TopBar from "./Top Bar/Settings-Bar.js";
-import Appearance from "./settings-components/Appearance.js"
+import './MyAccount.css';
+import './Appearance.js';
+import SettingsBar from '../Top-Bar/Settings-Bar.js';
 
-function Settings() {
+
+function Settings (){
   return (
     <>
-      <div className="topbar border border-1 border-black"><TopBar/></div>
-        <div class="menuBox">
+      <div class="topbar border border-1 border-black"><SettingsBar /></div>
+     
+        {/*<div class="menuBox">
           <div class="settingsMenu">
-            <a class="activeBox">My account <br/></a>
-            <nav id='settings'>
-              <NavLink to="#">Appearance <br/></NavLink>
-              <NavLink to="#"> Privacy & Security <br/></NavLink>
-              <NavLink to="#"> Notifications <br/></NavLink>
-              <NavLink to="#"> Language <br/></NavLink>
-              <NavLink to="#"> Advanced<br/></NavLink>
+            <nav>
+              <ul>
+                <li><a className='activeBox'>My Account</a></li>
+                <li>Appearance</li>
+                <li>Privacy& Security</li>
+                <li>Notifications</li>
+                <li>Language</li>
+                <li>Advanced</li>
+              </ul>
             </nav>
           </div>
-        </div>
+        </div>*/}
+
       <div class="formBox">
         <div class="formHeading">My Account</div>
         <div class="editButton">Edit</div>
@@ -45,8 +49,10 @@ function Settings() {
           <div class="button-2fa">Enable 2FA</div>
         </div>
       </div>
+      
     </>
  );
 }
-
 export default Settings;
+
+

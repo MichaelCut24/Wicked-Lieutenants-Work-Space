@@ -1,0 +1,352 @@
+* {box-sizing: border-box;}
+
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Shows which page you are currently on */
+.activeBox {
+	width: 230px;
+	height: 42px;
+	padding: 8px 8px 8px 8px;
+	background: #F3F3F3;
+	border-radius: 8px 8px 8px 8px;
+	font-weight: bolder;
+}
+
+/* Menu box */
+.menuBox {
+	width: 270px;
+	height: 290px;
+	padding: 8px 8px 8px 8px;
+	background: white;
+	border-radius: 16px 16px 16px 16px;
+    margin-left: 20%;
+    margin-top: 2%;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* Menu */
+.settingsMenu {
+	width: 221px;
+	height: 274px;
+	color: #202123;;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 3;
+	text-align: left;
+    margin-left: 3%;
+    float: inline-end;
+    border-color: black;
+	line-break: loose;
+}
+
+/* Form Box */
+.formBox {
+	width: 480px;
+	height: 687px;
+	padding: 8px 8px 8px 8px;
+	background: #FFFFFF;
+	border-radius: 34px 34px 34px 34px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    float: inline-end;
+    margin-right: 25%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Form heading */
+.formHeading {
+	width: 186px;
+	height: 28px;
+	color: #202123;
+	float: center;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 1.3;
+	text-align: left;
+    float: inline-start;
+    margin-top: 5%;
+    margin-left: 5%;
+	text-wrap: nowrap;
+}
+
+/* Edit Button */
+.editButton {
+	width: 76px;
+	height: 40px;
+	padding: 8px 16px 8px 16px;
+	background: #202123;
+	color: #FFFFFF;
+	border-color: #202123;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 4px 4px 4px 4px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.3;
+	text-align: center;
+    float: inline-end;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+/* 2 factor authentication button */
+.button-2fa{
+    width: 150px;
+	height: 40x;
+	padding: 8px 16px 8px 16px;
+	background: #202123;
+	color: #FFFFFF;
+	border-color: #202123;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 4px 4px 4px 4px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.3;
+	text-align: center;
+    margin-top: 10px;
+}
+ 
+/* Formatting the change password button */
+.button-chgPsw {
+	width: 200px;
+	height: 40x;
+	padding: 8px 16px 8px 16px;
+	background: #202123;
+	color: #FFFFFF;
+	border-color: #202123;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 4px 4px 4px 4px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.3;
+	text-align: center;
+    margin-top: 10px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+input [type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Outlines box blue to show where cursor is*/
+input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Information container */
+.infoContainer {
+    margin-top: 10%;
+    float: bottom;
+}
+
+/* Spacing for standard menu spacing */
+.option-main{
+	margin-bottom: 30px;
+  }
+
+/* Spacing for notification menu */
+.option-heading {
+	padding-top: 20px;
+	margin-bottom: -10px;
+	font-weight: bold;
+}
+
+.option-a {
+	margin-left: 30px;
+	margin-bottom: -25px;
+}
+
+.option-b {
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+
+/* Main toggle switch postion */
+.toggle-switch-main {
+	position: relative;
+	left: 21.7em;
+	bottom: 2.2em;
+	display: inline-block;
+	width: 49px;
+	height: 20px;
+	border-color: rgb(129, 128, 128);
+    border-style: solid;
+    border-width: 2px;
+	border-radius: 30px 30px 30px 30px;
+  }
+
+/* Submenu toggle switch position */
+.toggle-switch-sub {
+	position: relative;
+	left: 20em;
+	bottom: 2.2em;
+	display: inline-block;
+	width: 49px;
+	height: 20px;
+	border-color: rgb(129, 128, 128);
+    border-style: solid;
+    border-width: 2px;
+	border-radius: 30px 30px 30px 30px;
+}
+  
+.toggle-switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+  
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgb(243, 240, 240);
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 34px;
+}
+  
+/* Inside slider cirlce */
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 10px;
+	width: 10px;
+	left: 4px;
+	top: 3px;
+	background-color: rgb(245, 238, 238);
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 50%;
+}
+
+.slider:after {
+	position: absolute;
+	content: "";
+	height: 10px;
+	width: 10px;
+	left: 4px;
+	top: 3px;
+	background-color: rgb(10, 10, 10);
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 50%;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+input:checked + .slider:after {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+	background-color: white;
+}
+
+input:checked + .slider {
+	background-color: #414241;
+}
+  
+input:focus + .slider {
+	box-shadow: 0 0 1px #6d6c6c;
+}
+
+.font-menu {
+	padding-bottom: 20px;
+}
+
+.font-menu select {
+	border: 1px solid #969494; /* Set the border color and style */
+	padding: 8px; /* Add padding for better visual appearance */
+	border-radius: 4px; /* Add border-radius for rounded corners, if desired */
+	width: 200px; /* Set the width as needed */
+}
+
+.font-size-button {
+	border-radius: 34px 34px 34px 34px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+	font-size: 20px ; /* Adjust the font size as needed */
+	margin: 0 20px;   /* Adjust the margin as needed */
+	padding: 3px 3px; /* Adjust the padding as needed */
+}
+
+button {
+	cursor: pointer;
+	padding: 8px 16px;
+	font-size: 14px;
+	background-color: #6d6c6c;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	margin-right: 5px;
+}
+
+#subHeadings li {
+	list-style: none;
+	font-weight: bold;
+	padding-top: 0px;
+}
+
+.language-menu {
+	padding-bottom: 10px;
+}
+
+.language-menu select {
+	border: 1px solid #969494; /* Set the border color and style */
+	padding: 8px; /* Add padding for better visual appearance */
+	border-radius: 4px; /* Add border-radius for rounded corners, if desired */
+	width: 200px; /* Set the width as needed */
+}
+
+/* Description text for advanced page */
+.description {
+	font-size: .75em;
+	font-weight: 100;
+	text-align: left;
+	text-wrap: balance;
+	margin-top: -40px;
+}
+
+#feedHeading li {
+	list-style: none;
+	font-weight: bold;
+	padding-top: 40px;
+}
+
+ 

@@ -1,6 +1,6 @@
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect, useState } from "react";
-import { auth } from "../Firebase";
+import { auth } from "./Firebase";
 
 function LoginState() {
     const [authUser, setAuthUser] = useState(null);
