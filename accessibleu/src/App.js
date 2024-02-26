@@ -22,25 +22,25 @@ function App() {
     <>
       <Router> {/* Everything related to the page routing will be put inside here */} 
           <nav className= "nav"> {/* Navigation Bar component */}
-            <div class="logo">
+            <div className="logo">
               <img src="./nobg-logoWH.png" atl="logo"></img>
             </div>
             <div className='NavLinks'>
               <ul>
                 <li>
-                  <NavLink to="/"><i class='bx bx-home'></i></NavLink>
+                  <NavLink to="/"><i className='bx bx-home'></i></NavLink>
                   <a><NavLink to="/">Home</NavLink></a>
                 </li>
                 <li>
-                  <NavLink to="login"><i class='bx bx-log-in-circle'></i></NavLink>
+                  <NavLink to="login"><i className='bx bx-log-in-circle'></i></NavLink>
                   <NavLink to="login">Login</NavLink>
                 </li>
                 <li>
-                  <NavLink to="communities"><i class='bx bx-group'></i></NavLink>
+                  <NavLink to="communities"><i className='bx bx-group'></i></NavLink>
                   <NavLink to="communities">Communities</NavLink>
                 </li>
                 <li>
-                  <NavLink to="settings"><i class='bx bx-cog'></i></NavLink>
+                  <NavLink to="settings"><i className='bx bx-cog'></i></NavLink>
                   <NavLink to="settings" onClick={toggleDropdown} className="dropdown-toggle">Settings</NavLink>
                   <li>
                     <div className="dropdown">
@@ -62,7 +62,7 @@ function App() {
 
             </div>
             <div className='bar'>
-              <span class="material-symbols-outlined"></span>
+              <span className="material-symbols-outlined"></span>
             </div>
             <footer className='footnav'>
                   <div className='lownav'>
