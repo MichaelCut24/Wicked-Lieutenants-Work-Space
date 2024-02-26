@@ -3,66 +3,44 @@ import React, {useState} from "react"
 
 // IMPORT YOUR .JS PAGE HERE
 import Login from './pages/Login';
-import Home from './pages/Home';
+import Home from "./pages/Home";
 import Community from './pages/Community';
-import MyAccount from './pages/settings-components/MyAccount';
-import Appearance from './pages/settings-components/Appearance';
-import PrivacySecurity from './pages/settings-components/Privacy-Security';
-import Notifications from './pages/settings-components/Notifications';
-import Language from './pages/settings-components/Language';
-import Advanced from './pages/settings-components/Advanced';
+import Advanced from './pages/settings-components/Advanced.js';
+
 
 import './App.css';
 
 function App() {
   const[isNavOpen, setIsNavOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleDropdown = () => {setIsOpen(!isOpen);};
   return (
     <>
       <Router> {/* Everything related to the page routing will be put inside here */} 
           <nav className= "nav"> {/* Navigation Bar component */}
-            <div className="logo">
+            <div class="logo">
               <img src="./nobg-logoWH.png" atl="logo"></img>
             </div>
             <div className='NavLinks'>
               <ul>
                 <li>
-                  <NavLink to="/"><i className='bx bx-home'></i></NavLink>
+                  <NavLink to="/"><i class='bx bx-home'></i></NavLink>
                   <a><NavLink to="/">Home</NavLink></a>
                 </li>
                 <li>
-                  <NavLink to="login"><i className='bx bx-log-in-circle'></i></NavLink>
+                  <NavLink to="login"><i class='bx bx-log-in-circle'></i></NavLink>
                   <NavLink to="login">Login</NavLink>
                 </li>
                 <li>
-                  <NavLink to="communities"><i className='bx bx-group'></i></NavLink>
+                  <NavLink to="communities"><i class='bx bx-group'></i></NavLink>
                   <NavLink to="communities">Communities</NavLink>
                 </li>
                 <li>
-                  <NavLink to="settings"><i className='bx bx-cog'></i></NavLink>
-                  <NavLink to="settings" onClick={toggleDropdown} className="dropdown-toggle">Settings</NavLink>
-                  <li>
-                    <div className="dropdown">
-                      {isOpen && (
-                        <ul className="dropdown-menu">
-                          <li><a href="myaccount">MyAccount</a></li>
-                          <li><a href="appearance">Appearance</a></li>
-                          <li><a href="privacySecurity">Privacy & Security</a></li>
-                          <li><a href="notifications">Notifications</a></li>
-                          <li><a href="language">Language</a></li>
-                          <li><a href="advanced">Advanced</a></li>
-                        </ul>
-                      )}
-                    </div>
-                    </li>
+                <NavLink to="advanced"><i class='bx bx-cog'></i></NavLink>
+                  <NavLink to="advanced">Settings</NavLink>
                 </li>
-                
               </ul>
-
             </div>
             <div className='bar'>
-              <span className="material-symbols-outlined"></span>
+              <span class="material-symbols-outlined"></span>
             </div>
             <footer className='footnav'>
                   <div className='lownav'>
@@ -86,12 +64,7 @@ function App() {
               <Route exact path="/" element={<Home/>}/>
               <Route path="login" element={<Login/>}/>
               <Route path="communities" element={<Community/>}/>
-              <Route path="myAccount" element={<MyAccount />}/>
-              <Route path="appearance" element={<Appearance />}/>
-              <Route path="privacySecurity" element={<PrivacySecurity />}/>
-              <Route path="notifications" element={<Notifications />}/>
-              <Route path="language" element={<Language />}/>
-              <Route path="advanced" element={<Advanced />}/>
+              <Route path="advanced" element={<Advanced/>}/>
             </Routes>
         </main> 
       </Router> 

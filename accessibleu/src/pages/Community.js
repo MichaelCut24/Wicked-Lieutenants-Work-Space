@@ -37,12 +37,7 @@ export default function Community(){
                 </div>
             </div>
             <footer className=" BottomSection">
-                <p className='ServerName'> University of North Texas.U</p>
-                <div className='CreatePost'>
-                    <a href ='#'>
-                        <p> Create A Post <span className="plus"> + </span></p>
-                    </a>
-                </div>  
+                <p className='ServerName'> University of North Texas.U</p> 
             </footer>
     </div>
       );
