@@ -1,5 +1,5 @@
 import "./Home.css"
-import TopBar from './Top Bar/TopBar.js';
+import TopBar from './Top-Bar/TopBar.js';
 import Feed from "./home-components/Feed.js";
 
 function Home(){
