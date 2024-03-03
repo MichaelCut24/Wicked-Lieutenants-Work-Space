@@ -4,7 +4,7 @@ import PopCreate from './login-components/PopCreate.js';
 import LoginState from './login-components/firebase-auth/LoginState.js';
 import SignInForm from './login-components/firebase-auth/SignIn.js';
 import FirebaseGoogle from './login-components/firebase-auth/FirebaseGoogle.js';
-import SignUpForm from './login-components/firebase-auth/SignUp.js';
+
 import Post from './database/Post.js';
 
 function Login() {
@@ -30,7 +30,7 @@ function Login() {
                     <div className="form absolute border boder-1 border-black"> {/* Login form container */}
                         <div className=" flex flex-col container"> 
                             <SignInForm/>
-                            <SignUpForm/>
+                            
                             <div className='third_party mt-4'> {/* Third Party login options divider */}
                                 <FirebaseGoogle/>
                             </div>

@@ -1,14 +1,14 @@
-import { auth } from "./Firebase";
+import { auth, db } from "./Firebase";
 import { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { collection, addDoc } from "firebase/firestore";
 
 
 function SignUpForm(){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-
     
-    const SignUp = (e) =>{
+    const SignUp = async (e) =>{
         e.preventDefault();
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
@@ -18,6 +18,14 @@ function SignUpForm(){
         })
     }
 
+    // adds data to firestore
+    const docRef = async () => {
+            await addDoc(collection(db, "Users"), {
+            email,
+            password
+          });
+          console.log("Document written with ID: ", docRef.id);
+    } 
 
     return(
         <form onSubmit={SignUp}>
