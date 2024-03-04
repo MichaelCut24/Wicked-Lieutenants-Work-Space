@@ -6,28 +6,15 @@
 }
 
 .TopSection{
-  margin: auto;
   position: absolute;
   width: 100vw;
-  padding: 10px;
+  background-color: white;
 }
-
-.TopSection .TopBtns{
-  color: black;
-  position: fixed;
-  display: flex;
-  gap: 120px;
-  font-size: 200%;
-  padding-top: 10px;
-  padding-left: 200px;
-  align-content: center;
-}
-
 
 .TopSearchBar{
   position: fixed;
   left: 35%;
-  top: 2%;
+  top: 1%;
 }
 
 .TopSearchBar input{
@@ -37,7 +24,7 @@
   border-radius: 30px;
   border: 1px solid rgb(230, 230, 230,);
   background-color: rgb(245,245,245);
-
+  color:black
 }
 
 .TopSearchBar input:hover{
@@ -54,44 +41,13 @@
   height: 100vh;
 }
 
-h1{
-  text-shadow: 0cqw;
-  font-size: 2em;
-  font-style: bold;
-  color: blue;
-}
-.ServerName{
-  text-shadow: 0cqw;
-  font-size: 2em;
-}
-
 .RecentPost{
   position: fixed;
   border: 1px solid black;
   margin-left: 11.95rem;
   aspect-ratio: 16 / 9;
-  top: 8%;
-  width: 1730px;
-}
-
-.BottomSection{
-  position: fixed;
-  display:black;
-  background-color: white;
-  border: 2px solid black;
-  top:95%;
-  bottom: 0%;
+  top: 7%;
   width: 100vw;
-  height: 5vh;
-  margin: auto;
-}
-
-.BottomSection .ServerName{
-  position: static;
-  text-align:center;
-  padding-top: 1px;
-  font-size: xx-large;
-  font-weight: bold;
 }
 
 .communities-container{
@@ -106,33 +62,23 @@ h1{
   position:fixed;
   right: 5%;
   border: none;
+  /* FireFox and Edge Hide Scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.feed-container::-webkit-scrollbar{
+/* Google Chrom Hide Scrollbar */
+.feed-container::-webkit-scrollbar {
   display: none;
 }
 
-@media only screen and (min-height: 0px) and (max-height: 900px){
-  .TopSection .TopBtns{
-    color: black;
-    position: fixed;
-    display: flex;
-    gap: 70px;
-    font-size: 200%;
-    padding-top: 10px;
-    padding-left: 200px;
-    align-content: center;
-  }
+.About{
+  position: fixed;
+  top: 20%;
+  left: 75%
+}
 
-  .BottomSection .CreatePost{
-    position: absolute;
-    right: 10px;
-    top: 15%;
-    background-color: black;
-    padding: 1px 5px 5px 5px;
-    border-radius: 10%/50%;
-    width: 20%;
-  }
+@media only screen and (min-height: 0px) and (max-height: 900px){
 
   .TopSearchBar input{
     min-width: 500px;
@@ -143,17 +89,15 @@ h1{
     background-color: rgb(245,245,245);
   
   }
-  
-  .TopSearchBar input:hover{
-    border-color: green;
-    background-color: white;
+
+  .RecentPost{
+    position: fixed;
+    border: 1px solid black;
+    aspect-ratio: 16 / 9;
+    top: 8%;
+    width: 100vw;
   }
 
-  .BottomSection .CreatePost p:hover{
-    color: #95a2f1;
-    transition: all 0.3s ease;
-  }
-  
   
 }
 

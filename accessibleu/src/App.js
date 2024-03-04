@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom' // React Router to create page routes/links
-import React, {useState} from "react"
+//import React, {useState} from "react"
 
 // IMPORT YOUR .JS PAGE HERE
 import Login from './pages/Login';
@@ -11,7 +11,7 @@ import Advanced from './pages/settings-components/Advanced.js';
 import './App.css';
 
 function App() {
-  const[isNavOpen, setIsNavOpen] = useState(false);
+  /*const[isNavOpen, setIsNavOpen] = useState(false);*/
   return (
     <>
       <Router> {/* Everything related to the page routing will be put inside here */} 
