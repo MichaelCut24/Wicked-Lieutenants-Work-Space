@@ -1,4 +1,9 @@
 import "./Feed.css";
+
+import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+
 import {
     Player,
     ControlBar,
@@ -11,6 +16,58 @@ import {
 } from 'video-react';
 
 function Feed() {
+    const [likesCount, setLikesCount] = useState(
+        parseInt(localStorage.getItem('likesCount')) || 0
+      );
+      const incrementLikes = () => {
+        const newLikesCount = likesCount + 1;
+        setLikesCount(newLikesCount);
+        localStorage.setItem('likesCount', newLikesCount);
+      };
+      useEffect(() => {
+        localStorage.setItem('likesCount', likesCount);
+      }, [likesCount]);
+      /*like button 1*/
+
+      const [likesCountt, setLikesCountt] = useState(
+        parseInt(localStorage.getItem('likesCountt')) || 0
+      );
+      const incrementLikess = () => {
+        const newLikesCountt = likesCountt + 1;
+        setLikesCountt(newLikesCountt);
+        localStorage.setItem('likesCountt', newLikesCountt);
+      };
+      useEffect(() => {
+        localStorage.setItem('likesCountt', likesCountt);
+      }, [likesCountt]);
+      /* like button 2*/
+
+      const [likesCounttt, setLikesCounttt] = useState(
+        parseInt(localStorage.getItem('likesCounttt')) || 0
+      );
+      const incrementLikesss = () => {
+        const newLikesCounttt = likesCounttt + 1;
+        setLikesCounttt(newLikesCounttt);
+        localStorage.setItem('likesCounttt', newLikesCounttt);
+      };
+      useEffect(() => {
+        localStorage.setItem('likesCounttt', likesCounttt);
+      }, [likesCounttt]);
+      /*like button 3*/
+
+      const [likesCountttt, setLikesCountttt] = useState(
+        parseInt(localStorage.getItem('likesCountttt')) || 0
+      );
+      const incrementLikessss = () => {
+        const newLikesCountttt = likesCountttt + 1;
+        setLikesCountttt(newLikesCountttt);
+        localStorage.setItem('likesCountttt', newLikesCountttt);
+      };
+      useEffect(() => {
+        localStorage.setItem('likesCountttt', likesCountttt);
+      }, [likesCountttt]);
+      /*like button 4*/
+
     return (
         <div className="feed-container">
             <div class="communities-container">
@@ -38,17 +95,8 @@ function Feed() {
                             <p>Description</p>
                         </div>
                     </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Community</h3>
-                            <p>Title</p>
-                            <p>Description</p>
-                        </div>
-                    </div>
                 </div>
             </div>   
-        
 
             <div className="contents-container space-y-10">
                 <div className="border border-1 border-black"> 
@@ -59,10 +107,10 @@ function Feed() {
                     <div className="border border-1 border-black">
                         <p> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
+
                     <div className="flex border border-1 border-black">
-                        <div className="border border-1 border-black"> Likes</div>
-                        <div className="border border-1 border-black"> Comments</div>
-                        <div className="border border-1 border-black"> Share</div>
+                    <button class="likeButton" onClick={() => setLikesCount(likesCount + 1)}><FontAwesomeIcon icon={faHeart}/></button>
+                    <h4 class="totalLikes">{likesCount}</h4>
                     </div>
                 </div>
 
@@ -88,9 +136,25 @@ function Feed() {
                             </Player>
                         </div>
                         <div className=" flex border border-1 border-black">
-                            <div className="border border-1 border-black">Likes</div>
-                            <div className="border border-1 border-black">Comments</div>
-                            <div className="border border-1 border-black">Share</div>
+                        <button class="likeButtonn" onClick={() => setLikesCountt(likesCountt + 1)}>
+                    <FontAwesomeIcon icon={faHeart} /></button>
+                    <h4 class="totalLikess">{likesCountt}</h4>
+                        </div>
+                        </div>
+                        <div className="border boder-1 border-black">
+                </div>
+
+                <div className="border boder-1 border-black">
+                    <div className="border border-1 border-black">a/community</div>
+                        <div className="border border-1 border-black">
+                            <h2>Title</h2>
+                        </div>
+                        <div className="border border-1 border-black text-sm">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div className="flex border border-1 border-black">
+                        <button class="likeButtonnn" onClick={() => setLikesCounttt(likesCounttt + 1)}><FontAwesomeIcon icon={faHeart} /></button>
+                    <h4 class="totalLikesss">{likesCounttt}</h4>     
                         </div>
                     </div>
                     <div className="border boder-1 border-black">
@@ -105,26 +169,8 @@ function Feed() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
                         <div className="flex border border-1 border-black">
-                            <div className="border border-1 border-black">Likes</div>
-                            <div className="border border-1 border-black">Comments</div>
-                            <div className="border border-1 border-black">Share</div>
-                        </div>
-                    </div>
-                    <div className="border boder-1 border-black">
-                </div>
-
-                <div className="border boder-1 border-black">
-                    <div className="border border-1 border-black">a/community</div>
-                        <div className="border border-1 border-black">
-                            <h2>Title</h2>
-                        </div>
-                        <div className="border border-1 border-black text-sm">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div className="flex flex row border border-1 border-black">
-                            <div className="border border-1 border-black">Likes</div>
-                            <div className="border border-1 border-black">Comments</div>
-                            <div className="border border-1 border-black">Share</div>
+                        <button class="likeButtonnnn" onClick={() => setLikesCountttt(likesCountttt + 1)}><FontAwesomeIcon icon={faHeart} /></button>
+                        <h4 class="totalLikessss">{likesCountttt}</h4>   
                         </div>
                     </div>
                     <div className="border boder-1 border-black">

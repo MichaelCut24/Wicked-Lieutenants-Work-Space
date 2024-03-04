@@ -7,7 +7,6 @@ import Home from "./pages/Home";
 import Community from './pages/Community';
 import Advanced from './pages/settings-components/Advanced.js';
 
-
 import './App.css';
 
 function App() {
