@@ -11,7 +11,7 @@ function Popup(props) {
             <br></br>
 
           <SignUpForm/>
-
+          
             {/*<input type="text" placeholder="Enter your first name" name="firstname" required/>
             <input type="text" placeholder="Enter your last name" name="lastname" required/>
             <input type="text" placeholder="Enter your Username" name="Username" required/>
