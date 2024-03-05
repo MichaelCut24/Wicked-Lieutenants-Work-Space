@@ -39,24 +39,21 @@ function App() {
                   <NavLink to="communities"><i class='bx bx-group'></i></NavLink>
                   <NavLink to="communities">Communities</NavLink>
                 </li>
-                <li>
-                  <li><a onClick={toggleDropdown} className="dropdown-toggle" i class='bx bx-cog'>Settings</a></li>
-                    <li>
-                      <div className="dropdown">
-                        {isOpen && (
-                          <ul className="dropdown-menu">
-                            <li><a href="myaccount">MyAccount</a></li>
-                            <li><a href="appearance">Appearance</a></li>
-                            <li><a href="privacySecurity">Privacy & Security</a></li>
-                            <li><a href="notifications">Notifications</a></li>
-                            <li><a href="language">Language</a></li>
-                            <li><a href="advanced">Advanced</a></li>
-                          </ul>
-                        )}
-                      </div>
-                    </li>
-                </li>
-                
+                <li className='dropdown-toggle'><a onClick={toggleDropdown} className="dropdown-toggle" i class='bx bx-cog'>Settings</a></li>
+                  <li>
+                    <div className="dropdown">
+                      {isOpen && (
+                        <ul className="dropdown-menu">
+                          <li><NavLink to ="myaccount">MyAccount</NavLink></li>
+                          <li><NavLink to ="appearance">Appearance</NavLink></li>
+                          <li><NavLink to ="privacySecurity">Privacy & Security</NavLink></li>
+                          <li><NavLink to ="notifications">Notifications</NavLink></li>
+                          <li><NavLink to ="language">Language</NavLink></li>
+                          <li><NavLink to ="advanced">Advanced</NavLink></li>
+                        </ul>
+                      )}
+                    </div>
+                  </li>
               </ul>
 
             </div>
