@@ -14,6 +14,7 @@ export default function Post() {
       ),
     []
   );
+  
   return(
     <div>   
         {posts.map((post) => (
@@ -30,8 +31,7 @@ export default function Post() {
               <div className="border border-1 border-black"> Likes</div>
               <div className="border border-1 border-black"> Comments</div>
               <div className="border border-1 border-black"> Share</div>
-            </div>
-            
+            </div>  
           </div>
         ))}
 

@@ -5,9 +5,11 @@ import LoginState from './login-components/firebase-auth/LoginState.js';
 import SignInForm from './login-components/firebase-auth/SignIn.js';
 import FirebaseGoogle from './login-components/firebase-auth/FirebaseGoogle.js';
 import SignUpForm from './login-components/firebase-auth/SignUp.js';
+import Post from './home-components/Post.js';
 
 function Login() {
     return (
+        <>
         <div className="page flex flex-row">{/* Whole page container */}
             <div className="relative w-2/3 "> {/* Left half of page divider */}
                 <div className="wlcmsg absolute mt-1/4"> {/* Login message container */}
@@ -42,8 +44,12 @@ function Login() {
                 <div>
                     <LoginState/>
                 </div>   
-            </div> 
+            </div>
         </div>
+        <div className='w-1/2 m-96'>
+            <Post/>
+        </div> 
+        </>
     );
 }
 
