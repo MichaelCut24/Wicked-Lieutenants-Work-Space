@@ -8,6 +8,8 @@
 
 import './Community.css'
 import React from "react"
+import Feed from './home-components/Feed'
+import About from './communities-components/About.css'
 
 export default function Community(){
     return (
