@@ -5,7 +5,7 @@ import LoginState from './login-components/firebase-auth/LoginState.js';
 import SignInForm from './login-components/firebase-auth/SignIn.js';
 import FirebaseGoogle from './login-components/firebase-auth/FirebaseGoogle.js';
 
-import Post from './database/Post.js';
+import Post from './home-components/Post.js';
 
 function Login() {
     return (
