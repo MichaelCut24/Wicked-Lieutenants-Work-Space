@@ -30,14 +30,14 @@ function LoginState() {
         <div>
             {authUser ? 
                 <>
-                    <p>Signed In as {authUser.email}</p>
+                    <p>Signed In as {authUser.email}{authUser.UserUID}</p>
                     <p>
                         <button onClick={userSignOut}>Sign Out</button>
                     </p>
                 </> 
             : 
                 <>
-                    <p>Singed Out</p>
+                    <p>Signed Out</p>
                 </>
             }
         </div>
