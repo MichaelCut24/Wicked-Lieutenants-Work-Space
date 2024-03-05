@@ -1,6 +1,7 @@
 import { collection, onSnapshot } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "../login-components/firebase-auth/Firebase";
+import "./Post.css"
 
 
 export default function Post() {
@@ -14,15 +15,26 @@ export default function Post() {
     []
   );
   return(
-    <div>
-      <ul>
+    <div>   
         {posts.map((post) => (
-          <li>
-            <p>username: {post.username}</p>
-            <p>content: {post.contents}</p>
-          </li>
+          <div className="border border-1 border-black">
+             
+            <div className="border border-1 border-black">
+              <p>{post.username}</p>
+            </div>
+            <div className="border border-1 border-black">
+              <p>{post.contents}</p>
+            </div>
+
+            <div className="flex border border-1 border-black">
+              <div className="border border-1 border-black"> Likes</div>
+              <div className="border border-1 border-black"> Comments</div>
+              <div className="border border-1 border-black"> Share</div>
+            </div>
+            
+          </div>
         ))}
-      </ul>
+
     </div>
   );
 }
