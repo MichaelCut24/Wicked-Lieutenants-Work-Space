@@ -9,6 +9,7 @@
 import './Community.css'
 import React from "react"
 import About from "./communities-components/About.js"
+import Feed from "./home-components/Feed.js"
 
 export default function Community(){
     return (
