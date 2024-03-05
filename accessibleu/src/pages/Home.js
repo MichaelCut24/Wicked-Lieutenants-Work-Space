@@ -6,7 +6,7 @@ function Home(){
   return (
     <>
         <div className="topbar border border-1 border-black"><TopBar/></div>
-      <Feed/> 
+        <div className="feed"><Feed/> </div>
     </>
   );
 }

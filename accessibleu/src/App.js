@@ -1,5 +1,5 @@
-import { BrowserRouter as useState, Router, Routes, Route, NavLink} from 'react-router-dom' // React Router to create page routes/links
-//import React, {useState} from "react"
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom'; // React Router to create page routes/links
+import React, {useState} from "react"
 
 // IMPORT YOUR .JS PAGE HERE
 import Login from './pages/Login';
@@ -15,7 +15,7 @@ import Advanced from './pages/settings-components/Advanced';
 import './App.css';
 
 function App() {
-  const[isNavOpen, setIsNavOpen] = useState(false);
+  /*const[isNavOpen, setIsNavOpen] = useState(false);*/
   const [isOpen, setIsOpen] = useState(false);
   const toggleDropdown = () => {setIsOpen(!isOpen);};
   /*const[isNavOpen, setIsNavOpen] = useState(false);*/
