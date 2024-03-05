@@ -88,7 +88,7 @@
 .TopSearchBar{
   position: fixed;
   left: 35%;
-  top: 1%;
+  top: 2%;
 }
 
 .TopSearchBar input{
@@ -98,7 +98,7 @@
   border-radius: 30px;
   border: 1px solid rgb(230, 230, 230,);
   background-color: rgb(245,245,245);
-  color:black
+
 }
 
 .TopSearchBar input:hover{
@@ -113,6 +113,17 @@
   border: 1px solid black;
   width: 100vw;
   height: 100%;
+}
+
+h1{
+  text-shadow: 0cqw;
+  font-size: 2em;
+  font-style: bold;
+  color: blue;
+}
+.ServerName{
+  text-shadow: 0cqw;
+  font-size: 2em;
 }
 
 .RecentPost{
