@@ -61,34 +61,67 @@
     top:0;
     left:0;
 }
-
-.fa-thumbs-up{
-    float: left;
-    width: 5%;   
-    user-select: none;
-   }
-.fa-thumbs-up:hover {
-    color: darkblue;
+/* like button 1*/
+ .likeButton:hover {
+        color: red;
+     }
+.likeButton{
+    width: 5%;
+}
+.totalLikes {
+    color: black;
+    font-size: 13px;
+    width: 8%;
+    font-weight: bold;
   }
-  .fa-thumbs-up {
-    display: flex;
-    justify-content: center;
+
+/*like button 2*/          
+.likeButtonn:hover {
+    color: red;
  }
+.likeButtonn{
+width: 5%;
 
-   .fa-comment{
-       float: left;
-       width: 5%;   
-      }
-    .fa-comment:hover {
-        color: darkblue;
-      }
+}
+.totalLikess {
+color: black;
+font-size: 13px;
+width: 8%;
+font-weight: bold;
+}
 
-   .fa-share{
-       float: left;
-       width: 5%;   
-      }
-    .fa-share:hover {
-        color: darkblue;
-      }
+/*like button 3*/
+.likeButtonnn:hover {
+    color: red;
+ }
+.likeButtonnn{
+width: 5%;
 
-    
+}
+.totalLikesss {
+color: black;
+font-size: 13px;
+width: 8%;
+font-weight: bold;
+}
+
+/*like button 4*/
+.likeButtonnnn:hover {
+    color: red;
+ }
+.likeButtonnnn{
+width: 5%;
+}
+button.liked {
+    background-color: white;
+    color: red;
+  }
+.totalLikessss {
+color: black;
+font-size: 13px;
+width: 8%;
+font-weight: bold;
+}
+
+
+      

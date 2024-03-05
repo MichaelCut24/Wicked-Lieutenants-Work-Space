@@ -1,0 +1,95 @@
+.Aboutbox{
+    
+    width: 302px;
+    height: 400px;
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 5% 5% 0px 0px;
+}
+
+.Aboutbox .ServerName{
+    text-decoration: none;
+    text-align: center;
+    font-size: 110%;
+    font-weight: bolder;
+    color: Black;
+    padding-bottom: 8px;
+    padding-top: 10px;
+}
+
+.Aboutbox .Info{
+    text-decoration: none;
+    text-align: left;
+    font-size: 90%;
+    color: Black;
+    letter-spacing: 1px;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.Aboutbox .CreatePost{
+    font-size: 100%;
+    width: 250px;
+    height: 30px;
+    border: 1px solid ;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    position: relative;
+    top: 23%;
+    left: 10%;
+}
+
+.Aboutbox .CreatePost:hover{
+    border: gray;
+    color: grey;
+    transition: all 0.2s ease;
+}
+
+.Aboutbox .Rules{
+    position: relative;
+    width: 302px;
+    background-color: white;
+    border: 2px solid grey;
+    padding-left: 10px;
+    top: 26%;
+    right:.5%;
+}
+
+.Rules h1{
+    font-size: 100%;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.Aboutbox .bar{
+    font-size: 100px;
+    width: 18rem;
+    border: 1px solid grey;
+    max-height: 1px;
+    position: relative;
+    left: 2%;
+    top: 5%;
+}
+
+.Aboutbox .bar2{
+    font-size: 100px;
+    width: 18rem;
+    border: 1px solid grey;
+    max-height: 1px;
+    position: relative;
+    left: 2%;
+    top: 20%;
+}
+
+.Aboutbox .stats{
+    text-decoration: none;
+    text-align: left;
+    font-size: 90%;
+    color: Black;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    position: relative;
+    top: 10%;
+}
