@@ -4,12 +4,19 @@
     /* border: 1px solid black; removed because of a double border*/
     overflow-y: scroll;
     position:fixed;
+    /* FireFox and Edge Hide Scrollbar */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+.feed-container::-webkit-scrollbar {
+    display: none;
+  }
 
 .contents-container{
     position: relative;
     width:45vw;
-    left: 25%;
+    left: 33%;
 }
 
 
@@ -19,18 +26,18 @@
     padding: 0px 10px;
     max-width: 60vw;
     position: relative;
-    left: 10rem;
+    left: 14rem;
 }
 
 /* Float four columns side by side */
 .column {
     float: left;
-    width: 25%;
-    padding: 20px 20px;
+    width: 30%;
+    padding: 30px 20px;
     }
     
     /* Remove extra left and right margins, due to padding */
-    .row {margin: 0 -5px;}
+    .row {margin: 0 -115px;}
     
     /* Clear floats after the columns */
     .row:after {
@@ -41,7 +48,7 @@
     
     /* Style the counter cards */
     .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
     background-color: #f1f1f1;
@@ -61,3 +68,67 @@
     top:0;
     left:0;
 }
+/* like button 1*/
+ .likeButton:hover {
+        color: red;
+     }
+.likeButton{
+    width: 5%;
+}
+.totalLikes {
+    color: black;
+    font-size: 13px;
+    width: 8%;
+    font-weight: bold;
+  }
+
+/*like button 2*/          
+.likeButtonn:hover {
+    color: red;
+ }
+.likeButtonn{
+width: 5%;
+
+}
+.totalLikess {
+color: black;
+font-size: 13px;
+width: 8%;
+font-weight: bold;
+}
+
+/*like button 3*/
+.likeButtonnn:hover {
+    color: red;
+ }
+.likeButtonnn{
+width: 5%;
+
+}
+.totalLikesss {
+color: black;
+font-size: 13px;
+width: 8%;
+font-weight: bold;
+}
+
+/*like button 4*/
+.likeButtonnnn:hover {
+    color: red;
+ }
+.likeButtonnnn{
+width: 5%;
+}
+button.liked {
+    background-color: white;
+    color: red;
+  }
+.totalLikessss {
+color: black;
+font-size: 13px;
+width: 8%;
+font-weight: bold;
+}
+
+
+      
