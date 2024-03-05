@@ -4,7 +4,14 @@
     /* border: 1px solid black; removed because of a double border*/
     overflow-y: scroll;
     position:fixed;
+    /* FireFox and Edge Hide Scrollbar */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+.feed-container::-webkit-scrollbar {
+    display: none;
+  }
 
 .contents-container{
     position: relative;
