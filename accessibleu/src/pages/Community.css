@@ -5,10 +5,84 @@
   height: 100%;
 }
 
-.TopSection{
+.Homebutton{
   position: absolute;
-  width: 100vw;
+  left: 10.2%;
+  top: 2%;
+  width: 40px
+}
 
+.Messages{
+  position: absolute;
+  left: 15%;
+  top: 2%;
+  width: 40px
+}
+
+.Bell{
+  position: absolute;
+  left: 20%;
+  top: 2%;
+  width: 40px
+}
+
+.Messages:hover{
+  background-color: grey;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.Bell:hover{
+  background-color: grey;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+@media only screen and (min-width: 2560px){
+  .Homebutton{
+    position: absolute;
+    margin-left: 1rem;
+    left: 7%;
+    top: 2%;
+    width: 40px
+  }
+
+  .Messages{
+    position: absolute;
+    left: 11.5%;
+    top: 2%;
+    width: 40px
+  }
+  
+  .Bell{
+    position: absolute;
+    left: 15%;
+    top: 2%;
+    width: 40px
+  }
+}
+.Homebutton:hover{
+  background-color: grey;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.CreatePost{
+  position: fixed;
+  right: 10px;
+  top: 93%;
+  width: 150px;
+  padding-left: 10px;
+}
+
+.CreatePost:hover{
+  background-color: grey;
+  width: 150px;
+  height: 40px;
+  padding-left: 10px;
 }
 
 .TopSearchBar{
@@ -19,8 +93,8 @@
 
 .TopSearchBar input{
   width: 800px;
-  padding-left: 40px;
   padding: 10px;
+  padding-left: 40px;
   border-radius: 30px;
   border: 1px solid rgb(230, 230, 230,);
   background-color: rgb(245,245,245);
@@ -58,8 +132,7 @@ h1{
   margin-left: 11.95rem;
   aspect-ratio: 16 / 9;
   top: 8%;
-  width: 100vw;
-  height: 100vh;
+  width: 1730px;
 }
 
 @media only screen and (min-width: 2560px){
@@ -70,56 +143,43 @@ h1{
     top: 6%;
     width: 3000px;
   }
+
+  .ServerName{
+    text-shadow: 1cqw;
+    font-size: 2em;
+  }
 }
 
-
-.communities-container{
-  display: none;
-}
-
-.feedcom .feed-container{
+.BottomSection{
   position: fixed;
-  height:100vh;
-  width: 100vw;
-  transform: translate(-20%);
+  display:black;
+  border: 1px solid black;
+  top:92%;
+  bottom: 0%;
+  margin-left: 11.95rem;
+  max-width: 100%;
+  width: 1730px;
+  text-align: Center;
 }
 
-
-.About{
+@media only screen and (min-width: 2560px){
+.BottomSection{
   position: fixed;
-  top: 20%;
-  left: 70%;
+  display:black;
+  border: 1px solid black;
+  top:92%;
+  bottom: 0%;
+  margin-left: 11.95rem;
+  max-width: 100%;
+  width: 3000px;
+  text-align: Center;
 }
-
-@media only screen and (min-height: 0px) and (max-height: 900px){
-
-  .TopSearchBar input{
-    min-width: 500px;
-    padding: 10px 10px 10px 10px;
-    padding-left: 40px;
-    border-radius: 30px;
-    border: 1px solid rgb(230, 230, 230,);
-    background-color: rgb(245,245,245);
-  
-  }
-
-  .RecentPost{
-    position: fixed;
-    border: 1px solid black;
-    aspect-ratio: 16 / 9;
-    top: 8%;
-    width: 100vw;
-  }
-
-  .feedcom .feed-container{
-    padding-top: 20px;
-    transform: translate(-30%);
-    position:fixed;
-    border: none;
-    height: 100vh;
-    width: 100vw;
-  }
-
-  
+.CreatePost{
+  position: fixed;
+  right: 10px;
+  top: 93%;
+  width: 150px;
+  padding-left: 10px;
+}
 }
 

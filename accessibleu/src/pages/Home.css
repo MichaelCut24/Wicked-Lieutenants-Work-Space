@@ -13,20 +13,6 @@ body {
   text-align: center;
 }
 
-.feed .feed-container{
-  transform: translate(0);
-  position: fixed;
-  overflow-y: scroll;
-  height: 100vh;
-  width: 100vw;
-}
-
-.feed .contents-container{
-  position: relative;
-  width:45vw;
-  left: 33%;
-}
-
 
 /*Style and shape for Trending box
 .div1 {
@@ -54,14 +40,6 @@ body {
   display: block;
   margin-bottom: 20px;
 }
-}
-
-@media only screen and (min-height: 0px) and (max-height: 900px){
-  .feed .feed-container{
-    transform: translate(0);
-    position: fixed;
-    overflow-y: scroll;
-  }
 }
 
 /* On smaller screens, where height is less than 450px, 
