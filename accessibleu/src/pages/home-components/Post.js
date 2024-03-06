@@ -1,8 +1,18 @@
-import { collection, onSnapshot } from "firebase/firestore";
+import { addDoc, collection, onSnapshot, serverTimestamp } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "../login-components/firebase-auth/Firebase";
 import "./Post.css"
 
+export const handleNew = async () => {
+  const username = prompt("username");
+  const contents = prompt("contents");
+  const postdate = serverTimestamp();
+
+  const collectionRef = collection(db, "posts");
+  const payload = {username, contents, postdate};
+
+  await addDoc(collectionRef, payload);
+}
 
 export default function Post() {
   const [posts, setPosts] = useState([]); // array to hold posts
@@ -14,7 +24,7 @@ export default function Post() {
       ),
     []
   );
-  
+
   return(
     <div>   
         {posts.map((post) => (

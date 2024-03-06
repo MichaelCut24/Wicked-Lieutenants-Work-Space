@@ -5,7 +5,7 @@ import LoginState from './login-components/firebase-auth/LoginState.js';
 import SignInForm from './login-components/firebase-auth/SignIn.js';
 import FirebaseGoogle from './login-components/firebase-auth/FirebaseGoogle.js';
 
-import Post from './home-components/Post.js';
+import Post, { handleNew } from './home-components/Post.js';
 
 function Login() {
     return (
@@ -47,6 +47,7 @@ function Login() {
                 </div> 
             </div>
             <div className='w-1/2 m-96'>
+                <button onClick={handleNew}>New</button>
                 <Post/>
             </div>
         </>
