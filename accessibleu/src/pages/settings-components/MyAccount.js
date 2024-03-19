@@ -4,8 +4,13 @@ import './MyAccount.css';
 import './Appearance.js';
 import SettingsBar from '../Top-Bar/Settings-Bar.js';
 
+import UserInfo from '../login-components/firebase-auth/UserInfo.js';
+import PopEdit from '../EditPop/PopEdit.js';
+
 
 function Settings (){
+
+  
   return (
     <>
       <div class="topbar border border-1 border-black"><SettingsBar /></div>
@@ -27,11 +32,17 @@ function Settings (){
 
       <div class="formBox">
         <div class="formHeading">My Account</div>
-        <div class="editButton">Edit</div>
+        <div class="editButton"><PopEdit/></div>
         <div class="boxHeading"></div>
         <div class="container">
           <form>
-              <label for="username">Username:</label>
+
+          <div>
+        <UserInfo/>
+          </div>
+
+
+              {/*<label for="username">Username:</label>
               <input type="text" id="username" name="username" placeholder="Enter your username"></input>
 
               <label for="firstName">First Name:</label>
@@ -42,6 +53,7 @@ function Settings (){
 
               <label for="email">Email Address:</label>
               <input type="email" id="email" name="email" placeholder="contact@accessibleu.com"></input>
+          */}
           </form>
 
           <div class="infoContainer">Two-Factor Authentication adds an extra layer of Security

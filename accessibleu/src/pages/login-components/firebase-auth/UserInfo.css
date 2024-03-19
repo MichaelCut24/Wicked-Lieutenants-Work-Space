@@ -1,0 +1,43 @@
+*
+.UserDataBase{
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.UserDataBase h2{
+    color: #2196f3;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.UserDataBase .UserInfoDisplay{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.UserDataBase .UserInfoDisplay .box{
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.UserDataBase .UserInfoDisplay .box h3{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #232323;
+}
+
+.UserDataBase .UserInfoDisplay .box button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #2196f3;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
