@@ -1,11 +1,8 @@
 // LOGIN PAGE
 import './Login.css'
 import PopCreate from './login-components/PopCreate.js';
-import LoginState from './login-components/firebase-auth/LoginState.js';
 import SignInForm from './login-components/firebase-auth/SignIn.js';
 import FirebaseGoogle from './login-components/firebase-auth/FirebaseGoogle.js';
-
-import Post, { handleNew } from './home-components/Post.js';
 
 function Login() {
     return (
@@ -39,16 +36,8 @@ function Login() {
                         <div className="PopCreate">
                             <PopCreate/>
                         </div>
-                    </div>
-
-                    <div>
-                        <LoginState/>
-                    </div>   
+                    </div> 
                 </div> 
-            </div>
-            <div className='w-1/2 m-96'>
-                <button onClick={handleNew}>New</button>
-                <Post/>
             </div>
         </>
     );

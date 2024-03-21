@@ -1,0 +1,10 @@
+#user-email, #user-password{
+    width: 100%; 
+    padding: 12px 12px; 
+    display: inline-block; 
+    margin: 8px 0;
+    border: 1px solid black; 
+    box-sizing: border-box;
+    font-size: smaller; 
+    border-radius: 10px;
+}

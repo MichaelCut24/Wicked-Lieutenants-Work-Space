@@ -27,18 +27,16 @@ function LoginState() {
     
     
     return(
-        <div>
+        <div className="login-state-container">
             {authUser ? 
-                <>
+                <div className="flex gap-3">
                     <p>Signed In as {authUser.email}{authUser.UserUID}</p>
-                    <p>
-                        <button onClick={userSignOut}>Sign Out</button>
-                    </p>
-                </> 
+                    <button onClick={userSignOut}>Sign Out</button>
+                </div> 
             : 
-                <>
+                <div>
                     <p>Signed Out</p>
-                </>
+                </div>
             }
         </div>
     );

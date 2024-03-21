@@ -11,6 +11,7 @@ import PrivacySecurity from './pages/settings-components/Privacy-Security';
 import Notifications from './pages/settings-components/Notifications';
 import Language from './pages/settings-components/Language';
 import Advanced from './pages/settings-components/Advanced';
+import TopBar from './pages/Top-Bar/TopBar';
 
 import './App.css';
 
@@ -20,7 +21,8 @@ function App() {
   const toggleDropdown = () => {setIsOpen(!isOpen);};
   /*const[isNavOpen, setIsNavOpen] = useState(false);*/
   return (
-    <>
+    <div>
+      <div className="topbar border border-1 border-black"><TopBar/></div>
       <Router> {/* Everything related to the page routing will be put inside here */} 
           <nav className= "nav"> {/* Navigation Bar component */}
             <div class="logo">
@@ -92,7 +94,7 @@ function App() {
             </Routes>
         </main> 
       </Router> 
-    </>       
+    </div>       
   );
 }
 

@@ -1,6 +1,7 @@
 import { auth } from "./Firebase";
 import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
+import "./SignIn.css";
 
 
 function SignInForm(){
