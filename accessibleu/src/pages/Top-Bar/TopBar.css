@@ -4,22 +4,21 @@ header {
   text-align: left;
   overflow: hidden;
   width: 1126px;
-  height: 140px;
-  padding: 8px 8px 8px 8px;
-  background: #FFFFFF;
+  height: 20px;
 }
   
 /* Style the header links*/  
 .header a {
   float: left;
   display: block;
-  color: black;
+
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   margin-left: 6rem;
 }
+
 .header-right {
   margin-left: 40%;
   padding-bottom: 2%;
@@ -40,27 +39,12 @@ header {
   margin-left: 100px; 
   float: left; 
 }
-  
-/* Style the "active" element to highlight the current page*/
-.header a.active {
-  background-color: lightgrey;
-  color: white;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
-}
 
 .search-container {
   background-color: #fff;
   width: 280px;
-}
+  margin-left: 50%;
+  }
 
 /* Style the input field */
 .search-input[type=text] {
@@ -76,34 +60,17 @@ header {
   width: 70%;
 }
 
-/* Profile name and icon */
-.random-user {
-	width: 111px;
-	height: 28px;
-	color: #444444;
-	font-weight: 500;
-	font-size: 16px;
-  float: right;
-  margin-right: 200px;
-  margin-top: 20px;
-}
-/*
-.keyboard-arrow-down-icon-2 {
-	width: 20px;
-	height: 20px;
-	background: #AAAAAA;
-}*/
-
-#searchButton:hover {
-  background-color: lightgrey;
-}
-
 /* Magnifying Glass Icon */
 .search-icon {
   content: "\1F50D"; /* Unicode character for a magnifying glass */
   font-size: 18px;
   margin-right: 5px;
 }
+
+#searchButton:hover {
+  background-color: lightgrey;
+}
+
 .images {
 	width: 47px;
 	height: 47px;
@@ -134,6 +101,18 @@ header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Adjust the shadow as needed */
 }
 
+/* Profile name and icon */
+.random-user {
+	width: 111px;
+	height: 28px;
+	color: #444444;
+	font-weight: 500;
+	font-size: 16px;
+  float: right;
+  margin-right: 200px;
+  margin-top: 20px;
+}
+
 /* Style for the notification icon container */
 .notification-container {
   width: 30px; /* Adjust the size according to your design */
@@ -151,3 +130,26 @@ header {
   color: #fff; /* Adjust the color of the icon */
   font-size: 16px; /* Adjust the size of the icon */
 }
+
+/* Style the "active" element to highlight the current page*/
+.header a.active {
+  background-color: lightgrey;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+/*
+.keyboard-arrow-down-icon-2 {
+	width: 20px;
+	height: 20px;
+	background: #AAAAAA;
+}*/
