@@ -4,15 +4,16 @@
 /* Apply settings to the entire website using CSS variables */
 :root {
 	--contrast: 100%;
-	--brightness: 100%;
+	--brightness: 50%;
 	--font: 'Arial, sans-serif';
 	--fontSize: 16px;
   }
 
 body {
-    filter: contrast(var(--contrast)) brightness(var(--brightness));
+    filter: invert(0%) contrast(100%) brightness(100%);
   	font-family: var(--font);
   	font-size: var(--fontSize);
+	background: white;
 }
 
 /* Form Box */
@@ -47,7 +48,7 @@ body {
   	text-wrap: nowrap;
 }
 
-/* Edit Button */
+/* Edit/Save Button */
 .editButton {
 	width: 90px;
 	height: 40px;
@@ -97,6 +98,21 @@ body {
     margin-right: 10%;
 }
 
+/* Spacing for notification and advanced menu */
+.option-headingNotifications {
+	padding-bottom: 20px;
+	margin-top: -50px;
+	margin-bottom: -10px;
+	font-weight: bold;
+}
+
+.option-heading {
+	padding-bottom: 20px;
+	margin-bottom: -10px;
+	font-weight: bold;
+}
+
+/* Formatting for label */
 label {
     display: block;
 	padding-right: 8px;
@@ -114,13 +130,6 @@ label {
 	line-height: 1;
 	font-size: medium;
 	font-weight: 400;
-}
-
-/* Spacing for notification and advanced menu */
-.option-heading {
-	padding-bottom: 20px;
-	margin-bottom: -10px;
-	font-weight: bold;
 }
 
 .email-label {
@@ -170,7 +179,7 @@ input[type="text"], input[type="email"] {
 	margin-left: 25%;
 }
  
-/* Formatting the change password button */
+/* Format change password button */
 .button-chgPsw {
 	width: 200px;
 	height: 40x;
@@ -187,7 +196,6 @@ input[type="text"], input[type="email"] {
 	text-align: center;
     margin-top: 20px;
 }
-
 
 /* Outlines box blue to show where cursor is*/
 input:focus {
@@ -219,6 +227,14 @@ input:focus {
 	margin-left: 30px;
 	margin-bottom: 20px;
 }
+
+/* Hide the checkbox input */
+.checkbox-input {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
 
 /* Main toggle switch postion */
 .toggle-switch-main {
@@ -253,7 +269,8 @@ input:focus {
 	width: 0;
 	height: 0;
 }
-  
+
+/* Format slider */
 .slider {
 	position: absolute;
 	cursor: pointer;
@@ -315,6 +332,7 @@ input:focus + .slider {
 	box-shadow: 0 0 1px #6d6c6c;
 }
 
+/*** Appearance settings ***/
 .appearance {
 	margin-bottom: 30px;
 	margin-left: 30px;

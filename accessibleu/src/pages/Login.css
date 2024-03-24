@@ -1,9 +1,11 @@
+body {
+    background: white;
+}
 
 .page{
 
     height: 100vh;
     width: 100vw;
-    background-color: white;
 }
 
 /* Welcome message */

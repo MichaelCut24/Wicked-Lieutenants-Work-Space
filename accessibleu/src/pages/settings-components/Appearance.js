@@ -1,47 +1,67 @@
-import React, { useState } from 'react';
-
+import React, { useState, useEffect } from 'react';
 import './MyAccount.css';
 import SettingsBar from '../Top-Bar/Settings-Bar.js';
 
 function Appearance (){
-  // State for appearance options
-  const [contrast, setContrast] = useState(50); // Initial value between 0 and 100
-  const [brightness, setBrightness] = useState(100); // Initial value between 0 and 100
-  const [font, setFont] = useState('Arial, sans-serif');
-  const [fontSize, setFontSize] = useState(16); // Initial font size
+  //Retrieve settings from localStorage or use default values
+  const [invertColors, setInvertColors] = useState(() => localStorage.getItem('invertColors') === 'true' || false);
+  const [increaseContrast, setIncreaseContrast] = useState(() => localStorage.getItem('increaseContrast') === 'true' || false);
+  const [applyColorFilters, setApplyColorFilters] = useState(() => localStorage.getItem('applyColorFilters') === 'true' || false);
+  const [reduceWhitePoint, setReduceWhitePoint] = useState(() => localStorage.getItem('reduceWhitePoint') === 'true' || false);
+  const [brightness, setBrightness] = useState(() => parseInt(localStorage.getItem('brightness')) || 100);
+  const [font, setFont] = useState(() => localStorage.getItem('font') || 'Arial, sans-serif');
+  const [fontSize, setFontSize] = useState(() => parseInt(localStorage.getItem('fontSize')) || 16);
   
-  // Function to handle contrast change
-  const handleContrastChange = (e) => {
-    setContrast(e.target.value);
-    applySettings();
+  //Apply current settings to the entire website
+  const applySettings = () => {
+    //Contrast settings
+    let filterValue = '';
+    if (invertColors) filterValue += 'invert(100%) '; //Invert colors
+    if (increaseContrast) filterValue += 'contrast(200%) '; //Increase contrast
+    if (applyColorFilters) filterValue += 'sepia(100%) saturate(200%) '; //Color filters
+    if (reduceWhitePoint) filterValue += 'brightness(50%)'; //Reduce white point
+  
+    document.documentElement.style.setProperty('--brightness', `${brightness}%`); //Brightness
+    document.documentElement.style.setProperty('--font', `${font}`); //Font
+    document.documentElement.style.setProperty('--fontSize', `${fontSize}px`); //Font size
+    document.documentElement.style.filter = filterValue;
+
+    //Save settings to localStorage
+    localStorage.setItem('invertColors', invertColors);
+    localStorage.setItem('increaseContrast', increaseContrast);
+    localStorage.setItem('applyColorFilters', applyColorFilters);
+    localStorage.setItem('reduceWhitePoint', reduceWhitePoint);
+    localStorage.setItem('brightness', brightness);
+    localStorage.setItem('font', font);
+    localStorage.setItem('fontSize', fontSize);
   };
 
-  // Function to handle brightness setting
+  useEffect(() => {
+    applySettings();
+  }, [invertColors, increaseContrast, applyColorFilters, reduceWhitePoint, brightness, font, fontSize]);
+
+  //Function to handle brightness setting
   const handleBrightnessChange = (e) => {
-    setBrightness(e.target.value);
-    applySettings();
+    setBrightness(parseInt(e.target.value));
   };
 
-  // Function to handle font setting
+  //Function to handle font setting
   const handleFontChange = (e) => {
     setFont(e.target.value);
-    applySettings();
   };
 
-  // Function to handle font size setting
+  //Function to handle font size setting
   const handleFontSizeChange = (e) => {
-    setFontSize(e.target.value);
-    applySettings();
+    setFontSize(parseInt(e.target.value));
   };
 
-  // Apply current settings to the entire website
-  const applySettings = () => {
-    document.documentElement.style.setProperty('--contrast', `${contrast}%`);
-    document.documentElement.style.setProperty('--brightness', `${brightness}%`);
-    document.documentElement.style.setProperty('--font', `${font}`);
-    document.documentElement.style.setProperty('--fontSize', `${fontSize}px`);
+  //Handle checkbox toggles
+  const handleToggleChange = (setter) => {
+    return () => {
+      setter((prev) => !prev);
+    };
   };
-
+  
   return (
     <>
       <div class="topbar border border-1 border-black"><SettingsBar/></div>
@@ -60,60 +80,92 @@ function Appearance (){
       </div>*/}
 
      
-        <div class="formHeading">Appearance</div>
-      
-        <div class="container">
-          <form className='appearance-settings'>
-            <div className="appearance">
-              <label htmlFor="contrastSlider">Contrast:</label>
-              <input
-                type="range"
-                min="0"
-                max="200"
-                step="1"
-                value={contrast}
-                onChange={handleContrastChange}
-              />
-            </div>
+      <div class="formHeading">Appearance</div>
+    
+      <div class="container">
+        <form className='appearance-settings'>
+          <div className="appearance">
+            <label>Invert Colors:</label>
+            <input
+              type="checkbox"
+              checked={invertColors}
+              onChange={() => {
+                handleToggleChange(setInvertColors(!invertColors));
+              }}
+            />
+          </div>
+          
+          <div className="appearance">
+            <label>Increase Contrast:</label>
+            <input
+              type="checkbox"
+              checked={increaseContrast}
+              onChange={() => {
+                handleToggleChange(setIncreaseContrast(!increaseContrast));
+              }}
+            />
+          </div>
 
-            <div className="appearance">
-              <label>Brightness:</label>
-              <input
-                type="range"
-                min="0"
-                max="200"
-                step="1"
-                value={brightness}
-                onChange={handleBrightnessChange}
-              />
-            </div>
+          <div className="appearance">
+            <label>Apply Color Filters:</label>
+            <input
+              type="checkbox"
+              checked={applyColorFilters}
+              onChange={() => {
+                handleToggleChange(setApplyColorFilters(!applyColorFilters));
+              }}
+            />
+          </div>
 
-            <div className="font-menu">
-              <label>Font:</label>
-              <select value={font} onChange={handleFontChange}>
-                <option value="Arial, sans-serif">Arial</option>
-                <option value="Verdana, sans-serif">Verdana</option>
-                <option value="Georgia, serif">Georgia</option>
-                <option value="Courier Prime">Courier</option>
-                <option value="Calistoga">Calistoga</option>
-                {/* Add more font options as needed */}
-              </select>
-            </div>
+          <div className="appearance">
+            <label>Reduce White Point:</label>
+            <input
+              type="checkbox"
+              checked={reduceWhitePoint}
+              onChange={() => {
+                handleToggleChange(setReduceWhitePoint(!reduceWhitePoint));
+              }}
+            />
+          </div>
 
-            <div className="appearance">
-              <label>Font Size:</label>
-              <input
-                type="range"
-                min="10"
-                max="36"
-                step="1"
-                value={fontSize}
-                onChange={handleFontSizeChange}
-              />
-            </div>
+          <div className="appearance">
+            <label>Brightness:</label>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              step="1"
+              value={brightness}
+              onChange={handleToggleChange(handleBrightnessChange)}
+            />
+          </div>
 
-          </form>
-        </div>
+          <div className="font-menu">
+            <label>Font:</label>
+            <select value={font} onChange={handleFontChange}>
+              <option value="Arial, sans-serif">Arial</option>
+              <option value="Verdana, sans-serif">Verdana</option>
+              <option value="Georgia, serif">Georgia</option>
+              <option value="Courier Prime">Courier</option>
+              <option value="Calistoga">Calistoga</option>
+              {/* Add more font options here */}
+            </select>
+          </div>
+
+          <div className="appearance">
+            <label>Font Size:</label>
+            <input
+              type="range"
+              min="10"
+              max="36"
+              step="1"
+              value={fontSize}
+              onChange={handleToggleChange(handleFontSizeChange)}
+            />
+          </div>
+
+        </form>
+      </div>
     
     </>
   );
