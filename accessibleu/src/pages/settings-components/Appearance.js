@@ -61,7 +61,7 @@ function Appearance (){
 
      
         <div class="formHeading">Appearance</div>
-        <div class="boxHeading"></div>
+      
         <div class="container">
           <form className='appearance-settings'>
             <div className="appearance">

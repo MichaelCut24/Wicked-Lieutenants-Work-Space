@@ -27,15 +27,15 @@ function Advanced (){
         </div>
       </div>*/}
 
-      <div class="formBox">
+     
         <div class="formHeading">Advanced</div>
-        <div class="boxHeading"></div>
+       
         <div class="container">
-          <form>
-            <div className="option-heading">
+          <form className='appearance-settings'>
+            <div>
               <label>Content Visibility</label> 
               <label className="toggle-switch-main"> 
-                <input type="checkbox" checked={allNotifications} onChange={toggleAllNotifications} />
+                
                   <span className="slider"></span>
               </label>
               <label class="description">Posts created by this profile will be public and visible to anyone.</label>
@@ -44,7 +44,7 @@ function Advanced (){
             <div className="option-heading">
               <label>Community Activity</label> 
               <label className="toggle-switch-main"> 
-                <input type="checkbox" checked={allNotifications} onChange={toggleAllNotifications} />
+                
                   <span className="slider"></span>
               </label>
               <label class="description">Show the communites I am active in on my profile page. </label>
@@ -53,21 +53,19 @@ function Advanced (){
             <div className="option-heading">
               <label>Clear Post History</label> 
               <label className="toggle-switch-main"> 
-                <input type="checkbox" checked={allNotifications} onChange={toggleAllNotifications} />
-                  <span className="slider"></span>
+                <span className="slider"></span>
               </label>
               <label class="description">Remove your post viewing history.</label>
             </div>
 
-            <section id="feedHeading">
-              <li>Feed Settings</li>
+            <section className="option-heading">
+              <label>Feed Settings</label>
             </section>
 
             <div className="option-b">
               <label>Autoplay Videos</label> 
               <label className="toggle-switch-sub"> 
-                <input type="checkbox" checked={allNotifications} onChange={toggleAllNotifications} />
-                  <span className="slider"></span>
+                <span className="slider"></span>
               </label>
               <label class="description">All media will play automatically when in view.</label>
             </div>
@@ -75,15 +73,14 @@ function Advanced (){
             <div className="option-b">
               <label>Open Posts in a New Tab</label> 
               <label className="toggle-switch-sub"> 
-                <input type="checkbox" checked={allNotifications} onChange={toggleAllNotifications} />
-                  <span className="slider"></span>
+                <span className="slider"></span>
               </label>
               <label class="description">When enabled selected posts will open in a new tab.</label>
             </div>
 
           </form>
         </div>
-      </div>
+     
     </>
   );
 };

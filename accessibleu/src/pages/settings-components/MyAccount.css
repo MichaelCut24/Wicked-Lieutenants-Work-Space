@@ -102,7 +102,7 @@ label {
 	padding-right: 8px;
     margin-bottom: 8px;
     line-height: 1;
-   
+	padding-top: 10px;
 	font-weight: 600;
 	font-size: large;
 }
@@ -112,14 +112,13 @@ label {
 	padding-right: 8px;
 	margin-bottom: 8px;
 	line-height: 1;
-	margin-top: 35px;
 	font-size: medium;
 	font-weight: 400;
 }
 
-/* Spacing for notification menu */
+/* Spacing for notification and advanced menu */
 .option-heading {
-	
+	padding-bottom: 20px;
 	margin-bottom: -10px;
 	font-weight: bold;
 }
@@ -208,6 +207,7 @@ input:focus {
 /* Spacing for standard menu spacing */
 .option-main{
 	margin-bottom: 30px;
+	margin-left: 30%;
   }
 
 .option-a {
@@ -224,7 +224,7 @@ input:focus {
 .toggle-switch-main {
 	position: relative;
 	left: 21.7em;
-	bottom: 2.2em;
+	bottom: 1.5em;
 	display: inline-block;
 	width: 49px;
 	height: 20px;
@@ -238,7 +238,7 @@ input:focus {
 .toggle-switch-sub {
 	position: relative;
 	left: 20em;
-	bottom: 2.2em;
+	bottom: 1.5em;
 	display: inline-block;
 	width: 49px;
 	height: 20px;
@@ -359,7 +359,9 @@ button {
 }
 
 .language-menu {
-	padding-bottom: 10px;
+	padding-bottom: 20px;
+	margin-top: 125px;
+	margin-left: 30%;
 }
 
 .language-menu select {
@@ -376,13 +378,10 @@ button {
 	text-align: left;
 	text-wrap: balance;
 	margin-top: -40px;
+	padding-top: 10px;
 }
 
-#feedHeading li {
-	list-style: none;
-	font-weight: bold;
-	padding-top: 40px;
-}
+
 
 /* Shows which page you are currently on 
 .activeBox {

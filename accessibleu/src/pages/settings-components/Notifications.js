@@ -51,7 +51,6 @@ function Notifications (){
           <div className="option-heading">
             <label>All Notifications</label> 
             <label className="toggle-switch-main"> 
-              <input type="checkbox" checked={allNotifications} onChange={toggleAllNotifications} />
               <span className="slider"></span>
             </label> 
           </div>
@@ -60,11 +59,9 @@ function Notifications (){
             <label>Emails</label>
           </section>
           
-
           <div className="option-a">
             <label className='notification-label'>Daily Emails:</label>
             <label className="toggle-switch-sub"> 
-              <input type="checkbox" checked={dailyEmails} onChange={toggleDailyEmails} />
               <span className="slider"></span>
             </label>
           </div>
@@ -72,7 +69,6 @@ function Notifications (){
           <div className="option-a">
             <label className='notification-label'>Weekly Emails:</label>
             <label className="toggle-switch-sub"> 
-              <input type="checkbox" checked={weeklyEmails} onChange={toggleWeeklyEmails} />
               <span className="slider"></span>
             </label>
           </div>
@@ -80,7 +76,6 @@ function Notifications (){
           <div className="option-a">
             <label className='notification-label'>Monthly Emails:</label>
             <label className="toggle-switch-sub"> 
-              <input type="checkbox" checked={monthlyEmails} onChange={toggleMonthlyEmails} />
               <span className="slider"></span>
             </label>
           </div>
@@ -92,7 +87,6 @@ function Notifications (){
           <div className="option-a">
             <label className='notification-label'>New posts in communities you follow:</label>
             <label className="toggle-switch-sub"> 
-              <input type="checkbox" checked={monthlyEmails} onChange={toggleMonthlyEmails} />
               <span className="slider"></span>
             </label>
           </div>
@@ -100,7 +94,6 @@ function Notifications (){
           <div className="option-a">
             <label className='notification-label'>Comments on your posts:</label>
             <label className="toggle-switch-sub"> 
-              <input type="checkbox" checked={monthlyEmails} onChange={toggleMonthlyEmails} />
               <span className="slider"></span>
             </label>
           </div>
@@ -108,7 +101,6 @@ function Notifications (){
           <div className="option-a">
             <label className='notification-label'>Replies on your posts:</label>
             <label className="toggle-switch-sub"> 
-              <input type="checkbox" checked={monthlyEmails} onChange={toggleMonthlyEmails} />
               <span className="slider"></span>
             </label>
           </div>

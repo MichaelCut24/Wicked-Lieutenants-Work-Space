@@ -89,18 +89,7 @@ function Settings (){
               <span>{userData.lastName}</span>
             )}  
           </div>
-       
-          {isEditing ? (
-            <button onClick={handleSaveClick}>Save</button>
-          ) : (
-            <button onClick={handleEditClick}>Edit</button>
-          )}
         </form>
-
-        
-       
-      
-      
     </>
  );
 }
