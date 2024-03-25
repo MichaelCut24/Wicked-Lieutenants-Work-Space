@@ -14,11 +14,11 @@ import Feed from "./home-components/Feed.js"
 export default function Community(){
     return (
         <div className="Page">
-            <header className='TopSection'>
+            <div className='TopSection'>
                 <div className="TopSearchBar">
                     <input id="searchbar" placeholder="Search for a post" />
                 </div>  
-            </header>  
+            </div>  
             <div className="MainSection">
                 <div className="RecentPost">
                     <div className='feedcom'>

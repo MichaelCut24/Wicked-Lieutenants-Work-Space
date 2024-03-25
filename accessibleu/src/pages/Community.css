@@ -7,8 +7,8 @@
 
 .TopSection{
   position: absolute;
-  width: 100vw;
-
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .TopSearchBar{
@@ -36,7 +36,6 @@
 .MainSection{
   display:black;
   flex-direction:column;
-  border: 1px solid black;
   width: 100vw;
   height: 100vh;
 }
@@ -47,8 +46,8 @@
   margin-left: 11.95rem;
   aspect-ratio: 16 / 9;
   top: 8%;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (min-width: 2560px){
@@ -57,7 +56,8 @@
     border: 1px solid black;
     margin-left: 11.95rem;
     top: 6%;
-    width: 3000px;
+    width: 50%;
+    overflow-x: hidden;
   }
 }
 
@@ -68,8 +68,10 @@
 
 .feedcom .feed-container{
   transform: translate(-25%, 1%);
-  display: initial;
   z-index: 1;
+  overflow: scroll;
+  height:100vh;
+  width: 100vw;
 }
 
 

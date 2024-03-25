@@ -13,7 +13,7 @@
     flex-direction: column;
     min-width:12rem;
     max-width:12rem;
-    height: 100%;
+    height: 123vh;
     z-index: 10000;
     padding: 0px 60px;
 }
@@ -181,7 +181,6 @@
         min-width:100vw;
         height: 6%;
         z-index: 10000;
-        top: 94%;
     }
 
     .nav .logo{
