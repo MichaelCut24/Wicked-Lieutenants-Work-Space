@@ -21,7 +21,6 @@ function SettingsBar (){
             
           <div class="search-container">
             <form action="/action_page.php">
-              <input type="text" placeholder="🔍  Search..." name="search"></input>
             </form>
               
           </div>

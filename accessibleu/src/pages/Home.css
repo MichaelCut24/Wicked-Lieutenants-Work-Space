@@ -27,27 +27,6 @@ body {
   left: 33%;
 }
 
-
-/*Style and shape for Trending box
-.div1 {
-  width: 700px;
-  height: 400px;
-  margin-left: 15px;
-  box-sizing: border-box;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect 
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-}*/
-
-
-/*
-.responsive {
-  width: 100%;
-  height: auto;
-}*/
-
-/* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
 .column {
   width: 100%;
@@ -63,11 +42,3 @@ body {
     overflow-y: scroll;
   }
 }
-
-/* On smaller screens, where height is less than 450px, 
-change the style of the sidenav (less padding and a smaller font size) 
-@media screen and (max-height: 450px) {
-.sidebar {padding-top: 15px;}
-.sidebar a {font-size: 18px;}
-}
-*/

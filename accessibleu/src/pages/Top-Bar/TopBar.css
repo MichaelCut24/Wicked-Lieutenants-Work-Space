@@ -1,36 +1,10 @@
-header {
-  background-color: #f7f4f4;
-  color: white;
-  text-align: left;
-  overflow: hidden;
-  width: 1126px;
-  height: 140px;
-  padding: 8px 8px 8px 8px;
-  background: #FFFFFF;
-}
-  
-/* Style the header links*/  
-.header a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  margin-left: 6rem;
-}
-.header-right {
-  margin-left: 40%;
-  padding-bottom: 2%;
-}
-
-/* Style for the welcome message */
-.header a.welcome {
-  font-size: 35px;
+.welcome {
+  font-size: 20px;
   font-weight: bold;
-  margin-left: 100px; 
+  margin-left: 198px; 
+  margin-top: -265px;
   float: left;
+  font-style: italic;
 }
 
 /* Style the settings message for the settings Bar */
@@ -57,24 +31,6 @@ header {
   padding-top: 102px;
 }
 
-.search-container {
-  background-color: #fff;
-  width: 280px;
-}
-
-/* Style the input field */
-.search-input[type=text] {
-  border: none;
-  padding: 10px;
-  width: 100%;
-}
-
-#searchInput {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px;
-  width: 70%;
-}
 
 /* Profile name and icon */
 .random-user {
@@ -85,7 +41,7 @@ header {
 	font-size: 16px;
   float: right;
   margin-right: 200px;
-  margin-top: 20px;
+  margin-top: -265px;
 }
 /*
 .keyboard-arrow-down-icon-2 {
@@ -94,60 +50,47 @@ header {
 	background: #AAAAAA;
 }*/
 
-#searchButton:hover {
-  background-color: lightgrey;
-}
 
-/* Magnifying Glass Icon */
-.search-icon {
-  content: "\1F50D"; /* Unicode character for a magnifying glass */
-  font-size: 18px;
-  margin-right: 5px;
-}
 .images {
 	width: 47px;
 	height: 47px;
 	background: #00000000;
 }
-
 /* Style for the profile icon container */
 .profile-container {
   width: 25px; /* Adjust the size according to your design */
   height: 25px; /* Adjust the size according to your design */
-  border-radius: 50%;
+  border-radius: 30%;
   overflow: hidden;
   float: inline-end;
-  margin-top: 2.5%;
-  margin-right: 2%;
+  border:4px solid #fff; /* Adjust the color as needed */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Adjust the shadow as needed */
+  margin-top: -267px;
+  margin-right: 14%;
 }
 
 /* Style for the profile picture */
 .profile-picture {
-  width: 100%;
   height: 100%;
   object-fit: cover; /* Ensures the image covers the entire container */
 }
 
-/* Optional: Add some border and shadow for a decorative effect */
-.profile-container {
-  border: 2px solid #fff; /* Adjust the color as needed */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Adjust the shadow as needed */
-}
-
 /* Style for the notification icon container */
 .notification-container {
-  width: 30px; /* Adjust the size according to your design */
-  height: 30px; /* Adjust the size according to your design */
-  border-radius: 50%;
   background-color: white; 
   display: flex;
   float: inline-end;
   margin-right: 10%;
-  margin-top: 2%;
+  margin-top: -167px;
 }
-
 /* Style for the notification icon */
 .notification-icon {
   color: #fff; /* Adjust the color of the icon */
-  font-size: 16px; /* Adjust the size of the icon */
+  font-size: 18px; /* Adjust the size of the icon */
+  margin-top: -100px;
 }
+
+.topbar {
+  height: 50px; /* Adjust height as needed */
+}
+
