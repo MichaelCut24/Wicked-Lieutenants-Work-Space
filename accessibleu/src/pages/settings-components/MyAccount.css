@@ -1,63 +1,36 @@
 * {box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css?family=Calistoga&family=Courier+Prime');
+
+/* Apply settings to the entire website using CSS variables */
+:root {
+	--contrast: 100%;
+	--brightness: 50%;
+	--font: 'Arial, sans-serif';
+	--fontSize: 16px;
+  }
 
 body {
-    
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Shows which page you are currently on */
-.activeBox {
-	width: 230px;
-	height: 42px;
-	padding: 8px 8px 8px 8px;
-	background: #F3F3F3;
-	border-radius: 8px 8px 8px 8px;
-	font-weight: bolder;
-}
-
-/* Menu box */
-.menuBox {
-	width: 270px;
-	height: 290px;
-	padding: 8px 8px 8px 8px;
+    filter: invert(0%) contrast(100%) brightness(100%);
+  	font-family: var(--font);
+  	font-size: var(--fontSize);
 	background: white;
-	border-radius: 16px 16px 16px 16px;
-    margin-left: 20%;
-    margin-top: 2%;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-}
-
-/* Menu */
-.settingsMenu {
-	width: 221px;
-	height: 274px;
-	color: #202123;;
-	font-weight: 500;
-	font-size: 15px;
-	line-height: 3;
-	text-align: left;
-    margin-left: 3%;
-    float: inline-end;
-    border-color: black;
-	line-break: loose;
 }
 
 /* Form Box */
-.formBox {
-	width: 480px;
-	height: 687px;
-	padding: 8px 8px 8px 8px;
-	background: #FFFFFF;
-	border-radius: 34px 34px 34px 34px;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    float: inline-end;
-    margin-right: 25%;
-    margin-top: 40px;
-    margin-bottom: 20px;
+.form {
+	display: inline-table;
+	justify-content: space-between;
+	margin-top: 150px;
+}
+.privacy-settings {
+	display: inline-block;
+	margin-top: 10%;
+}
+
+.appearance-settings {
+	display: inline-block;
+	margin-top: 150px;
+	padding-bottom: 150px;
 }
 
 /* Form heading */
@@ -65,22 +38,21 @@ body {
 	width: 186px;
 	height: 28px;
 	color: #202123;
-	float: center;
+	float: top;
 	font-weight: 600;
 	font-size: 22px;
 	line-height: 1.3;
 	text-align: left;
-    float: inline-start;
+    float:left;
     margin-top: 5%;
-    margin-left: 5%;
-	text-wrap: nowrap;
+  	text-wrap: nowrap;
 }
 
-/* Edit Button */
+/* Edit/Save Button */
 .editButton {
-	width: 76px;
+	width: 90px;
 	height: 40px;
-	padding: 8px 16px 8px 16px;
+	padding: 8px 20px 8px 8px;
 	background: #202123;
 	color: #FFFFFF;
 	border-color: #202123;
@@ -94,6 +66,98 @@ body {
     float: inline-end;
     margin-top: 5%;
     margin-right: 5%;
+}
+
+.edit-button {
+	width: 90px;
+	height: 40px;
+	padding: 8px 8px 8px 8px;
+	color: #FFFFFF;
+	background: black;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.3;
+	text-align: center;
+    float: inline-end;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+.save-button {
+	width: 90px;
+	height: 40px;
+	padding: 8px 8px 8px 8px;
+	color: #FFFFFF;
+	background: rgb(3, 3, 175);
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.3;
+	text-align: center;
+    float: inline-end;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+/* Spacing for notification and advanced menu */
+.option-headingNotifications {
+	padding-bottom: 20px;
+	margin-top: -50px;
+	margin-bottom: -10px;
+	font-weight: bold;
+}
+
+.option-heading {
+	padding-bottom: 20px;
+	margin-bottom: -10px;
+	font-weight: bold;
+}
+
+/* Formatting for label */
+label {
+    display: block;
+	padding-right: 8px;
+    margin-bottom: 8px;
+    line-height: 1;
+	padding-top: 10px;
+	font-weight: 600;
+	font-size: large;
+}
+
+.notification-label {
+	display: block;
+	padding-right: 8px;
+	margin-bottom: 8px;
+	line-height: 1;
+	font-size: medium;
+	font-weight: 400;
+}
+
+.email-label {
+	padding-bottom: 9px;
+}
+
+/* Change password label formatting */
+.pass-label{
+	font-size: 16px;
+}
+
+.passwordHeading {
+	width: 186px;
+	height: 28px;
+	color: #202123;
+	font-weight: 500;
+	font-size: 20px;
+	margin-left: -25%;
+}
+
+input[type="text"], input[type="email"] {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 16px;
 }
 
 /* 2 factor authentication button */
@@ -111,10 +175,11 @@ body {
 	font-size: 16px;
 	line-height: 1.3;
 	text-align: center;
-    margin-top: 10px;
+    margin-top: -80px;
+	margin-left: 25%;
 }
  
-/* Formatting the change password button */
+/* Format change password button */
 .button-chgPsw {
 	width: 200px;
 	height: 40x;
@@ -129,30 +194,7 @@ body {
 	font-size: 16px;
 	line-height: 1.3;
 	text-align: center;
-    margin-top: 10px;
-}
-
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    margin-top: 20%;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    line-height: 1;
-    margin-top: 10px;
-}
-
-input [type="text"], input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
+    margin-top: 20px;
 }
 
 /* Outlines box blue to show where cursor is*/
@@ -164,21 +206,17 @@ input:focus {
 
 /* Information container */
 .infoContainer {
-    margin-top: 10%;
-    float: bottom;
+	width: 500px;
+	margin-left: 0;
+	margin-top: 75px;
+	padding-bottom: 100px;
 }
 
 /* Spacing for standard menu spacing */
 .option-main{
 	margin-bottom: 30px;
+	margin-left: 30%;
   }
-
-/* Spacing for notification menu */
-.option-heading {
-	padding-top: 20px;
-	margin-bottom: -10px;
-	font-weight: bold;
-}
 
 .option-a {
 	margin-left: 30px;
@@ -190,11 +228,19 @@ input:focus {
 	margin-bottom: 20px;
 }
 
+/* Hide the checkbox input */
+.checkbox-input {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+
 /* Main toggle switch postion */
 .toggle-switch-main {
 	position: relative;
 	left: 21.7em;
-	bottom: 2.2em;
+	bottom: 1.5em;
 	display: inline-block;
 	width: 49px;
 	height: 20px;
@@ -208,7 +254,7 @@ input:focus {
 .toggle-switch-sub {
 	position: relative;
 	left: 20em;
-	bottom: 2.2em;
+	bottom: 1.5em;
 	display: inline-block;
 	width: 49px;
 	height: 20px;
@@ -223,7 +269,8 @@ input:focus {
 	width: 0;
 	height: 0;
 }
-  
+
+/* Format slider */
 .slider {
 	position: absolute;
 	cursor: pointer;
@@ -285,9 +332,16 @@ input:focus + .slider {
 	box-shadow: 0 0 1px #6d6c6c;
 }
 
+/*** Appearance settings ***/
+.appearance {
+	margin-bottom: 30px;
+	margin-left: 30px;
+}
+
 .font-menu {
 	padding-bottom: 20px;
-}
+	margin-left: 30px;
+}  
 
 .font-menu select {
 	border: 1px solid #969494; /* Set the border color and style */
@@ -317,14 +371,15 @@ button {
 	margin-right: 5px;
 }
 
-#subHeadings li {
-	list-style: none;
+#subHeadings label{
 	font-weight: bold;
-	padding-top: 0px;
+	padding-top: 20px;
 }
 
 .language-menu {
-	padding-bottom: 10px;
+	padding-bottom: 20px;
+	margin-top: 125px;
+	margin-left: 30%;
 }
 
 .language-menu select {
@@ -341,12 +396,46 @@ button {
 	text-align: left;
 	text-wrap: balance;
 	margin-top: -40px;
+	padding-top: 10px;
 }
 
-#feedHeading li {
-	list-style: none;
-	font-weight: bold;
-	padding-top: 40px;
+
+
+/* Shows which page you are currently on 
+.activeBox {
+	width: 230px;
+	height: 42px;
+	padding: 8px 8px 8px 8px;
+	background: #F3F3F3;
+	border-radius: 8px 8px 8px 8px;
+	font-weight: bolder;
+}*/
+
+/* Menu box 
+.menuBox {
+	width: 270px;
+	height: 290px;
+	padding: 8px 8px 8px 8px;
+	background: white;
+	border-radius: 16px 16px 16px 16px;
+    margin-left: 20%;
+    margin-top: 2%;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
 }
 
- 
+/* Menu 
+.settingsMenu {
+	width: 221px;
+	height: 274px;
+	color: #202123;;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 3;
+	text-align: left;
+    margin-left: 3%;
+    float: inline-end;
+    border-color: black;
+	line-break: loose;
+}*/

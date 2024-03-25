@@ -41,9 +41,9 @@ function Language (){
         </div>
       </div>*/}
 
-      <div class="formBox">
+     
         <div class="formHeading">Language</div>
-        <div class="boxHeading"></div>
+       
         <div class="container">
           <form>
             <div className="language-menu">
@@ -64,13 +64,12 @@ function Language (){
             <div className="option-main">
               <label>Closed Captioning:</label>
               <label className="toggle-switch-main">
-                <input type="checkbox" checked={closedCaptioning} onChange={toggleClosedCaptioning} />
                 <span className="slider"></span>
               </label>
             </div>
           </form>
         </div>
-      </div>
+
     </>
   );
 

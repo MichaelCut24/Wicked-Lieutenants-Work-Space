@@ -1,11 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './MyAccount.css';
-import './Appearance.js';
 import SettingsBar from '../Top-Bar/Settings-Bar.js';
 
 
 function Settings (){
+  const [isEditing, setIsEditing] = useState(false);
+
+  // User data (replace with your actual user data)
+  const userData = {
+    username: 'john_doe',
+    email: 'john.doe@example.com',
+    firstName: 'John',
+    lastName: 'Doe',
+  };
+
+  const handleEditClick = () => {
+    setIsEditing(true);
+  };
+
+  const handleSaveClick = () => {
+    // Save edited data (you can implement the save logic here)
+    setIsEditing(false);
+  };
+
   return (
     <>
       <div class="topbar border border-1 border-black"><SettingsBar /></div>
@@ -25,31 +43,53 @@ function Settings (){
           </div>
         </div>*/}
 
-      <div class="formBox">
-        <div class="formHeading">My Account</div>
-        <div class="editButton">Edit</div>
-        <div class="boxHeading"></div>
-        <div class="container">
-          <form>
-              <label for="username">Username:</label>
-              <input type="text" id="username" name="username" placeholder="Enter your username"></input>
-
-              <label for="firstName">First Name:</label>
-              <input type="text" id="firstName" name="firstName" placeholder="Enter your first name"></input>
-
-              <label for="lastName">Last Name:</label>
-              <input type="text" id="lastName" name="lastName" placeholder="Enter your last name"></input>
-
-              <label for="email">Email Address:</label>
-              <input type="email" id="email" name="email" placeholder="contact@accessibleu.com"></input>
-          </form>
-
-          <div class="infoContainer">Two-Factor Authentication adds an extra layer of Security
-              to your account, ensuring that only you have the rights to login.</div>
-          <div class="button-2fa">Enable 2FA</div>
-        </div>
-      </div>
       
+        <div className="formHeading">My Account</div>
+        
+        <div >
+          {isEditing ? (
+            <button className="save-button" onClick={handleSaveClick}>Save</button>
+          ) : (
+            <button className="edit-button" onClick={handleEditClick}>Edit</button>
+          )}
+        </div>
+
+        <div className="boxHeading"></div>
+        
+        <form>
+          <div className='form'>
+            <label for="userName">Username:  </label>
+            {isEditing ? (
+              <input type="text" value={userData.username} onChange={(e) => {/* Handle changes */}} />
+            ) : (
+              <span>{userData.username}</span>
+            )}
+           
+
+            <label className='email-label' for="email">Email Address: </label>
+            {isEditing ? (
+              <input type="email" value={userData.email} onChange={(e) => {/* Handle changes */}} />
+            ) : (
+              <span>{userData.email}</span>
+            )}
+          </div>
+          
+          <div className='form'> 
+            <label for="firstName">First Name:  </label>
+            {isEditing ? (
+              <input type="text" value={userData.firstName} onChange={(e) => {/* Handle changes */}} />
+            ) : (
+              <span>{userData.firstName}</span>
+            )}
+
+            <label for="lastName" >Last Name: </label>
+            {isEditing ? (
+              <input type="text" id="lastName" name="lastName" value={userData.lastName} onChange={(e) => {/* Handle changes */}} />
+            ) : (
+              <span>{userData.lastName}</span>
+            )}  
+          </div>
+        </form>
     </>
  );
 }
