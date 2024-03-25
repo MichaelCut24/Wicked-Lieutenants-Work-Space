@@ -68,6 +68,8 @@
 
 .feedcom .feed-container{
   transform: translate(-25%, 1%);
+  display: initial;
+  z-index: 1;
 }
 
 
@@ -109,3 +111,18 @@
   
 }
 
+@media only screen and (min-width: 350px) and (max-width: 415px) {
+  .feedcom .feed-container{
+    padding-top: 20px;
+    transform: translate(-45%);
+    position:fixed;
+    height: 100%;
+    width: 200%;
+  }
+
+  .MainSection{
+    flex-direction:column;
+    width: 100vw;
+    height: 100vh;
+  }
+}

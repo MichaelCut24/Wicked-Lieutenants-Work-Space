@@ -34,11 +34,11 @@ function App() {
                 </li>
                 <li>
                   <NavLink to="login"><i class='bx bx-log-in-circle'></i></NavLink>
-                  <NavLink to="login">Login</NavLink>
+                  <a><NavLink to="login">Login</NavLink></a>
                 </li>
                 <li>
                   <NavLink to="communities"><i class='bx bx-group'></i></NavLink>
-                  <NavLink to="communities">Communities</NavLink>
+                  <a><NavLink to="communities">Communities</NavLink></a>
                 </li>
                 <li className='dropdown-toggle'><a onClick={toggleDropdown} className="dropdown-toggle" i class='bx bx-cog'>Settings</a></li>
                   <li>
@@ -56,8 +56,13 @@ function App() {
                     </div>
                   </li>
               </ul>
-
             </div>
+            <ul id='Moble'>
+                <li><NavLink to="/"><i class='bx bx-home'></i></NavLink></li>
+                <li><NavLink to="login"><i class='bx bx-log-in-circle'></i></NavLink></li>
+                <li><NavLink to="communities"><i class='bx bx-group'></i></NavLink></li>
+                <li><i class='bx bx-bell'></i></li>
+              </ul>
             <div className='bar'>
               <span class="material-symbols-outlined"></span>
             </div>
