@@ -1,11 +1,69 @@
 .feed-container{
-    height:100%;
-    width: 60vw;
+    width: 55rem;
     margin-left: 25rem;
 }
 
 .post-container{
-    border: 1px solid black;
+    padding-bottom: 2rem;
+    position: relative;
+    border: 5px solid #141414;
+    border-radius: 15px;
     margin-bottom: 1rem;
+    min-height: 9rem;
 }
-      
+
+.post-username{
+    margin-left: 2rem;
+}
+.post-username p{
+    font-size: 0.8rem;
+}
+
+.post-title{
+    margin-left: 0.2rem;
+}
+
+.post-title p{
+    font-size: 1.9rem;
+}
+
+.post-content{
+    margin-left: 0.2rem;
+    margin-right: 6rem;
+}
+.post-content p{
+    font-size: 1rem;
+}
+
+.post-icon{
+    width:1.5rem;
+}
+
+.likes-comments-shares{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right:0.5%;
+    top: 1rem;
+    height: 80%;
+    font-size: 0.8rem;
+}
+
+.likes{
+    display: flex;
+    gap: 0.2rem;
+}
+
+.comments{
+    position: absolute;
+    top: 2.3rem;
+    right: 0;
+    width:1.6rem;
+}
+
+.shares{
+    position: absolute;
+    top: 4.6rem;
+    right: 0;
+    width:1.6rem;
+}

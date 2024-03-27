@@ -14,13 +14,16 @@
     min-width:12rem;
     max-width:12rem;
     height: 100vh;
-    z-index: 10000;
+    z-index: 9999;
     padding: 0px 60px;
+    top:0;
 }
 
 .nav .logo{
-    width: 200px;
+    width: 13rem;
     transform: translate(0%, -15%);
+    margin-bottom: 3rem;
+    margin-top: 2.6rem;
 }
 
 
@@ -76,7 +79,7 @@
     font-size: 90%;
     position: relative;
     right: 40%;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
     display: flex;
     align-items: center;
     gap: 10px;

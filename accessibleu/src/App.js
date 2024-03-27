@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom'; // React Router to create page routes/links
+import { BrowserRouter as Router, Routes, Route, NavLink, BrowserRouter } from 'react-router-dom'; // React Router to create page routes/links
 import React, {useState} from "react"
 
 // IMPORT YOUR .JS PAGE HERE
@@ -21,80 +21,82 @@ function App() {
   const toggleDropdown = () => {setIsOpen(!isOpen);};
   /*const[isNavOpen, setIsNavOpen] = useState(false);*/
   return (
-    <div>
+    <BrowserRouter> {/* Everything related to the page routing will be put inside here */} 
       <div className="topbar border border-1 border-black"><TopBar/></div>
-      <Router> {/* Everything related to the page routing will be put inside here */} 
-          <nav className= "nav"> {/* Navigation Bar component */}
-            <div class="logo">
-              <img src="./nobg-logoWH.png" atl="logo"></img>
-            </div>
-            <div className='NavLinks'>
-              <ul>
-                <li>
-                  <NavLink to="/"><i class='bx bx-home'></i></NavLink>
-                  <a><NavLink to="/">Home</NavLink></a>
-                </li>
-                <li>
-                  <NavLink to="login"><i class='bx bx-log-in-circle'></i></NavLink>
-                  <NavLink to="login">Login</NavLink>
-                </li>
-                <li>
-                  <NavLink to="communities"><i class='bx bx-group'></i></NavLink>
-                  <NavLink to="communities">Communities</NavLink>
-                </li>
-                <li className='dropdown-toggle'><a onClick={toggleDropdown} className="dropdown-toggle" i class='bx bx-cog'>Settings</a></li>
-                  <li>
-                    <div className="dropdown">
-                      {isOpen && (
-                        <ul className="dropdown-menu">
-                          <li><NavLink to ="myaccount">MyAccount</NavLink></li>
-                          <li><NavLink to ="appearance">Appearance</NavLink></li>
-                          <li><NavLink to ="privacySecurity">Privacy & Security</NavLink></li>
-                          <li><NavLink to ="notifications">Notifications</NavLink></li>
-                          <li><NavLink to ="language">Language</NavLink></li>
-                          <li><NavLink to ="advanced">Advanced</NavLink></li>
-                        </ul>
-                      )}
-                    </div>
-                  </li>
-              </ul>
+      <nav className= "nav"> {/* Navigation Bar component */}
+        
+        <div className="logo">
+          <img src="./nobg-logoWH.png" atl="logo"></img>
+        </div>
 
-            </div>
-            <div className='bar'>
-              <span class="material-symbols-outlined"></span>
-            </div>
-            <footer className='footnav'>
-                  <div className='lownav'>
-                    <ul>
-                      <li>
-                        <NavLink to="#">Help</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="#">Contact Us</NavLink>
-                      </li>
-                      <li>
-                        <i class='bx bx-log-out-circle'></i>
-                        <NavLink to="#">Logout</NavLink>
-                      </li>
+        <div className='NavLinks'>
+          <ul>
+            <li>
+              <NavLink to="/"><i className='bx bx-home'></i></NavLink>
+              <a><NavLink to="/">Home</NavLink></a>
+            </li>
+            <li>
+              <NavLink to="login"><i className='bx bx-log-in-circle'></i></NavLink>
+              <NavLink to="login">Login</NavLink>
+            </li>
+            <li>
+              <NavLink to="communities"><i className='bx bx-group'></i></NavLink>
+              <NavLink to="communities">Communities</NavLink>
+            </li>
+            <li className='dropdown-toggle'><a onClick={toggleDropdown} className="dropdown-toggle" i class='bx bx-cog'>Settings</a></li>
+              <li>
+                <div className="dropdown">
+                  {isOpen && (
+                    <ul className="dropdown-menu">
+                      <li><NavLink to ="myaccount">MyAccount</NavLink></li>
+                      <li><NavLink to ="appearance">Appearance</NavLink></li>
+                      <li><NavLink to ="privacySecurity">Privacy & Security</NavLink></li>
+                      <li><NavLink to ="notifications">Notifications</NavLink></li>
+                      <li><NavLink to ="language">Language</NavLink></li>
+                      <li><NavLink to ="advanced">Advanced</NavLink></li>
                     </ul>
-                  </div>
-            </footer>
-          </nav>
-        <main>
-            <Routes> {/* Insert your page component here !!! */}
-              <Route exact path="/" element={<Home/>}/>
-              <Route path="login" element={<Login/>}/>
-              <Route path="communities" element={<Community/>}/>
-              <Route path="myAccount" element={<MyAccount />}/>
-              <Route path="appearance" element={<Appearance />}/>
-              <Route path="privacySecurity" element={<PrivacySecurity />}/>
-              <Route path="notifications" element={<Notifications />}/>
-              <Route path="language" element={<Language />}/>
-              <Route path="advanced" element={<Advanced />}/>
-            </Routes>
-        </main> 
-      </Router> 
-    </div>       
+                  )}
+                </div>
+              </li>
+          </ul>
+        </div>
+
+        <div className='bar'>
+          <span class="material-symbols-outlined"></span>
+        </div>
+
+        <footer className='footnav'>
+              <div className='lownav'>
+                <ul>
+                  <li>
+                    <NavLink to="#">Help</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="#">Contact Us</NavLink>
+                  </li>
+                  <li>
+                    <i className='bx bx-log-out-circle'></i>
+                    <NavLink to="#">Logout</NavLink>
+                  </li>
+                </ul>
+              </div>
+        </footer>
+
+      </nav>
+      <main>
+          <Routes> {/* Insert your page component here !!! */}
+            <Route exact path="/" element={<Home/>}/>
+            <Route path="login" element={<Login/>}/>
+            <Route path="communities" element={<Community/>}/>
+            <Route path="myAccount" element={<MyAccount />}/>
+            <Route path="appearance" element={<Appearance />}/>
+            <Route path="privacySecurity" element={<PrivacySecurity />}/>
+            <Route path="notifications" element={<Notifications />}/>
+            <Route path="language" element={<Language />}/>
+            <Route path="advanced" element={<Advanced />}/>
+          </Routes>
+      </main>
+    </BrowserRouter>    
   );
 }
 

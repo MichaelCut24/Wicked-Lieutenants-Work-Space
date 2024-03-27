@@ -24,7 +24,7 @@ function Login() {
 
 
                 <div className="relative w-1/2"> {/* Right half of page divider */}
-                    <div className="form absolute border boder-1 border-black"> {/* Login form container */}
+                    <div className="form absolute"> {/* Login form container */}
                         <div className=" flex flex-col container"> 
                             <SignInForm/>
                             

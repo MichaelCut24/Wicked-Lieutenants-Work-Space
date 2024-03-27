@@ -19,20 +19,30 @@ export default function Feed() {
         <div className="feed-container">   
             {posts.map((post) => (
               <div className="post-container">
-                <div>
-                  <p>Username: {post.username}</p>
+                <div className="post-username">
+                  <p>from {post.username}</p>
+                  
                 </div>
-                <div>
-                  <p>Title: {post.title}</p>
+                <div className="post-title">
+                  <p>{post.title}</p>
                 </div>
-                <div>
-                  <p>Content: {post.contents}</p>
+                <div className="post-content">
+                  <p>{post.contents}</p>
                 </div>
     
-                <div className="flex gap-1">
-                  <div className="border border-1 border-black"> {post.likes} Likes</div>
-                  <div className="border border-1 border-black"> Comments</div>
-                  <div className="border border-1 border-black"> Share</div>
+                <div className="likes-comments-shares">
+                  <div className="likes"> 
+                    {post.likes}
+                    <img className="post-icon" src="/likeicon.png" alt="likes"/>
+                  </div>
+
+                  <div className="comments">
+                    <img className="post-icon" src="/commenticon.png" alt="likes"/>
+                  </div>
+                  
+                  <div className="shares">
+                    <img className="post-icon" src="/shareicon.png" alt="likes"/>
+                  </div>
                 </div>  
               </div>
             ))}
