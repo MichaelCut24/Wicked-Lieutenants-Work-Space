@@ -9,7 +9,7 @@
 import './Community.css'
 import React from "react"
 import About from "./communities-components/About.js"
-import Feed from "./home-components/Feed.js"
+
 
 export default function Community(){
     return (
@@ -21,9 +21,6 @@ export default function Community(){
             </header>  
             <div className="MainSection">
                 <div className="RecentPost">
-                    <div className='feedcom'>
-                        <Feed/>
-                    </div>
                     <div className="About">
                         <About/>
                     </div>

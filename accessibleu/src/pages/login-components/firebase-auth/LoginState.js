@@ -1,7 +1,8 @@
-import { onAuthStateChanged, signOut } from "firebase/auth";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect, useState} from "react";
 import { auth } from "./Firebase";
 import { Link } from "react-router-dom";
+
 
 export default function LoginState() {
     const [authUser, setAuthUser] = useState(null);
@@ -44,3 +45,19 @@ export default function LoginState() {
     );
     
 }
+
+// Function to check if a user is logged in
+export const isUserLoggedIn = () => {
+    const auth = getAuth();
+    return new Promise((resolve, reject) => {
+        const unsubscribe = onAuthStateChanged(auth, user => {
+            unsubscribe(); // Unsubscribe after the first invocation
+            
+            if (user) {
+                resolve(true); // User is logged in
+            } else {
+                resolve(false); // No user is logged in
+            }
+        }, reject);
+    });
+};
