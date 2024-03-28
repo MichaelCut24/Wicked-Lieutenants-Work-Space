@@ -1,26 +1,40 @@
-import { auth, googleProvider } from "./Firebase";
+import { auth, db, googleProvider } from "./Firebase";
 import { signInWithPopup } from "firebase/auth";
+import { collection, addDoc } from "firebase/firestore";
 
 
 
 function FirebaseGoogle(){
-   /* const signInWithGoogle = async () => {
-        try {
-            await signInWithPopup(auth, googleProvider);
-        } catch (err) {
-            console.error(err);
-        }
-    }*/
+    //const [email, setEmail] = useState('');
 
-    const signInWithGoogle = (e) =>{
+    const signInWithGoogle = async (e) => {
         e.preventDefault();
-        signInWithPopup(auth, googleProvider)
-            .then((userCredential) => {
-            console.log(userCredential)
-            }).catch((error) => {
+        try {
+            const userCredential = await signInWithPopup(auth, googleProvider);
+            console.log(userCredential);
+            
+            // Assuming you have a user object with an email property
+            const user = userCredential.user;
+            const userDoc = {
+                email: user.email, // Get the email from the user object
+                // Add other properties if needed
+            };
+            
+            await docRef(userDoc); // Pass the user document to docRef
+        } catch (error) {
             console.log(error);
-        })
-    }
+        }
+    };
+
+    const docRef = async (userDoc) => {
+        try {
+          await addDoc(collection(db, "Users"), userDoc);
+          console.log("Document written with ID: ", docRef.id);
+        } catch (error) {
+          console.error("Error adding document: ", error);
+        }
+      };
+      
 
     return(
         <button onClick={signInWithGoogle}><img alt="login with google" src="./Google.png"/></button>
